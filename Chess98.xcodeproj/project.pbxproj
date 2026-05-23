@@ -13,13 +13,17 @@
 		20E667BE5AE7F28429B89ADA /* StockfishEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC59003F82B9E450AA6EF909 /* StockfishEngine.swift */; };
 		2216D3D2BB673A2786F213F2 /* Win98Tokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AA98B04035321098E699C8 /* Win98Tokens.swift */; };
 		4B3DBFEA62CD54CE6F10329A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F43191194979C63F7BCC673B /* Assets.xcassets */; };
+		52C499AD0892A6EB71BAE330 /* Difficulty.swift in Sources */ = {isa = PBXBuildFile; fileRef = D191A7315F2AA33B77404FE5 /* Difficulty.swift */; };
 		633019BB67DAF95A0761A42B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE9C8DB89218539C96062C /* ContentView.swift */; };
+		6378EA5CDD6FC7606AD4DB17 /* Win98MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F764A2A69D55665F879CEA /* Win98MenuBar.swift */; };
 		66CC1AD5F434A211021633B7 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5A2B8B4ED83C614AE95621 /* BoardView.swift */; };
 		69FC974E97E1989287BF7A4B /* Win98Bevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5DD8BE2D1A55FB20CB0910 /* Win98Bevel.swift */; };
 		6E21FDEFACBC73335580CD53 /* GameViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F2B04F941DE73BC067E903 /* GameViewModelTests.swift */; };
 		7D54F4EF656EBE410E602805 /* StockfishEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAEC1548CACBAC1FBE9B9A /* StockfishEngineTests.swift */; };
+		94E105E71113FA0CE29A7600 /* Win98Dialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2B9D6FA7B5E184C0C199F8 /* Win98Dialog.swift */; };
 		968751DF626974F1A6D3860A /* ChessKit in Frameworks */ = {isa = PBXBuildFile; productRef = 542ED04C175EA49A108C53B8 /* ChessKit */; };
 		A50D4C1F921B8D1ADF28398F /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7A7C72D8B32D4555A131AE /* GameViewModel.swift */; };
+		AE77C930BAFB349D530C7559 /* MoveHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D3507E4B364D2FC9853D4F /* MoveHistoryView.swift */; };
 		CD9A3B051A03B60D7B6D2AE6 /* Win98Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D7FCF9EB79C9467E326FA5 /* Win98Button.swift */; };
 		D469828696265DE3DAF7E36C /* PieceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B572538673A267173631B26 /* PieceView.swift */; };
 		DA5A3ADE404A115357B096E9 /* nn-37f18f62d772.nnue in Resources */ = {isa = PBXBuildFile; fileRef = 364C714FCFB08AE662E1E0A7 /* nn-37f18f62d772.nnue */; };
@@ -41,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		0F036FE834677E44F64BD6BA /* nn-1111cefa1111.nnue */ = {isa = PBXFileReference; path = "nn-1111cefa1111.nnue"; sourceTree = "<group>"; };
+		11D3507E4B364D2FC9853D4F /* MoveHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveHistoryView.swift; sourceTree = "<group>"; };
 		27D7FCF9EB79C9467E326FA5 /* Win98Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Win98Button.swift; sourceTree = "<group>"; };
 		2B572538673A267173631B26 /* PieceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceView.swift; sourceTree = "<group>"; };
 		2F5711DBB76352BFA16394AA /* Chess98App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chess98App.swift; sourceTree = "<group>"; };
@@ -52,11 +57,14 @@
 		83FE9C8DB89218539C96062C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		925B2B30403D242C4C74BAB1 /* Chess98.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Chess98.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0BAEC1548CACBAC1FBE9B9A /* StockfishEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockfishEngineTests.swift; sourceTree = "<group>"; };
+		B1F764A2A69D55665F879CEA /* Win98MenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Win98MenuBar.swift; sourceTree = "<group>"; };
 		BC76BC537073E5A4BF71E406 /* EngineProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineProtocol.swift; sourceTree = "<group>"; };
 		BDD2C23376B5C5B7E5F6EF59 /* SquareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareView.swift; sourceTree = "<group>"; };
 		C0F2B04F941DE73BC067E903 /* GameViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModelTests.swift; sourceTree = "<group>"; };
 		CF5A2B8B4ED83C614AE95621 /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
+		D191A7315F2AA33B77404FE5 /* Difficulty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Difficulty.swift; sourceTree = "<group>"; };
 		E1AA98B04035321098E699C8 /* Win98Tokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Win98Tokens.swift; sourceTree = "<group>"; };
+		EC2B9D6FA7B5E184C0C199F8 /* Win98Dialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Win98Dialog.swift; sourceTree = "<group>"; };
 		F43191194979C63F7BCC673B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA5DD8BE2D1A55FB20CB0910 /* Win98Bevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Win98Bevel.swift; sourceTree = "<group>"; };
 		FC59003F82B9E450AA6EF909 /* StockfishEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockfishEngine.swift; sourceTree = "<group>"; };
@@ -79,8 +87,10 @@
 			isa = PBXGroup;
 			children = (
 				CF5A2B8B4ED83C614AE95621 /* BoardView.swift */,
+				D191A7315F2AA33B77404FE5 /* Difficulty.swift */,
 				BC76BC537073E5A4BF71E406 /* EngineProtocol.swift */,
 				7F7A7C72D8B32D4555A131AE /* GameViewModel.swift */,
+				11D3507E4B364D2FC9853D4F /* MoveHistoryView.swift */,
 				2B572538673A267173631B26 /* PieceView.swift */,
 				BDD2C23376B5C5B7E5F6EF59 /* SquareView.swift */,
 				FC59003F82B9E450AA6EF909 /* StockfishEngine.swift */,
@@ -102,6 +112,8 @@
 			children = (
 				FA5DD8BE2D1A55FB20CB0910 /* Win98Bevel.swift */,
 				27D7FCF9EB79C9467E326FA5 /* Win98Button.swift */,
+				EC2B9D6FA7B5E184C0C199F8 /* Win98Dialog.swift */,
+				B1F764A2A69D55665F879CEA /* Win98MenuBar.swift */,
 				E1AA98B04035321098E699C8 /* Win98Tokens.swift */,
 				38175344AF79D85F3948D7D6 /* Win98Window.swift */,
 			);
@@ -281,13 +293,17 @@
 				66CC1AD5F434A211021633B7 /* BoardView.swift in Sources */,
 				04B53E238C721FEB09815EA5 /* Chess98App.swift in Sources */,
 				633019BB67DAF95A0761A42B /* ContentView.swift in Sources */,
+				52C499AD0892A6EB71BAE330 /* Difficulty.swift in Sources */,
 				FE8199F2D826E9546680105C /* EngineProtocol.swift in Sources */,
 				A50D4C1F921B8D1ADF28398F /* GameViewModel.swift in Sources */,
+				AE77C930BAFB349D530C7559 /* MoveHistoryView.swift in Sources */,
 				D469828696265DE3DAF7E36C /* PieceView.swift in Sources */,
 				E301FA970BDEF0E40BDA32A7 /* SquareView.swift in Sources */,
 				20E667BE5AE7F28429B89ADA /* StockfishEngine.swift in Sources */,
 				69FC974E97E1989287BF7A4B /* Win98Bevel.swift in Sources */,
 				CD9A3B051A03B60D7B6D2AE6 /* Win98Button.swift in Sources */,
+				94E105E71113FA0CE29A7600 /* Win98Dialog.swift in Sources */,
+				6378EA5CDD6FC7606AD4DB17 /* Win98MenuBar.swift in Sources */,
 				2216D3D2BB673A2786F213F2 /* Win98Tokens.swift in Sources */,
 				FAE9597CF6836F234591BEA2 /* Win98Window.swift in Sources */,
 			);

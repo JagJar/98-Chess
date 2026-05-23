@@ -4,6 +4,7 @@ import SwiftUI
 struct BoardView: View {
     @Bindable var game: GameViewModel
     var canInteract: Bool = true
+    var onPromotionNeeded: ((Square, Square) -> Void)? = nil
     @State private var selectedSquare: Square?
 
     var body: some View {
@@ -58,9 +59,13 @@ struct BoardView: View {
             if selected == square {
                 selectedSquare = nil
             } else if legalDestinations.contains(square) {
-                let promotion: Piece.Kind? = needsPromotion(from: selected, to: square) ? .queen : nil
-                _ = game.makeMove(from: selected, to: square, promotion: promotion)
-                selectedSquare = nil
+                if needsPromotion(from: selected, to: square) {
+                    onPromotionNeeded?(selected, square)
+                    selectedSquare = nil
+                } else {
+                    _ = game.makeMove(from: selected, to: square)
+                    selectedSquare = nil
+                }
             } else if let piece = game.piece(at: square), piece.color == game.sideToMove {
                 selectedSquare = square
             } else {

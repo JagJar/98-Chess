@@ -11,6 +11,7 @@ final class GameViewModel {
 
     private var board: Board
     private var history: [Ply] = []
+    private(set) var resignation: Piece.Color?
 
     init(startingPosition: Position = .standard) {
         board = Board(position: startingPosition)
@@ -23,10 +24,16 @@ final class GameViewModel {
     var sanMoves: [String] { history.map { $0.move.san } }
 
     var isGameOver: Bool {
+        if resignation != nil { return true }
         switch board.state {
-        case .checkmate, .draw: true
-        default: false
+        case .checkmate, .draw: return true
+        default: return false
         }
+    }
+
+    func resign() {
+        guard resignation == nil, !isGameOver else { return }
+        resignation = sideToMove
     }
 
     func piece(at square: Square) -> Piece? {
@@ -86,5 +93,6 @@ final class GameViewModel {
     func reset(to position: Position = .standard) {
         board = Board(position: position)
         history.removeAll()
+        resignation = nil
     }
 }
