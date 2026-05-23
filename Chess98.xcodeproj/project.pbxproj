@@ -13,8 +13,10 @@
 		20E667BE5AE7F28429B89ADA /* StockfishEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC59003F82B9E450AA6EF909 /* StockfishEngine.swift */; };
 		4B3DBFEA62CD54CE6F10329A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F43191194979C63F7BCC673B /* Assets.xcassets */; };
 		633019BB67DAF95A0761A42B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE9C8DB89218539C96062C /* ContentView.swift */; };
+		6E21FDEFACBC73335580CD53 /* GameViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F2B04F941DE73BC067E903 /* GameViewModelTests.swift */; };
 		7D54F4EF656EBE410E602805 /* StockfishEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAEC1548CACBAC1FBE9B9A /* StockfishEngineTests.swift */; };
 		968751DF626974F1A6D3860A /* ChessKit in Frameworks */ = {isa = PBXBuildFile; productRef = 542ED04C175EA49A108C53B8 /* ChessKit */; };
+		A50D4C1F921B8D1ADF28398F /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7A7C72D8B32D4555A131AE /* GameViewModel.swift */; };
 		DA5A3ADE404A115357B096E9 /* nn-37f18f62d772.nnue in Resources */ = {isa = PBXBuildFile; fileRef = 364C714FCFB08AE662E1E0A7 /* nn-37f18f62d772.nnue */; };
 		ECDFF9EBF2F239C715D7D9FA /* Chess98Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55565E6726A6676BA82D0508 /* Chess98Tests.swift */; };
 		FE8199F2D826E9546680105C /* EngineProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC76BC537073E5A4BF71E406 /* EngineProtocol.swift */; };
@@ -36,10 +38,12 @@
 		364C714FCFB08AE662E1E0A7 /* nn-37f18f62d772.nnue */ = {isa = PBXFileReference; path = "nn-37f18f62d772.nnue"; sourceTree = "<group>"; };
 		55565E6726A6676BA82D0508 /* Chess98Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chess98Tests.swift; sourceTree = "<group>"; };
 		7996A7ED3B777EB4848DEB48 /* Chess98Tests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = Chess98Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F7A7C72D8B32D4555A131AE /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		83FE9C8DB89218539C96062C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		925B2B30403D242C4C74BAB1 /* Chess98.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Chess98.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0BAEC1548CACBAC1FBE9B9A /* StockfishEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockfishEngineTests.swift; sourceTree = "<group>"; };
 		BC76BC537073E5A4BF71E406 /* EngineProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineProtocol.swift; sourceTree = "<group>"; };
+		C0F2B04F941DE73BC067E903 /* GameViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModelTests.swift; sourceTree = "<group>"; };
 		F43191194979C63F7BCC673B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC59003F82B9E450AA6EF909 /* StockfishEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockfishEngine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				BC76BC537073E5A4BF71E406 /* EngineProtocol.swift */,
+				7F7A7C72D8B32D4555A131AE /* GameViewModel.swift */,
 				FC59003F82B9E450AA6EF909 /* StockfishEngine.swift */,
 			);
 			path = Chess;
@@ -88,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				55565E6726A6676BA82D0508 /* Chess98Tests.swift */,
+				C0F2B04F941DE73BC067E903 /* GameViewModelTests.swift */,
 				B0BAEC1548CACBAC1FBE9B9A /* StockfishEngineTests.swift */,
 			);
 			path = Chess98Tests;
@@ -234,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECDFF9EBF2F239C715D7D9FA /* Chess98Tests.swift in Sources */,
+				6E21FDEFACBC73335580CD53 /* GameViewModelTests.swift in Sources */,
 				7D54F4EF656EBE410E602805 /* StockfishEngineTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,6 +252,7 @@
 				04B53E238C721FEB09815EA5 /* Chess98App.swift in Sources */,
 				633019BB67DAF95A0761A42B /* ContentView.swift in Sources */,
 				FE8199F2D826E9546680105C /* EngineProtocol.swift in Sources */,
+				A50D4C1F921B8D1ADF28398F /* GameViewModel.swift in Sources */,
 				20E667BE5AE7F28429B89ADA /* StockfishEngine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
