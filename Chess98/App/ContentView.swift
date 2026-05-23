@@ -1,11 +1,16 @@
 import ChessKit
+import SwiftData
 import SwiftUI
 
 struct ContentView: View {
+    @Environment(\.modelContext) private var modelContext
+    @Query(sort: \SavedGame.updatedAt, order: .reverse) private var savedGames: [SavedGame]
+
+    @AppStorage("difficulty") private var difficulty: Difficulty = .easy
+
     @State private var game = GameViewModel()
     @State private var engine: StockfishEngine?
     @State private var isThinking = false
-    @State private var difficulty: Difficulty = .easy
     @State private var openMenuID: String?
     @State private var activeDialog: ActiveDialog?
     @State private var pendingPromotion: PendingPromotion?
@@ -75,13 +80,22 @@ struct ContentView: View {
             }
         }
         .task {
+            restoreSavedGameIfAny()
+
             let e = StockfishEngine()
             await e.start()
             await e.setSkillLevel(difficulty.skillLevel)
             engine = e
+
+            if game.sideToMove == .black, !game.isGameOver, pendingPromotion == nil {
+                await playEngineMove()
+            }
         }
         .onChange(of: difficulty) { _, new in
             Task { await engine?.setSkillLevel(new.skillLevel) }
+        }
+        .onChange(of: game.sanMoves.count) { _, _ in
+            persistState()
         }
         .onChange(of: game.sideToMove) { _, newSide in
             if engine != nil, newSide == .black, !game.isGameOver, pendingPromotion == nil {
@@ -95,7 +109,7 @@ struct ContentView: View {
     private var menus: [Win98Menu] {
         [
             Win98Menu(id: "game", title: "Game", items: [
-                .action(id: "new", label: "New Game", action: { game.reset() }),
+                .action(id: "new", label: "New Game", action: newGame),
                 .action(id: "undo", label: "Undo", action: undo),
                 .separator(id: "sep1"),
                 .action(id: "resign", label: "Resign…", action: { activeDialog = .confirmResign })
@@ -171,6 +185,7 @@ struct ContentView: View {
                     Spacer()
                     Button("Resign") {
                         game.resign()
+                        clearSavedGame()
                         activeDialog = nil
                     }
                     .buttonStyle(.win98)
@@ -213,6 +228,11 @@ struct ContentView: View {
             && pendingPromotion == nil
     }
 
+    private func newGame() {
+        game.reset()
+        clearSavedGame()
+    }
+
     private func undo() {
         game.undo()
         game.undo()
@@ -227,6 +247,45 @@ struct ContentView: View {
             game.makeUCIMove(uci)
         }
     }
+
+    // MARK: - Persistence
+
+    private func restoreSavedGameIfAny() {
+        guard let saved = savedGames.first else { return }
+        let uciList = saved.uciMoves
+            .split(separator: " ")
+            .map(String.init)
+        guard !uciList.isEmpty else { return }
+        for uci in uciList {
+            _ = game.makeUCIMove(uci)
+        }
+    }
+
+    private func persistState() {
+        if game.isGameOver {
+            clearSavedGame()
+            return
+        }
+        let uciHistory = game.moves
+            .map { EngineLANParser.convert(move: $0) }
+            .joined(separator: " ")
+        if let existing = savedGames.first {
+            existing.uciMoves = uciHistory
+            existing.updatedAt = .now
+        } else if !uciHistory.isEmpty {
+            modelContext.insert(SavedGame(uciMoves: uciHistory))
+        }
+        try? modelContext.save()
+    }
+
+    private func clearSavedGame() {
+        for saved in savedGames {
+            modelContext.delete(saved)
+        }
+        try? modelContext.save()
+    }
+
+    // MARK: - Status text
 
     private var statusText: String {
         if engine == nil { return "Loading engine…" }
@@ -263,4 +322,5 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+        .modelContainer(for: SavedGame.self, inMemory: true)
 }
