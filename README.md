@@ -19,4 +19,4 @@ Open `98Chess.xcodeproj` in Xcode and run on the iOS Simulator or a connected de
 
 GPL-3.0-or-later. See [LICENSE](LICENSE).
 
-This project bundles [Stockfish](https://stockfishchess.org/) (GPL v3) as its chess engine.
+This project bundles [Stockfish](https://stockfishchess.org/) 17 (GPL v3) as its chess engine, along with the two NNUE evaluation networks (`nn-1111cefa1111.nnue` and `nn-37f18f62d772.nnue`) published by the Stockfish project under the same license.

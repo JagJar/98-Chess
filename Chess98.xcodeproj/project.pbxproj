@@ -8,11 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		04B53E238C721FEB09815EA5 /* Chess98App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5711DBB76352BFA16394AA /* Chess98App.swift */; };
+		07B6A230024F80C1DD2856A3 /* nn-1111cefa1111.nnue in Resources */ = {isa = PBXBuildFile; fileRef = 0F036FE834677E44F64BD6BA /* nn-1111cefa1111.nnue */; };
 		08AF770DB468B3C88F1A5677 /* ChessKitEngine in Frameworks */ = {isa = PBXBuildFile; productRef = 04BB05D27572E81AE3E013B3 /* ChessKitEngine */; };
+		20E667BE5AE7F28429B89ADA /* StockfishEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC59003F82B9E450AA6EF909 /* StockfishEngine.swift */; };
 		4B3DBFEA62CD54CE6F10329A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F43191194979C63F7BCC673B /* Assets.xcassets */; };
 		633019BB67DAF95A0761A42B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE9C8DB89218539C96062C /* ContentView.swift */; };
+		7D54F4EF656EBE410E602805 /* StockfishEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAEC1548CACBAC1FBE9B9A /* StockfishEngineTests.swift */; };
 		968751DF626974F1A6D3860A /* ChessKit in Frameworks */ = {isa = PBXBuildFile; productRef = 542ED04C175EA49A108C53B8 /* ChessKit */; };
+		DA5A3ADE404A115357B096E9 /* nn-37f18f62d772.nnue in Resources */ = {isa = PBXBuildFile; fileRef = 364C714FCFB08AE662E1E0A7 /* nn-37f18f62d772.nnue */; };
 		ECDFF9EBF2F239C715D7D9FA /* Chess98Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55565E6726A6676BA82D0508 /* Chess98Tests.swift */; };
+		FE8199F2D826E9546680105C /* EngineProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC76BC537073E5A4BF71E406 /* EngineProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,12 +31,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F036FE834677E44F64BD6BA /* nn-1111cefa1111.nnue */ = {isa = PBXFileReference; path = "nn-1111cefa1111.nnue"; sourceTree = "<group>"; };
 		2F5711DBB76352BFA16394AA /* Chess98App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chess98App.swift; sourceTree = "<group>"; };
+		364C714FCFB08AE662E1E0A7 /* nn-37f18f62d772.nnue */ = {isa = PBXFileReference; path = "nn-37f18f62d772.nnue"; sourceTree = "<group>"; };
 		55565E6726A6676BA82D0508 /* Chess98Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chess98Tests.swift; sourceTree = "<group>"; };
 		7996A7ED3B777EB4848DEB48 /* Chess98Tests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = Chess98Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83FE9C8DB89218539C96062C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		925B2B30403D242C4C74BAB1 /* Chess98.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Chess98.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0BAEC1548CACBAC1FBE9B9A /* StockfishEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockfishEngineTests.swift; sourceTree = "<group>"; };
+		BC76BC537073E5A4BF71E406 /* EngineProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineProtocol.swift; sourceTree = "<group>"; };
 		F43191194979C63F7BCC673B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC59003F82B9E450AA6EF909 /* StockfishEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockfishEngine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,9 +57,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BF757C288D918201E3A6B17 /* Chess */ = {
+			isa = PBXGroup;
+			children = (
+				BC76BC537073E5A4BF71E406 /* EngineProtocol.swift */,
+				FC59003F82B9E450AA6EF909 /* StockfishEngine.swift */,
+			);
+			path = Chess;
+			sourceTree = "<group>";
+		};
 		49E1958070EA5E81F4A96088 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DA584A4D24153C6DD514FB99 /* NNUE */,
 				F43191194979C63F7BCC673B /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -68,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				55565E6726A6676BA82D0508 /* Chess98Tests.swift */,
+				B0BAEC1548CACBAC1FBE9B9A /* StockfishEngineTests.swift */,
 			);
 			path = Chess98Tests;
 			sourceTree = "<group>";
@@ -76,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				8BD5B259C3A8F643B2FA9EA7 /* App */,
+				0BF757C288D918201E3A6B17 /* Chess */,
 				49E1958070EA5E81F4A96088 /* Resources */,
 			);
 			path = Chess98;
@@ -88,6 +110,15 @@
 				7996A7ED3B777EB4848DEB48 /* Chess98Tests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		DA584A4D24153C6DD514FB99 /* NNUE */ = {
+			isa = PBXGroup;
+			children = (
+				364C714FCFB08AE662E1E0A7 /* nn-37f18f62d772.nnue */,
+				0F036FE834677E44F64BD6BA /* nn-1111cefa1111.nnue */,
+			);
+			path = NNUE;
 			sourceTree = "<group>";
 		};
 		FDCF79A46163AFE86787C814 = {
@@ -190,6 +221,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B3DBFEA62CD54CE6F10329A /* Assets.xcassets in Resources */,
+				07B6A230024F80C1DD2856A3 /* nn-1111cefa1111.nnue in Resources */,
+				DA5A3ADE404A115357B096E9 /* nn-37f18f62d772.nnue in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECDFF9EBF2F239C715D7D9FA /* Chess98Tests.swift in Sources */,
+				7D54F4EF656EBE410E602805 /* StockfishEngineTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +244,8 @@
 			files = (
 				04B53E238C721FEB09815EA5 /* Chess98App.swift in Sources */,
 				633019BB67DAF95A0761A42B /* ContentView.swift in Sources */,
+				FE8199F2D826E9546680105C /* EngineProtocol.swift in Sources */,
+				20E667BE5AE7F28429B89ADA /* StockfishEngine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
