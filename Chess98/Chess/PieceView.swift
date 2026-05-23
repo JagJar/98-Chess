@@ -11,7 +11,11 @@ struct PieceView: View {
     }
 
     private static func symbol(for piece: Piece) -> String {
-        switch (piece.color, piece.kind) {
+        // U+FE0E is the text-style variation selector. Without it iOS renders
+        // the black chess codepoints (U+265A–U+265F) as colored emoji glyphs
+        // that don't match the flat outline style of the white pieces.
+        let textStyle = "\u{FE0E}"
+        let base: String = switch (piece.color, piece.kind) {
         case (.white, .king):   "\u{2654}"
         case (.white, .queen):  "\u{2655}"
         case (.white, .rook):   "\u{2656}"
@@ -25,5 +29,6 @@ struct PieceView: View {
         case (.black, .knight): "\u{265E}"
         case (.black, .pawn):   "\u{265F}"
         }
+        return base + textStyle
     }
 }
