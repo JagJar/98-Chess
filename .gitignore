@@ -32,7 +32,7 @@ xcuserdata/
 .swiftpm/
 Packages/
 Package.pins
-*.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved
+# Note: Package.resolved IS committed (reproducible builds)
 
 # CocoaPods (not used, but block anyway)
 Pods/
