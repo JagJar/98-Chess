@@ -3,6 +3,7 @@ import SwiftUI
 
 struct BoardView: View {
     @Bindable var game: GameViewModel
+    var canInteract: Bool = true
     @State private var selectedSquare: Square?
 
     var body: some View {
@@ -52,6 +53,7 @@ struct BoardView: View {
     }
 
     private func handleTap(_ square: Square) {
+        guard canInteract else { return }
         if let selected = selectedSquare {
             if selected == square {
                 selectedSquare = nil

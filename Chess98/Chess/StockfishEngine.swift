@@ -19,6 +19,10 @@ actor StockfishEngine: ChessEngine {
         await engine.stop()
     }
 
+    func setSkillLevel(_ level: Int) async {
+        await engine.send(command: .setoption(id: "Skill Level", value: "\(level)"))
+    }
+
     func bestMove(forFEN fen: String, depth: Int) async throws -> String {
         guard let stream = await engine.responseStream else {
             throw ChessEngineError.engineNotRunning
