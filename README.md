@@ -1,6 +1,6 @@
 # 98 Chess
 
-A Windows 98 themed chess app for iOS. Play against the computer in a faithful recreation of the classic desktop aesthetic — teal background, gray window chrome, navy title bar, and a Stockfish-powered opponent.
+A Windows 98 themed chess app for iOS. Play against the computer in a faithful recreation of the classic desktop aesthetic: teal background, gray window chrome, navy title bar, and a Stockfish-powered opponent.
 
 ## Status
 
