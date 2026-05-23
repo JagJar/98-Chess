@@ -10,32 +10,32 @@ struct ContentView: View {
     private let engineSkill = 5
 
     var body: some View {
-        VStack(spacing: 12) {
-            HStack(spacing: 8) {
-                if engine == nil || isThinking {
-                    ProgressView().controlSize(.small)
+        ZStack {
+            Win98.Palette.desktop.ignoresSafeArea()
+
+            Win98Window(title: "98 Chess") {
+                VStack(spacing: 8) {
+                    statusBar
+                    BoardView(game: game, canInteract: canInteract)
+                        .win98Bevel(.inset)
+                    HStack(spacing: 6) {
+                        Spacer()
+                        Button("Undo") {
+                            game.undo()
+                            game.undo()
+                        }
+                        .buttonStyle(.win98)
+                        .disabled(game.moves.count < 2 || isThinking || engine == nil)
+
+                        Button("New Game") {
+                            game.reset()
+                        }
+                        .buttonStyle(.win98)
+                        .disabled(isThinking)
+                    }
                 }
-                Text(statusText)
-                    .font(.headline)
             }
-            .padding(.top)
-
-            BoardView(game: game, canInteract: canInteract)
-                .padding(.horizontal)
-
-            HStack(spacing: 16) {
-                Button("Undo") {
-                    game.undo()
-                    game.undo()
-                }
-                .disabled(game.moves.count < 2 || isThinking || engine == nil)
-
-                Button("New Game") {
-                    game.reset()
-                }
-                .disabled(isThinking)
-            }
-            .padding(.bottom)
+            .padding(12)
         }
         .task {
             let e = StockfishEngine()
@@ -48,6 +48,24 @@ struct ContentView: View {
                 Task { await playEngineMove() }
             }
         }
+    }
+
+    private var statusBar: some View {
+        HStack(spacing: 6) {
+            if engine == nil || isThinking {
+                ProgressView().controlSize(.mini)
+            }
+            Text(statusText)
+                .font(.system(size: 12))
+                .foregroundStyle(Win98.Palette.text)
+                .lineLimit(1)
+            Spacer(minLength: 0)
+        }
+        .padding(.horizontal, 6)
+        .padding(.vertical, 3)
+        .frame(maxWidth: .infinity)
+        .background(Win98.Palette.face)
+        .win98Bevel(.inset)
     }
 
     private var canInteract: Bool {
@@ -96,6 +114,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    // In Xcode Previews the engine has no NNUE files and stays in "Loading…"
     ContentView()
 }

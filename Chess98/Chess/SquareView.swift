@@ -13,13 +13,13 @@ struct SquareView: View {
     var body: some View {
         ZStack {
             Rectangle()
-                .fill(isLight ? Color(white: 0.92) : Color(white: 0.55))
+                .fill(isLight ? Win98.Palette.lightSquare : Win98.Palette.darkSquare)
 
             if isLastMoveSquare {
-                Rectangle().fill(Color.yellow.opacity(0.35))
+                Rectangle().fill(Color.yellow.opacity(0.45))
             }
             if isSelected {
-                Rectangle().fill(Color.blue.opacity(0.4))
+                Rectangle().fill(Win98.Palette.selection.opacity(0.45))
             }
 
             GeometryReader { geo in
