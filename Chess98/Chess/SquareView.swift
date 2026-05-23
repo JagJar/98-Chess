@@ -25,6 +25,7 @@ struct SquareView: View {
             GeometryReader { geo in
                 if let piece {
                     PieceView(piece: piece)
+                        .font(.system(size: geo.size.width * 0.78))
                         .frame(width: geo.size.width, height: geo.size.height)
                 }
 
