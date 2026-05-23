@@ -10,32 +10,36 @@ struct ContentView: View {
     private let engineSkill = 5
 
     var body: some View {
-        ZStack {
+        ZStack(alignment: .top) {
             Win98.Palette.desktop.ignoresSafeArea()
 
-            Win98Window(title: "98 Chess") {
-                VStack(spacing: 8) {
-                    statusBar
-                    BoardView(game: game, canInteract: canInteract)
-                        .win98Bevel(.inset)
-                    HStack(spacing: 6) {
-                        Spacer()
-                        Button("Undo") {
-                            game.undo()
-                            game.undo()
-                        }
-                        .buttonStyle(.win98)
-                        .disabled(game.moves.count < 2 || isThinking || engine == nil)
+            VStack(spacing: 0) {
+                Win98Window(title: "98 Chess") {
+                    VStack(spacing: 8) {
+                        statusBar
+                        BoardView(game: game, canInteract: canInteract)
+                            .win98Bevel(.inset)
+                        HStack(spacing: 6) {
+                            Spacer()
+                            Button("Undo") {
+                                game.undo()
+                                game.undo()
+                            }
+                            .buttonStyle(.win98)
+                            .disabled(game.moves.count < 2 || isThinking || engine == nil)
 
-                        Button("New Game") {
-                            game.reset()
+                            Button("New Game") {
+                                game.reset()
+                            }
+                            .buttonStyle(.win98)
+                            .disabled(isThinking)
                         }
-                        .buttonStyle(.win98)
-                        .disabled(isThinking)
                     }
                 }
+                .padding(.horizontal, 8)
+                .padding(.top, 8)
+                Spacer(minLength: 0)
             }
-            .padding(12)
         }
         .task {
             let e = StockfishEngine()
