@@ -29,6 +29,14 @@ final class GameViewModel {
         }
     }
 
+    func piece(at square: Square) -> Piece? {
+        board.position.piece(at: square)
+    }
+
+    func legalMoves(from square: Square) -> [Square] {
+        board.legalMoves(forPieceAt: square)
+    }
+
     @discardableResult
     func makeMove(from: Square, to: Square, promotion: Piece.Kind? = nil) -> Move? {
         let snapshot = board
