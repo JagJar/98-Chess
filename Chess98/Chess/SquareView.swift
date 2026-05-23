@@ -48,6 +48,8 @@ struct SquareView: View {
         .onTapGesture(perform: onTap)
         .accessibilityIdentifier("square_\(square)")
         .accessibilityLabel(accessibilityDescription)
+        .accessibilityHint(accessibilityHint)
+        .accessibilityAddTraits(.isButton)
     }
 
     private var accessibilityDescription: String {
@@ -63,5 +65,20 @@ struct SquareView: View {
         case .pawn:   "pawn"
         }
         return "\(squareName), \(color) \(kind)"
+    }
+
+    private var accessibilityHint: String {
+        if isSelected {
+            return "Selected. Double-tap another square to move."
+        }
+        if isLegalDestination {
+            return piece == nil
+                ? "Empty. Double-tap to move here."
+                : "Capture. Double-tap to take this piece."
+        }
+        if piece != nil {
+            return "Double-tap to select."
+        }
+        return ""
     }
 }

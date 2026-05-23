@@ -12,6 +12,7 @@
 		08AF770DB468B3C88F1A5677 /* ChessKitEngine in Frameworks */ = {isa = PBXBuildFile; productRef = 04BB05D27572E81AE3E013B3 /* ChessKitEngine */; };
 		20E667BE5AE7F28429B89ADA /* StockfishEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC59003F82B9E450AA6EF909 /* StockfishEngine.swift */; };
 		2216D3D2BB673A2786F213F2 /* Win98Tokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AA98B04035321098E699C8 /* Win98Tokens.swift */; };
+		4215FBDE47E3DB1D1DF02A8B /* Haptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6857502A84D7EB0B2F1B090A /* Haptics.swift */; };
 		4B3DBFEA62CD54CE6F10329A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F43191194979C63F7BCC673B /* Assets.xcassets */; };
 		52C499AD0892A6EB71BAE330 /* Difficulty.swift in Sources */ = {isa = PBXBuildFile; fileRef = D191A7315F2AA33B77404FE5 /* Difficulty.swift */; };
 		633019BB67DAF95A0761A42B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE9C8DB89218539C96062C /* ContentView.swift */; };
@@ -53,6 +54,7 @@
 		364C714FCFB08AE662E1E0A7 /* nn-37f18f62d772.nnue */ = {isa = PBXFileReference; path = "nn-37f18f62d772.nnue"; sourceTree = "<group>"; };
 		38175344AF79D85F3948D7D6 /* Win98Window.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Win98Window.swift; sourceTree = "<group>"; };
 		55565E6726A6676BA82D0508 /* Chess98Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chess98Tests.swift; sourceTree = "<group>"; };
+		6857502A84D7EB0B2F1B090A /* Haptics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptics.swift; sourceTree = "<group>"; };
 		7996A7ED3B777EB4848DEB48 /* Chess98Tests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = Chess98Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F7A7C72D8B32D4555A131AE /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		83FE9C8DB89218539C96062C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				D191A7315F2AA33B77404FE5 /* Difficulty.swift */,
 				BC76BC537073E5A4BF71E406 /* EngineProtocol.swift */,
 				7F7A7C72D8B32D4555A131AE /* GameViewModel.swift */,
+				6857502A84D7EB0B2F1B090A /* Haptics.swift */,
 				11D3507E4B364D2FC9853D4F /* MoveHistoryView.swift */,
 				2B572538673A267173631B26 /* PieceView.swift */,
 				BDD2C23376B5C5B7E5F6EF59 /* SquareView.swift */,
@@ -307,6 +310,7 @@
 				52C499AD0892A6EB71BAE330 /* Difficulty.swift in Sources */,
 				FE8199F2D826E9546680105C /* EngineProtocol.swift in Sources */,
 				A50D4C1F921B8D1ADF28398F /* GameViewModel.swift in Sources */,
+				4215FBDE47E3DB1D1DF02A8B /* Haptics.swift in Sources */,
 				AE77C930BAFB349D530C7559 /* MoveHistoryView.swift in Sources */,
 				D469828696265DE3DAF7E36C /* PieceView.swift in Sources */,
 				6AF3EE021DE1988D3E24CF3C /* SavedGame.swift in Sources */,

@@ -4,6 +4,8 @@ import SwiftUI
 
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
+    @Environment(\.horizontalSizeClass) private var hSizeClass
+    @Environment(\.verticalSizeClass) private var vSizeClass
     @Query(sort: \SavedGame.updatedAt, order: .reverse) private var savedGames: [SavedGame]
 
     @AppStorage("difficulty") private var difficulty: Difficulty = .easy
@@ -44,25 +46,9 @@ struct ContentView: View {
                             .win98Bevel(.outset)
                             .zIndex(10)
 
-                        VStack(spacing: 6) {
-                            statusBar
-                            BoardView(
-                                game: game,
-                                canInteract: canInteract,
-                                onPromotionNeeded: { from, to in
-                                    pendingPromotion = PendingPromotion(
-                                        from: from,
-                                        to: to,
-                                        color: game.sideToMove
-                                    )
-                                }
-                            )
-                            .win98Bevel(.inset)
-                            MoveHistoryView(sanMoves: game.sanMoves)
-                                .frame(height: 90)
-                        }
-                        .contentShape(Rectangle())
-                        .onTapGesture { openMenuID = nil }
+                        gameContent
+                            .contentShape(Rectangle())
+                            .onTapGesture { openMenuID = nil }
                     }
                 }
                 .padding(.horizontal, 8)
@@ -79,6 +65,9 @@ struct ContentView: View {
                 }
             }
         }
+        // Win98 chrome is fixed-pixel; lock visual size while leaving
+        // VoiceOver labels intact for screen-reader users.
+        .dynamicTypeSize(.large)
         .task {
             restoreSavedGameIfAny()
 
@@ -94,7 +83,10 @@ struct ContentView: View {
         .onChange(of: difficulty) { _, new in
             Task { await engine?.setSkillLevel(new.skillLevel) }
         }
-        .onChange(of: game.sanMoves.count) { _, _ in
+        .onChange(of: game.sanMoves.count) { oldCount, newCount in
+            if newCount > oldCount, let lastMove = game.moves.last {
+                Haptics.play(for: lastMove, gameOver: game.isGameOver)
+            }
             persistState()
         }
         .onChange(of: game.sideToMove) { _, newSide in
@@ -102,6 +94,53 @@ struct ContentView: View {
                 Task { await playEngineMove() }
             }
         }
+    }
+
+    // MARK: - Layout
+
+    private var isWideLayout: Bool {
+        // iPad in any orientation, or iPhone in landscape — show board + history side-by-side.
+        hSizeClass == .regular || vSizeClass == .compact
+    }
+
+    @ViewBuilder
+    private var gameContent: some View {
+        if isWideLayout {
+            HStack(alignment: .top, spacing: 6) {
+                VStack(spacing: 6) {
+                    statusBar
+                    boardView
+                        .frame(maxWidth: 560, maxHeight: 560)
+                }
+                MoveHistoryView(sanMoves: game.sanMoves)
+                    .frame(minWidth: 160, idealWidth: 200, maxWidth: 240)
+                    .frame(maxHeight: 600)
+            }
+            .frame(maxWidth: 820, alignment: .top)
+            .frame(maxWidth: .infinity, alignment: .center)
+        } else {
+            VStack(spacing: 6) {
+                statusBar
+                boardView
+                MoveHistoryView(sanMoves: game.sanMoves)
+                    .frame(height: 90)
+            }
+        }
+    }
+
+    private var boardView: some View {
+        BoardView(
+            game: game,
+            canInteract: canInteract,
+            onPromotionNeeded: { from, to in
+                pendingPromotion = PendingPromotion(
+                    from: from,
+                    to: to,
+                    color: game.sideToMove
+                )
+            }
+        )
+        .win98Bevel(.inset)
     }
 
     // MARK: - Menus
