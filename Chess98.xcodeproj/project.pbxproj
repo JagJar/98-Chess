@@ -30,6 +30,7 @@
 		D469828696265DE3DAF7E36C /* PieceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B572538673A267173631B26 /* PieceView.swift */; };
 		DA5A3ADE404A115357B096E9 /* nn-37f18f62d772.nnue in Resources */ = {isa = PBXBuildFile; fileRef = 364C714FCFB08AE662E1E0A7 /* nn-37f18f62d772.nnue */; };
 		E301FA970BDEF0E40BDA32A7 /* SquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD2C23376B5C5B7E5F6EF59 /* SquareView.swift */; };
+		EC3F781CD8F24FB08DB6BF6B /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = A9BF7D58446BDCD225DDFFF3 /* PrivacyInfo.xcprivacy */; };
 		ECDFF9EBF2F239C715D7D9FA /* Chess98Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55565E6726A6676BA82D0508 /* Chess98Tests.swift */; };
 		FAE9597CF6836F234591BEA2 /* Win98Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38175344AF79D85F3948D7D6 /* Win98Window.swift */; };
 		FE8199F2D826E9546680105C /* EngineProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC76BC537073E5A4BF71E406 /* EngineProtocol.swift */; };
@@ -59,6 +60,7 @@
 		7F7A7C72D8B32D4555A131AE /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		83FE9C8DB89218539C96062C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		925B2B30403D242C4C74BAB1 /* Chess98.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Chess98.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9BF7D58446BDCD225DDFFF3 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		B0BAEC1548CACBAC1FBE9B9A /* StockfishEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockfishEngineTests.swift; sourceTree = "<group>"; };
 		B1F764A2A69D55665F879CEA /* Win98MenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Win98MenuBar.swift; sourceTree = "<group>"; };
 		BC76BC537073E5A4BF71E406 /* EngineProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineProtocol.swift; sourceTree = "<group>"; };
@@ -101,6 +103,14 @@
 				FC59003F82B9E450AA6EF909 /* StockfishEngine.swift */,
 			);
 			path = Chess;
+			sourceTree = "<group>";
+		};
+		13EC56B4A733AE0AAF341752 /* Privacy */ = {
+			isa = PBXGroup;
+			children = (
+				A9BF7D58446BDCD225DDFFF3 /* PrivacyInfo.xcprivacy */,
+			);
+			path = Privacy;
 			sourceTree = "<group>";
 		};
 		49E1958070EA5E81F4A96088 /* Resources */ = {
@@ -158,6 +168,7 @@
 				8BD5B259C3A8F643B2FA9EA7 /* App */,
 				0BF757C288D918201E3A6B17 /* Chess */,
 				981E29848B974244C35FFF7F /* Persistence */,
+				13EC56B4A733AE0AAF341752 /* Privacy */,
 				49E1958070EA5E81F4A96088 /* Resources */,
 				7DD4733C95D7C665CE394409 /* Theme */,
 			);
@@ -282,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B3DBFEA62CD54CE6F10329A /* Assets.xcassets in Resources */,
+				EC3F781CD8F24FB08DB6BF6B /* PrivacyInfo.xcprivacy in Resources */,
 				07B6A230024F80C1DD2856A3 /* nn-1111cefa1111.nnue in Resources */,
 				DA5A3ADE404A115357B096E9 /* nn-37f18f62d772.nnue in Resources */,
 			);

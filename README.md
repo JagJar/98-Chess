@@ -1,10 +1,19 @@
 # 98 Chess
 
-A Windows 98 themed chess app for iOS. Play against the computer in a faithful recreation of the classic desktop aesthetic.
+A Windows 98 themed chess app for iOS. Play against the computer in a faithful recreation of the classic desktop aesthetic — teal background, gray window chrome, navy title bar, and a Stockfish-powered opponent.
 
 ## Status
 
-Pre-alpha. Under active development.
+v0.1.0 — feature-complete for first release. Pending App Store submission.
+
+## Features
+
+- Five difficulty levels (Beginner / Easy / Medium / Hard / Master) backed by Stockfish 17
+- Full chess rules: castling, en passant, promotion (with a Win98-style picker), draw by stalemate, fifty-move rule, threefold repetition, insufficient material
+- Game state persists across launches via SwiftData
+- Adaptive layout — iPhone portrait stacks board + history; iPhone landscape and iPad show them side by side
+- Haptic feedback on every move (light / medium / rigid / heavy mapped to move, capture, castle, check)
+- VoiceOver labels on every square and menu item
 
 ## Requirements
 
@@ -13,10 +22,26 @@ Pre-alpha. Under active development.
 
 ## Building
 
-Open `98Chess.xcodeproj` in Xcode and run on the iOS Simulator or a connected device.
+```sh
+xcodegen generate   # if you edit project.yml; otherwise just open the project
+open Chess98.xcodeproj
+```
+
+Then run the `Chess98` scheme on a simulator or device.
+
+## Privacy
+
+98 Chess does not collect, transmit, or share any personal information. All game state lives on-device in the app's own SwiftData store. The app makes no network requests. The bundled privacy manifest declares one Required Reason API use — `NSPrivacyAccessedAPICategoryUserDefaults` (CA92.1) — for storing the difficulty preference.
+
+## Attribution
+
+This project bundles or depends on the following open-source software:
+
+- [Stockfish 17](https://stockfishchess.org/) — chess engine, GPL v3
+- Stockfish NNUE networks `nn-1111cefa1111.nnue` and `nn-37f18f62d772.nnue` — GPL v3
+- [chesskit-swift](https://github.com/chesskit-app/chesskit-swift) — chess logic, MIT
+- [chesskit-engine](https://github.com/chesskit-app/chesskit-engine) — UCI wrapper for Stockfish, MIT
 
 ## License
 
-GPL-3.0-or-later. See [LICENSE](LICENSE).
-
-This project bundles [Stockfish](https://stockfishchess.org/) 17 (GPL v3) as its chess engine, along with the two NNUE evaluation networks (`nn-1111cefa1111.nnue` and `nn-37f18f62d772.nnue`) published by the Stockfish project under the same license.
+GPL-3.0-or-later. See [LICENSE](LICENSE). The app is open-sourced because Stockfish (statically linked) is GPL v3.
