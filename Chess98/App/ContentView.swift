@@ -40,7 +40,7 @@ struct ContentView: View {
             Win98.Palette.desktop.ignoresSafeArea()
 
             VStack(spacing: 0) {
-                Win98Window(title: "98 Chess") {
+                Win98Window(title: "Chess 98") {
                     VStack(spacing: 6) {
                         Win98MenuBar(menus: menus, openMenuID: $openMenuID)
                             .win98Bevel(.outset)
@@ -164,7 +164,7 @@ struct ContentView: View {
                 }
             ),
             Win98Menu(id: "help", title: "Help", items: [
-                .action(id: "about", label: "About 98 Chess", action: { activeDialog = .about })
+                .action(id: "about", label: "About Chess 98", action: { activeDialog = .about })
             ])
         ]
     }
@@ -236,9 +236,9 @@ struct ContentView: View {
     }
 
     private var aboutDialog: some View {
-        Win98Dialog(title: "About 98 Chess", onClose: { activeDialog = nil }) {
+        Win98Dialog(title: "About Chess 98", onClose: { activeDialog = nil }) {
             VStack(alignment: .leading, spacing: 6) {
-                Text("98 Chess").font(.system(size: 14, weight: .bold))
+                Text("Chess 98").font(.system(size: 14, weight: .bold))
                 Text("Version 0.1.0")
                 Text("A Windows 98 themed chess app for iOS.")
                     .padding(.bottom, 4)

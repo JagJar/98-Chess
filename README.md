@@ -1,4 +1,4 @@
-# 98 Chess
+# Chess 98
 
 A Windows 98 themed chess app for iOS. Play against the computer in a faithful recreation of the classic desktop aesthetic: teal background, gray window chrome, navy title bar, and a Stockfish-powered opponent.
 
@@ -31,7 +31,7 @@ Then run the `Chess98` scheme on a simulator or device.
 
 ## Privacy
 
-98 Chess does not collect, transmit, or share any personal information. All game state lives on-device in the app's own SwiftData store. The app makes no network requests. The bundled privacy manifest declares one Required Reason API use — `NSPrivacyAccessedAPICategoryUserDefaults` (CA92.1) — for storing the difficulty preference.
+Chess 98 does not collect, transmit, or share any personal information. All game state lives on-device in the app's own SwiftData store. The app makes no network requests. The bundled privacy manifest declares one Required Reason API use — `NSPrivacyAccessedAPICategoryUserDefaults` (CA92.1) — for storing the difficulty preference.
 
 ## Attribution
 
