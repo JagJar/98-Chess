@@ -1,6 +1,7 @@
 import ChessKit
 import SwiftData
 import SwiftUI
+import UserNotifications
 
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
@@ -22,6 +23,11 @@ struct ContentView: View {
     @State private var pendingAchievements: [Achievement] = []
     @State private var currentAchievementToast: Achievement?
     @State private var puzzleVM: PuzzleViewModel?
+    @State private var onboardingStep: OnboardingStep?
+    @State private var onboardingHour = 19
+    @State private var onboardingMinute = 0
+    @State private var notificationAuthStatus: UNAuthorizationStatus = .notDetermined
+    private let notifications = NotificationScheduler()
 
     private enum ActiveDialog: Identifiable {
         case confirmResign
@@ -29,6 +35,7 @@ struct ContentView: View {
         case stats
         case freezeUsed
         case achievements
+        case notifications
 
         var id: String {
             switch self {
@@ -37,6 +44,7 @@ struct ContentView: View {
             case .stats:         "stats"
             case .freezeUsed:    "freeze-used"
             case .achievements:  "achievements"
+            case .notifications: "notifications"
             }
         }
     }
@@ -96,11 +104,18 @@ struct ContentView: View {
                 case .stats:         statsDialog
                 case .freezeUsed:    freezeUsedDialog
                 case .achievements:  achievementsDialog
+                case .notifications: notificationsDialog
                 }
             }
 
-            // Achievement toasts overlay everything else.
-            if let ach = currentAchievementToast {
+            // Onboarding takes precedence over achievement toasts so the user
+            // sees the welcome flow before celebrations.
+            if let step = onboardingStep {
+                switch step {
+                case .welcome:        onboardingWelcomeDialog
+                case .dailyReminder:  onboardingReminderDialog
+                }
+            } else if let ach = currentAchievementToast {
                 AchievementUnlockedDialog(achievement: ach, onDismiss: dismissCurrentAchievement)
             }
         }
@@ -121,6 +136,26 @@ struct ContentView: View {
             // was auto-applied during onAppLaunch.
             if retentionService.stats.freezeUsedOn != nil, activeDialog == nil {
                 activeDialog = .freezeUsed
+            }
+
+            // Kick off onboarding on first launch.
+            if !retentionService.stats.onboardingCompleted {
+                onboardingHour = retentionService.stats.notificationHour
+                onboardingMinute = retentionService.stats.notificationMinute
+                onboardingStep = .welcome
+            }
+
+            // Refresh notification body batch + auth status when the app
+            // appears (so a streak update is reflected in upcoming reminders).
+            notificationAuthStatus = await notifications.authorizationStatus()
+            if retentionService.stats.notificationsEnabled, notificationAuthStatus == .authorized {
+                await notifications.rescheduleDailyReminders(
+                    hour: retentionService.stats.notificationHour,
+                    minute: retentionService.stats.notificationMinute,
+                    bodyProvider: { dayOffset in
+                        DailyReminderBody.body(forDayOffset: dayOffset, stats: retentionService.stats)
+                    }
+                )
             }
 
             let e = StockfishEngine()
@@ -329,7 +364,9 @@ struct ContentView: View {
                         id: "achievements",
                         label: hasUnreadAchievements ? "Achievements… (!)" : "Achievements…",
                         action: { activeDialog = .achievements }
-                    )
+                    ),
+                    .separator(id: "tools-sep"),
+                    .action(id: "notifications", label: "Notifications…", action: openNotificationsDialog)
                 ]
             ),
             Win98Menu(id: "help", title: "Help", items: [
@@ -425,6 +462,105 @@ struct ContentView: View {
     private func dismissFreezeDialog() {
         retention?.clearFreezeNotice()
         activeDialog = nil
+    }
+
+    private var onboardingWelcomeDialog: some View {
+        OnboardingWelcomeDialog {
+            onboardingStep = .dailyReminder
+        }
+    }
+
+    private var onboardingReminderDialog: some View {
+        OnboardingDailyReminderDialog(
+            hour: $onboardingHour,
+            minute: $onboardingMinute,
+            onYes: { Task { await acceptDailyReminder() } },
+            onNo: { declineDailyReminder() }
+        )
+    }
+
+    private func acceptDailyReminder() async {
+        let granted = await notifications.requestPermission()
+        notificationAuthStatus = await notifications.authorizationStatus()
+        retention?.setNotificationPreferences(
+            enabled: granted,
+            hour: onboardingHour,
+            minute: onboardingMinute
+        )
+        if granted, let stats = retention?.stats {
+            await notifications.rescheduleDailyReminders(
+                hour: stats.notificationHour,
+                minute: stats.notificationMinute,
+                bodyProvider: { DailyReminderBody.body(forDayOffset: $0, stats: stats) }
+            )
+        }
+        retention?.completeOnboarding()
+        onboardingStep = nil
+    }
+
+    private func declineDailyReminder() {
+        retention?.setNotificationPreferences(
+            enabled: false,
+            hour: onboardingHour,
+            minute: onboardingMinute
+        )
+        retention?.completeOnboarding()
+        onboardingStep = nil
+    }
+
+    @ViewBuilder
+    private var notificationsDialog: some View {
+        if let retention {
+            NotificationSettingsDialog(
+                enabled: Binding(
+                    get: { retention.stats.notificationsEnabled },
+                    set: { _ in /* updated via onCommit */ }
+                ),
+                hour: Binding(
+                    get: { retention.stats.notificationHour },
+                    set: { retention.stats.notificationHour = $0 }
+                ),
+                minute: Binding(
+                    get: { retention.stats.notificationMinute },
+                    set: { retention.stats.notificationMinute = $0 }
+                ),
+                authorizationStatus: notificationAuthStatus,
+                onClose: { activeDialog = nil },
+                onCommit: { Task { await applyNotificationPrefs() } }
+            )
+        }
+    }
+
+    private func openNotificationsDialog() {
+        Task {
+            notificationAuthStatus = await notifications.authorizationStatus()
+            activeDialog = .notifications
+        }
+    }
+
+    private func applyNotificationPrefs() async {
+        guard let retention else { return }
+        let stats = retention.stats
+        retention.setNotificationPreferences(
+            enabled: stats.notificationsEnabled,
+            hour: stats.notificationHour,
+            minute: stats.notificationMinute
+        )
+        if stats.notificationsEnabled {
+            if notificationAuthStatus == .notDetermined {
+                _ = await notifications.requestPermission()
+                notificationAuthStatus = await notifications.authorizationStatus()
+            }
+            if notificationAuthStatus == .authorized {
+                await notifications.rescheduleDailyReminders(
+                    hour: stats.notificationHour,
+                    minute: stats.notificationMinute,
+                    bodyProvider: { DailyReminderBody.body(forDayOffset: $0, stats: stats) }
+                )
+            }
+        } else {
+            await notifications.cancelAll()
+        }
     }
 
     private var achievementsDialog: some View {

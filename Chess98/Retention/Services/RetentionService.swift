@@ -151,12 +151,23 @@ final class RetentionService {
         let newlyUnlockedAchievements: [Achievement]
     }
 
-    /// Called when the player solves the daily puzzle. Awards XP, marks the
-    /// daily puzzle as done, records the attempt, and evaluates achievements.
+    /// Called when the player solves the daily puzzle. Awards XP only the
+    /// first time a given puzzle is solved; subsequent solves of the same
+    /// puzzle (e.g. re-trying after solving) return zero XP.
     @discardableResult
     func onPuzzleSolved(puzzleID: String, fromHint: Bool) -> PuzzleReport {
         let now = Date.now
         let today = calendar.startOfDay(for: now)
+
+        let descriptor = FetchDescriptor<DailyPuzzleAttempt>(
+            predicate: #Predicate { $0.puzzleID == puzzleID }
+        )
+        let existing = (try? context.fetch(descriptor))?.first
+        if existing?.solvedAt != nil {
+            // Already solved before — no rewards.
+            return PuzzleReport(xpAwarded: 0, newlyUnlockedAchievements: [])
+        }
+
         var xp = XPCalculator.perPuzzleSolve
         if !fromHint { xp += XPCalculator.noHintBonus }
 
@@ -166,11 +177,6 @@ final class RetentionService {
         stats.lastPuzzleDay = today
         stats.puzzlesSolvedToday = true
 
-        // Update or insert the per-puzzle attempt record.
-        let descriptor = FetchDescriptor<DailyPuzzleAttempt>(
-            predicate: #Predicate { $0.puzzleID == puzzleID }
-        )
-        let existing = (try? context.fetch(descriptor))?.first
         if let attempt = existing {
             attempt.solvedAt = now
             attempt.solvedFromHint = fromHint
@@ -213,6 +219,21 @@ final class RetentionService {
             ))
         }
         stats.puzzlesAttempted += 1
+        save()
+    }
+
+    /// Updates notification preferences. Caller is responsible for
+    /// triggering the scheduler.
+    func setNotificationPreferences(enabled: Bool, hour: Int, minute: Int) {
+        stats.notificationsEnabled = enabled
+        stats.notificationHour = hour
+        stats.notificationMinute = minute
+        save()
+    }
+
+    /// Marks onboarding as complete so we never re-show the welcome flow.
+    func completeOnboarding() {
+        stats.onboardingCompleted = true
         save()
     }
 

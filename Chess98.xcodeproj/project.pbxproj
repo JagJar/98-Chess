@@ -18,6 +18,7 @@
 		3ED070514C6F975045B1A871 /* XPCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743FA83EE1E867EF42E995B8 /* XPCalculator.swift */; };
 		4215FBDE47E3DB1D1DF02A8B /* Haptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6857502A84D7EB0B2F1B090A /* Haptics.swift */; };
 		477BC88CB34698123DA52E46 /* DailyPuzzleAttempt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23ED9CBAACA685E4E322D1F /* DailyPuzzleAttempt.swift */; };
+		48523ED6E983F8EFB404A879 /* NotificationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A5CB0828DBEA5AF0793774 /* NotificationScheduler.swift */; };
 		4B3DBFEA62CD54CE6F10329A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F43191194979C63F7BCC673B /* Assets.xcassets */; };
 		501CCE82FB19E31BF5CF6258 /* Puzzles.json in Resources */ = {isa = PBXBuildFile; fileRef = 94E8090B982528E454C9431A /* Puzzles.json */; };
 		52C499AD0892A6EB71BAE330 /* Difficulty.swift in Sources */ = {isa = PBXBuildFile; fileRef = D191A7315F2AA33B77404FE5 /* Difficulty.swift */; };
@@ -42,6 +43,8 @@
 		B0525CC3BC6EF61C6B5565D1 /* GameResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD1EA893809D84D1C5DE440 /* GameResult.swift */; };
 		BC3D05715CF5EE59CD291864 /* SOURCES.md in Resources */ = {isa = PBXBuildFile; fileRef = 668F1B3DA128B4034FD4844B /* SOURCES.md */; };
 		C9AF2F325CA922E8EEA0C5EC /* StatsWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B509652876800B739C033B96 /* StatsWindow.swift */; };
+		CBE4860FCFEACCB2032DE09E /* NotificationSettingsDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2252CE46782577D1DF8A9B8 /* NotificationSettingsDialog.swift */; };
+		CC7565A645961629F731BAEE /* OnboardingFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818340794EEA3D74E2D02ECB /* OnboardingFlow.swift */; };
 		CD9A3B051A03B60D7B6D2AE6 /* Win98Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D7FCF9EB79C9467E326FA5 /* Win98Button.swift */; };
 		D469828696265DE3DAF7E36C /* PieceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B572538673A267173631B26 /* PieceView.swift */; };
 		DA5A3ADE404A115357B096E9 /* nn-37f18f62d772.nnue in Resources */ = {isa = PBXBuildFile; fileRef = 364C714FCFB08AE662E1E0A7 /* nn-37f18f62d772.nnue */; };
@@ -84,6 +87,8 @@
 		784BBF17C6546B6FE08EE784 /* AchievementEvaluator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementEvaluator.swift; sourceTree = "<group>"; };
 		7996A7ED3B777EB4848DEB48 /* Chess98Tests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = Chess98Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F7A7C72D8B32D4555A131AE /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		80A5CB0828DBEA5AF0793774 /* NotificationScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationScheduler.swift; sourceTree = "<group>"; };
+		818340794EEA3D74E2D02ECB /* OnboardingFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFlow.swift; sourceTree = "<group>"; };
 		827D1FC11333492853162B3A /* AchievementsWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsWindow.swift; sourceTree = "<group>"; };
 		83FE9C8DB89218539C96062C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		925B2B30403D242C4C74BAB1 /* Chess98.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Chess98.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +114,7 @@
 		E5C439F6A9383E497F3E7576 /* RetentionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetentionService.swift; sourceTree = "<group>"; };
 		EC2B9D6FA7B5E184C0C199F8 /* Win98Dialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Win98Dialog.swift; sourceTree = "<group>"; };
 		EFA3ECB4478ECEA159ADBA77 /* SavedGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedGame.swift; sourceTree = "<group>"; };
+		F2252CE46782577D1DF8A9B8 /* NotificationSettingsDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSettingsDialog.swift; sourceTree = "<group>"; };
 		F43191194979C63F7BCC673B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA5DD8BE2D1A55FB20CB0910 /* Win98Bevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Win98Bevel.swift; sourceTree = "<group>"; };
 		FC59003F82B9E450AA6EF909 /* StockfishEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockfishEngine.swift; sourceTree = "<group>"; };
@@ -131,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				784BBF17C6546B6FE08EE784 /* AchievementEvaluator.swift */,
+				80A5CB0828DBEA5AF0793774 /* NotificationScheduler.swift */,
 				E5C439F6A9383E497F3E7576 /* RetentionService.swift */,
 				1679B9FA230D3253A3799AF8 /* StreakCalculator.swift */,
 				743FA83EE1E867EF42E995B8 /* XPCalculator.swift */,
@@ -226,6 +233,8 @@
 			children = (
 				827D1FC11333492853162B3A /* AchievementsWindow.swift */,
 				BBD3BD78F90B05E40DB141B5 /* AchievementUnlockedDialog.swift */,
+				F2252CE46782577D1DF8A9B8 /* NotificationSettingsDialog.swift */,
+				818340794EEA3D74E2D02ECB /* OnboardingFlow.swift */,
 				B509652876800B739C033B96 /* StatsWindow.swift */,
 				CC8BDE0691D8238334322EB8 /* StreakBadge.swift */,
 			);
@@ -438,6 +447,9 @@
 				A50D4C1F921B8D1ADF28398F /* GameViewModel.swift in Sources */,
 				4215FBDE47E3DB1D1DF02A8B /* Haptics.swift in Sources */,
 				AE77C930BAFB349D530C7559 /* MoveHistoryView.swift in Sources */,
+				48523ED6E983F8EFB404A879 /* NotificationScheduler.swift in Sources */,
+				CBE4860FCFEACCB2032DE09E /* NotificationSettingsDialog.swift in Sources */,
+				CC7565A645961629F731BAEE /* OnboardingFlow.swift in Sources */,
 				D469828696265DE3DAF7E36C /* PieceView.swift in Sources */,
 				F90337F9E3A029A5CA5E6209 /* PlayerStats.swift in Sources */,
 				8F1301AB9DA363952271133F /* Puzzle.swift in Sources */,
