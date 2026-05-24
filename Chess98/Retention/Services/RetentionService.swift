@@ -67,15 +67,20 @@ final class RetentionService {
         save()
     }
 
+    struct GameReport {
+        let xpAwarded: Int
+        let newlyUnlockedAchievements: [Achievement]
+    }
+
     /// Called when a game transitions from in-progress to game-over (any cause:
-    /// checkmate, draw, resignation). Returns the XP awarded so the caller can
-    /// surface it if desired.
+    /// checkmate, draw, resignation). Updates stats, awards XP, evaluates
+    /// achievements, and returns the resulting report for UI surfacing.
     @discardableResult
     func onGameFinished(
         outcome: GameOutcome,
         difficulty: Difficulty,
         moveCount: Int
-    ) -> Int {
+    ) -> GameReport {
         let now = Date.now
         let today = calendar.startOfDay(for: now)
         var xp = XPCalculator.xp(for: outcome, difficulty: difficulty)
@@ -125,9 +130,37 @@ final class RetentionService {
         )
         context.insert(result)
 
+        // Evaluate achievements after stats and result are in place.
+        let alreadyUnlocked = fetchAlreadyUnlockedIDs()
+        let achievementContext = AchievementContext(stats: stats, lastResult: result)
+        let newly = AchievementEvaluator.newlyUnlocked(
+            in: achievementContext,
+            alreadyUnlocked: alreadyUnlocked
+        )
+        for ach in newly {
+            context.insert(UnlockedAchievement(achievementID: ach.id))
+        }
+
         pruneOldResults()
         save()
-        return xp
+        return GameReport(xpAwarded: xp, newlyUnlockedAchievements: newly)
+    }
+
+    /// Marks every unlocked achievement as read; called when the user opens
+    /// the Achievements window.
+    func markAchievementsRead() {
+        let descriptor = FetchDescriptor<UnlockedAchievement>(
+            predicate: #Predicate { $0.isNew }
+        )
+        guard let unread = try? context.fetch(descriptor) else { return }
+        for row in unread { row.isNew = false }
+        save()
+    }
+
+    private func fetchAlreadyUnlockedIDs() -> Set<String> {
+        let descriptor = FetchDescriptor<UnlockedAchievement>()
+        guard let rows = try? context.fetch(descriptor) else { return [] }
+        return Set(rows.map(\.achievementID))
     }
 
     // MARK: - Internals

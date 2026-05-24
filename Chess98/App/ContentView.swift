@@ -7,6 +7,7 @@ struct ContentView: View {
     @Environment(\.horizontalSizeClass) private var hSizeClass
     @Environment(\.verticalSizeClass) private var vSizeClass
     @Query(sort: \SavedGame.updatedAt, order: .reverse) private var savedGames: [SavedGame]
+    @Query private var unlockedAchievements: [UnlockedAchievement]
 
     @AppStorage("difficulty") private var difficulty: Difficulty = .easy
 
@@ -18,12 +19,15 @@ struct ContentView: View {
     @State private var pendingPromotion: PendingPromotion?
     @State private var retention: RetentionService?
     @State private var hasReportedThisGame = false
+    @State private var pendingAchievements: [Achievement] = []
+    @State private var currentAchievementToast: Achievement?
 
     private enum ActiveDialog: Identifiable {
         case confirmResign
         case about
         case stats
         case freezeUsed
+        case achievements
 
         var id: String {
             switch self {
@@ -31,8 +35,17 @@ struct ContentView: View {
             case .about:         "about"
             case .stats:         "stats"
             case .freezeUsed:    "freeze-used"
+            case .achievements:  "achievements"
             }
         }
+    }
+
+    private var unlockedAchievementIDs: Set<String> {
+        Set(unlockedAchievements.map(\.achievementID))
+    }
+
+    private var hasUnreadAchievements: Bool {
+        unlockedAchievements.contains(where: \.isNew)
     }
 
     private struct PendingPromotion {
@@ -81,7 +94,13 @@ struct ContentView: View {
                 case .about:         aboutDialog
                 case .stats:         statsDialog
                 case .freezeUsed:    freezeUsedDialog
+                case .achievements:  achievementsDialog
                 }
+            }
+
+            // Achievement toasts overlay everything else.
+            if let ach = currentAchievementToast {
+                AchievementUnlockedDialog(achievement: ach, onDismiss: dismissCurrentAchievement)
             }
         }
         // Win98 chrome is fixed-pixel; lock visual size while leaving
@@ -200,9 +219,18 @@ struct ContentView: View {
                     )
                 }
             ),
-            Win98Menu(id: "tools", title: "Tools", items: [
-                .action(id: "stats", label: "Stats…", action: { activeDialog = .stats })
-            ]),
+            Win98Menu(
+                id: "tools",
+                title: hasUnreadAchievements ? "Tools (!)" : "Tools",
+                items: [
+                    .action(id: "stats", label: "Stats…", action: { activeDialog = .stats }),
+                    .action(
+                        id: "achievements",
+                        label: hasUnreadAchievements ? "Achievements… (!)" : "Achievements…",
+                        action: { activeDialog = .achievements }
+                    )
+                ]
+            ),
             Win98Menu(id: "help", title: "Help", items: [
                 .action(id: "about", label: "About Chess 98", action: { activeDialog = .about })
             ])
@@ -298,6 +326,16 @@ struct ContentView: View {
         activeDialog = nil
     }
 
+    private var achievementsDialog: some View {
+        AchievementsWindow(
+            unlockedIDs: unlockedAchievementIDs,
+            onClose: {
+                retention?.markAchievementsRead()
+                activeDialog = nil
+            }
+        )
+    }
+
     @ViewBuilder
     private var statsDialog: some View {
         if let retention {
@@ -353,11 +391,23 @@ struct ContentView: View {
         guard let retention else { return }
         hasReportedThisGame = true
         let outcome = deriveOutcome()
-        retention.onGameFinished(
+        let report = retention.onGameFinished(
             outcome: outcome,
             difficulty: difficulty,
             moveCount: game.sanMoves.count
         )
+        pendingAchievements.append(contentsOf: report.newlyUnlockedAchievements)
+        showNextAchievement()
+    }
+
+    private func showNextAchievement() {
+        guard currentAchievementToast == nil, !pendingAchievements.isEmpty else { return }
+        currentAchievementToast = pendingAchievements.removeFirst()
+    }
+
+    private func dismissCurrentAchievement() {
+        currentAchievementToast = nil
+        showNextAchievement()
     }
 
     private func deriveOutcome() -> GameOutcome {
