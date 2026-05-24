@@ -7,6 +7,12 @@ struct Chess98App: App {
         WindowGroup {
             ContentView()
         }
-        .modelContainer(for: SavedGame.self)
+        .modelContainer(for: [
+            SavedGame.self,
+            PlayerStats.self,
+            UnlockedAchievement.self,
+            GameResult.self,
+            DailyPuzzleAttempt.self
+        ])
     }
 }

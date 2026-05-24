@@ -16,15 +16,19 @@ struct ContentView: View {
     @State private var openMenuID: String?
     @State private var activeDialog: ActiveDialog?
     @State private var pendingPromotion: PendingPromotion?
+    @State private var retention: RetentionService?
+    @State private var hasReportedThisGame = false
 
     private enum ActiveDialog: Identifiable {
         case confirmResign
         case about
+        case stats
 
         var id: String {
             switch self {
             case .confirmResign: "confirm-resign"
             case .about:         "about"
+            case .stats:         "stats"
             }
         }
     }
@@ -62,6 +66,7 @@ struct ContentView: View {
                 switch dialog {
                 case .confirmResign: resignConfirmDialog
                 case .about:         aboutDialog
+                case .stats:         statsDialog
                 }
             }
         }
@@ -71,6 +76,13 @@ struct ContentView: View {
         .task {
             restoreSavedGameIfAny()
 
+            let retentionService = RetentionService(context: modelContext)
+            retentionService.onAppLaunch()
+            retention = retentionService
+            // If we restored a game that was already over, don't report it
+            // as a fresh completion next time isGameOver flips.
+            hasReportedThisGame = game.isGameOver
+
             let e = StockfishEngine()
             await e.start()
             await e.setSkillLevel(difficulty.skillLevel)
@@ -78,6 +90,11 @@ struct ContentView: View {
 
             if game.sideToMove == .black, !game.isGameOver, pendingPromotion == nil {
                 await playEngineMove()
+            }
+        }
+        .onChange(of: game.isGameOver) { wasOver, isOver in
+            if !wasOver, isOver, !hasReportedThisGame {
+                reportGameCompletion()
             }
         }
         .onChange(of: difficulty) { _, new in
@@ -163,6 +180,9 @@ struct ContentView: View {
                     )
                 }
             ),
+            Win98Menu(id: "tools", title: "Tools", items: [
+                .action(id: "stats", label: "Stats…", action: { activeDialog = .stats })
+            ]),
             Win98Menu(id: "help", title: "Help", items: [
                 .action(id: "about", label: "About Chess 98", action: { activeDialog = .about })
             ])
@@ -235,6 +255,19 @@ struct ContentView: View {
         }
     }
 
+    @ViewBuilder
+    private var statsDialog: some View {
+        if let retention {
+            StatsWindow(stats: retention.stats, onClose: { activeDialog = nil })
+        } else {
+            Win98Dialog(title: "Stats", onClose: { activeDialog = nil }) {
+                Text("Loading…")
+                    .font(.system(size: 12))
+                    .foregroundStyle(Win98.Palette.text)
+            }
+        }
+    }
+
     private var aboutDialog: some View {
         Win98Dialog(title: "About Chess 98", onClose: { activeDialog = nil }) {
             VStack(alignment: .leading, spacing: 6) {
@@ -270,6 +303,32 @@ struct ContentView: View {
     private func newGame() {
         game.reset()
         clearSavedGame()
+        hasReportedThisGame = false
+    }
+
+    private func reportGameCompletion() {
+        guard let retention else { return }
+        hasReportedThisGame = true
+        let outcome = deriveOutcome()
+        retention.onGameFinished(
+            outcome: outcome,
+            difficulty: difficulty,
+            moveCount: game.sanMoves.count
+        )
+    }
+
+    private func deriveOutcome() -> GameOutcome {
+        if let resigned = game.resignation {
+            return resigned == .white ? .resign : .win
+        }
+        switch game.state {
+        case .checkmate(let matedColor):
+            return matedColor == .white ? .loss : .win
+        case .draw:
+            return .draw
+        default:
+            return .draw
+        }
     }
 
     private func undo() {
