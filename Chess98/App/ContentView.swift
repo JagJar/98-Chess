@@ -21,6 +21,7 @@ struct ContentView: View {
     @State private var hasReportedThisGame = false
     @State private var pendingAchievements: [Achievement] = []
     @State private var currentAchievementToast: Achievement?
+    @State private var puzzleVM: PuzzleViewModel?
 
     private enum ActiveDialog: Identifiable {
         case confirmResign
@@ -161,7 +162,9 @@ struct ContentView: View {
 
     @ViewBuilder
     private var gameContent: some View {
-        if isWideLayout {
+        if let vm = puzzleVM {
+            puzzleContent(vm: vm)
+        } else if isWideLayout {
             HStack(alignment: .top, spacing: 6) {
                 VStack(spacing: 6) {
                     statusBar
@@ -182,6 +185,98 @@ struct ContentView: View {
                     .frame(height: 90)
             }
         }
+    }
+
+    @ViewBuilder
+    private func puzzleContent(vm: PuzzleViewModel) -> some View {
+        VStack(spacing: 6) {
+            puzzleBanner(vm: vm)
+            BoardView(
+                game: vm.game,
+                canInteract: vm.state == .inProgress
+            )
+            .win98Bevel(.inset)
+            .onChange(of: vm.game.sanMoves.count) { oldCount, newCount in
+                guard newCount > oldCount else { return }
+                handlePuzzleMove(vm: vm)
+            }
+            puzzleControls(vm: vm)
+        }
+    }
+
+    private func puzzleBanner(vm: PuzzleViewModel) -> some View {
+        HStack(alignment: .center, spacing: 8) {
+            VStack(alignment: .leading, spacing: 1) {
+                Text("Daily Puzzle · \(vm.puzzle.title)")
+                    .font(.system(size: 12, weight: .semibold))
+                Text(puzzleStatusText(vm: vm))
+                    .font(.system(size: 11))
+                    .foregroundStyle(Win98.Palette.shadow)
+            }
+            Spacer(minLength: 0)
+            Button("Back to Game", action: closePuzzle)
+                .buttonStyle(.win98)
+        }
+        .padding(.horizontal, 6)
+        .padding(.vertical, 4)
+        .frame(maxWidth: .infinity)
+        .background(Win98.Palette.face)
+        .win98Bevel(.outset)
+    }
+
+    private func puzzleControls(vm: PuzzleViewModel) -> some View {
+        HStack(spacing: 6) {
+            if let hint = vm.puzzle.hint, vm.state == .wrongMove || vm.state == .inProgress {
+                Text("Hint: \(hint)")
+                    .font(.system(size: 11))
+                    .foregroundStyle(Win98.Palette.shadow)
+                    .lineLimit(2)
+            }
+            Spacer()
+            if vm.state == .wrongMove {
+                Button("Try Again") { vm.tryAgain() }
+                    .buttonStyle(.win98)
+            }
+        }
+        .padding(.horizontal, 6)
+    }
+
+    private func puzzleStatusText(vm: PuzzleViewModel) -> String {
+        switch vm.state {
+        case .inProgress: return "Find the best move."
+        case .wrongMove:  return "Not quite — try again."
+        case .solved:     return "Solved! Well done."
+        }
+    }
+
+    private func handlePuzzleMove(vm: PuzzleViewModel) {
+        let priorState = vm.state
+        let newState = vm.validateLastMove()
+        if priorState != .solved, newState == .solved {
+            let report = retention?.onPuzzleSolved(
+                puzzleID: vm.puzzle.id,
+                fromHint: false
+            )
+            if let report {
+                pendingAchievements.append(contentsOf: report.newlyUnlockedAchievements)
+                showNextAchievement()
+            }
+        } else if newState == .wrongMove {
+            retention?.recordPuzzleAttempt(puzzleID: vm.puzzle.id)
+        }
+    }
+
+    private func openDailyPuzzle() {
+        guard let puzzle = PuzzleCatalog.today() else { return }
+        puzzleVM = PuzzleViewModel(puzzle: puzzle)
+    }
+
+    private func closePuzzle() {
+        puzzleVM = nil
+    }
+
+    private var isPuzzleSolvedToday: Bool {
+        retention?.stats.puzzlesSolvedToday ?? false
     }
 
     private var boardView: some View {
@@ -207,6 +302,12 @@ struct ContentView: View {
                 .action(id: "new", label: "New Game", action: newGame),
                 .action(id: "undo", label: "Undo", action: undo),
                 .separator(id: "sep1"),
+                .action(
+                    id: "daily-puzzle",
+                    label: isPuzzleSolvedToday ? "Daily Puzzle…" : "Daily Puzzle… (!)",
+                    action: openDailyPuzzle
+                ),
+                .separator(id: "sep2"),
                 .action(id: "resign", label: "Resign…", action: { activeDialog = .confirmResign })
             ]),
             Win98Menu(id: "difficulty", title: "Difficulty", items:

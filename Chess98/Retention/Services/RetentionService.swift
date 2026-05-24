@@ -146,6 +146,76 @@ final class RetentionService {
         return GameReport(xpAwarded: xp, newlyUnlockedAchievements: newly)
     }
 
+    struct PuzzleReport {
+        let xpAwarded: Int
+        let newlyUnlockedAchievements: [Achievement]
+    }
+
+    /// Called when the player solves the daily puzzle. Awards XP, marks the
+    /// daily puzzle as done, records the attempt, and evaluates achievements.
+    @discardableResult
+    func onPuzzleSolved(puzzleID: String, fromHint: Bool) -> PuzzleReport {
+        let now = Date.now
+        let today = calendar.startOfDay(for: now)
+        var xp = XPCalculator.perPuzzleSolve
+        if !fromHint { xp += XPCalculator.noHintBonus }
+
+        stats.xpTotal += xp
+        stats.puzzlesSolvedTotal += 1
+        stats.puzzlesAttempted += 1
+        stats.lastPuzzleDay = today
+        stats.puzzlesSolvedToday = true
+
+        // Update or insert the per-puzzle attempt record.
+        let descriptor = FetchDescriptor<DailyPuzzleAttempt>(
+            predicate: #Predicate { $0.puzzleID == puzzleID }
+        )
+        let existing = (try? context.fetch(descriptor))?.first
+        if let attempt = existing {
+            attempt.solvedAt = now
+            attempt.solvedFromHint = fromHint
+            attempt.attempts += 1
+        } else {
+            context.insert(DailyPuzzleAttempt(
+                puzzleID: puzzleID,
+                firstAttemptAt: now,
+                solvedAt: now,
+                attempts: 1,
+                solvedFromHint: fromHint
+            ))
+        }
+
+        let alreadyUnlocked = fetchAlreadyUnlockedIDs()
+        let ctx = AchievementContext(stats: stats, lastResult: nil)
+        let newly = AchievementEvaluator.newlyUnlocked(in: ctx, alreadyUnlocked: alreadyUnlocked)
+        for ach in newly {
+            context.insert(UnlockedAchievement(achievementID: ach.id))
+        }
+
+        save()
+        return PuzzleReport(xpAwarded: xp, newlyUnlockedAchievements: newly)
+    }
+
+    /// Records a failed puzzle attempt without awarding XP.
+    func recordPuzzleAttempt(puzzleID: String) {
+        let now = Date.now
+        let descriptor = FetchDescriptor<DailyPuzzleAttempt>(
+            predicate: #Predicate { $0.puzzleID == puzzleID }
+        )
+        let existing = (try? context.fetch(descriptor))?.first
+        if let attempt = existing {
+            attempt.attempts += 1
+        } else {
+            context.insert(DailyPuzzleAttempt(
+                puzzleID: puzzleID,
+                firstAttemptAt: now,
+                attempts: 1
+            ))
+        }
+        stats.puzzlesAttempted += 1
+        save()
+    }
+
     /// Marks every unlocked achievement as read; called when the user opens
     /// the Achievements window.
     func markAchievementsRead() {

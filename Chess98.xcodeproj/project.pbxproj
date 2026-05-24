@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		04B53E238C721FEB09815EA5 /* Chess98App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5711DBB76352BFA16394AA /* Chess98App.swift */; };
+		0635F27EEFB9CC6ADB8AC52A /* PuzzleCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1455EA87153510583C3129F /* PuzzleCatalog.swift */; };
 		07B6A230024F80C1DD2856A3 /* nn-1111cefa1111.nnue in Resources */ = {isa = PBXBuildFile; fileRef = 0F036FE834677E44F64BD6BA /* nn-1111cefa1111.nnue */; };
 		08AF770DB468B3C88F1A5677 /* ChessKitEngine in Frameworks */ = {isa = PBXBuildFile; productRef = 04BB05D27572E81AE3E013B3 /* ChessKitEngine */; };
 		0DC84F480F62E53DB277FC0F /* StreakCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1679B9FA230D3253A3799AF8 /* StreakCalculator.swift */; };
@@ -18,6 +19,7 @@
 		4215FBDE47E3DB1D1DF02A8B /* Haptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6857502A84D7EB0B2F1B090A /* Haptics.swift */; };
 		477BC88CB34698123DA52E46 /* DailyPuzzleAttempt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23ED9CBAACA685E4E322D1F /* DailyPuzzleAttempt.swift */; };
 		4B3DBFEA62CD54CE6F10329A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F43191194979C63F7BCC673B /* Assets.xcassets */; };
+		501CCE82FB19E31BF5CF6258 /* Puzzles.json in Resources */ = {isa = PBXBuildFile; fileRef = 94E8090B982528E454C9431A /* Puzzles.json */; };
 		52C499AD0892A6EB71BAE330 /* Difficulty.swift in Sources */ = {isa = PBXBuildFile; fileRef = D191A7315F2AA33B77404FE5 /* Difficulty.swift */; };
 		5ECE26F0E17A752B17102E61 /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2680ED08CBB66165DB57E176 /* Achievement.swift */; };
 		633019BB67DAF95A0761A42B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE9C8DB89218539C96062C /* ContentView.swift */; };
@@ -30,6 +32,7 @@
 		710781F5A311B4B12A14476A /* AchievementsWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827D1FC11333492853162B3A /* AchievementsWindow.swift */; };
 		7D54F4EF656EBE410E602805 /* StockfishEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BAEC1548CACBAC1FBE9B9A /* StockfishEngineTests.swift */; };
 		85CFE2CF341F1DB8977E7E2A /* UnlockedAchievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5EAC369861AC37B184B3D8 /* UnlockedAchievement.swift */; };
+		8F1301AB9DA363952271133F /* Puzzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6214E2A1AE3219A3A7C1852F /* Puzzle.swift */; };
 		9455DCD550D50CB3303C2630 /* AchievementUnlockedDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD3BD78F90B05E40DB141B5 /* AchievementUnlockedDialog.swift */; };
 		94E105E71113FA0CE29A7600 /* Win98Dialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2B9D6FA7B5E184C0C199F8 /* Win98Dialog.swift */; };
 		968751DF626974F1A6D3860A /* ChessKit in Frameworks */ = {isa = PBXBuildFile; productRef = 542ED04C175EA49A108C53B8 /* ChessKit */; };
@@ -37,10 +40,12 @@
 		A50D4C1F921B8D1ADF28398F /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7A7C72D8B32D4555A131AE /* GameViewModel.swift */; };
 		AE77C930BAFB349D530C7559 /* MoveHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D3507E4B364D2FC9853D4F /* MoveHistoryView.swift */; };
 		B0525CC3BC6EF61C6B5565D1 /* GameResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD1EA893809D84D1C5DE440 /* GameResult.swift */; };
+		BC3D05715CF5EE59CD291864 /* SOURCES.md in Resources */ = {isa = PBXBuildFile; fileRef = 668F1B3DA128B4034FD4844B /* SOURCES.md */; };
 		C9AF2F325CA922E8EEA0C5EC /* StatsWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B509652876800B739C033B96 /* StatsWindow.swift */; };
 		CD9A3B051A03B60D7B6D2AE6 /* Win98Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D7FCF9EB79C9467E326FA5 /* Win98Button.swift */; };
 		D469828696265DE3DAF7E36C /* PieceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B572538673A267173631B26 /* PieceView.swift */; };
 		DA5A3ADE404A115357B096E9 /* nn-37f18f62d772.nnue in Resources */ = {isa = PBXBuildFile; fileRef = 364C714FCFB08AE662E1E0A7 /* nn-37f18f62d772.nnue */; };
+		DE60A530BB226A32D9ACDCD4 /* PuzzleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476CCCA48B2D584156547E4 /* PuzzleViewModel.swift */; };
 		E301FA970BDEF0E40BDA32A7 /* SquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD2C23376B5C5B7E5F6EF59 /* SquareView.swift */; };
 		EC3F781CD8F24FB08DB6BF6B /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = A9BF7D58446BDCD225DDFFF3 /* PrivacyInfo.xcprivacy */; };
 		ECDFF9EBF2F239C715D7D9FA /* Chess98Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55565E6726A6676BA82D0508 /* Chess98Tests.swift */; };
@@ -71,6 +76,8 @@
 		364C714FCFB08AE662E1E0A7 /* nn-37f18f62d772.nnue */ = {isa = PBXFileReference; path = "nn-37f18f62d772.nnue"; sourceTree = "<group>"; };
 		38175344AF79D85F3948D7D6 /* Win98Window.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Win98Window.swift; sourceTree = "<group>"; };
 		55565E6726A6676BA82D0508 /* Chess98Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chess98Tests.swift; sourceTree = "<group>"; };
+		6214E2A1AE3219A3A7C1852F /* Puzzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Puzzle.swift; sourceTree = "<group>"; };
+		668F1B3DA128B4034FD4844B /* SOURCES.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = SOURCES.md; sourceTree = "<group>"; };
 		6857502A84D7EB0B2F1B090A /* Haptics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptics.swift; sourceTree = "<group>"; };
 		6FD1EA893809D84D1C5DE440 /* GameResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameResult.swift; sourceTree = "<group>"; };
 		743FA83EE1E867EF42E995B8 /* XPCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPCalculator.swift; sourceTree = "<group>"; };
@@ -80,6 +87,8 @@
 		827D1FC11333492853162B3A /* AchievementsWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsWindow.swift; sourceTree = "<group>"; };
 		83FE9C8DB89218539C96062C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		925B2B30403D242C4C74BAB1 /* Chess98.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Chess98.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9476CCCA48B2D584156547E4 /* PuzzleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleViewModel.swift; sourceTree = "<group>"; };
+		94E8090B982528E454C9431A /* Puzzles.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Puzzles.json; sourceTree = "<group>"; };
 		9D85C07BF69615EF0201C3AE /* PlayerStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStats.swift; sourceTree = "<group>"; };
 		A9BF7D58446BDCD225DDFFF3 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		AB5EAC369861AC37B184B3D8 /* UnlockedAchievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockedAchievement.swift; sourceTree = "<group>"; };
@@ -90,6 +99,7 @@
 		BC76BC537073E5A4BF71E406 /* EngineProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineProtocol.swift; sourceTree = "<group>"; };
 		BDD2C23376B5C5B7E5F6EF59 /* SquareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareView.swift; sourceTree = "<group>"; };
 		C0F2B04F941DE73BC067E903 /* GameViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModelTests.swift; sourceTree = "<group>"; };
+		C1455EA87153510583C3129F /* PuzzleCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleCatalog.swift; sourceTree = "<group>"; };
 		C23ED9CBAACA685E4E322D1F /* DailyPuzzleAttempt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyPuzzleAttempt.swift; sourceTree = "<group>"; };
 		CC8BDE0691D8238334322EB8 /* StreakBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakBadge.swift; sourceTree = "<group>"; };
 		CF5A2B8B4ED83C614AE95621 /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
@@ -152,6 +162,14 @@
 			path = Privacy;
 			sourceTree = "<group>";
 		};
+		2FBC6896BB019A16D53E7AB5 /* Puzzle */ = {
+			isa = PBXGroup;
+			children = (
+				9476CCCA48B2D584156547E4 /* PuzzleViewModel.swift */,
+			);
+			path = Puzzle;
+			sourceTree = "<group>";
+		};
 		49E1958070EA5E81F4A96088 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +184,7 @@
 			children = (
 				D0B594CB09C40999818721B5 /* Catalog */,
 				FD08B2B4FEED899B2B1F7B25 /* Models */,
+				2FBC6896BB019A16D53E7AB5 /* Puzzle */,
 				023B9B2C74F1C7868EB049E9 /* Services */,
 				9A128A89A1AF670DBB6E0A22 /* Views */,
 			);
@@ -251,6 +270,10 @@
 			children = (
 				2680ED08CBB66165DB57E176 /* Achievement.swift */,
 				D35F1AAE10320D2D4794C5D1 /* AchievementCatalog.swift */,
+				6214E2A1AE3219A3A7C1852F /* Puzzle.swift */,
+				C1455EA87153510583C3129F /* PuzzleCatalog.swift */,
+				94E8090B982528E454C9431A /* Puzzles.json */,
+				668F1B3DA128B4034FD4844B /* SOURCES.md */,
 			);
 			path = Catalog;
 			sourceTree = "<group>";
@@ -376,6 +399,8 @@
 			files = (
 				4B3DBFEA62CD54CE6F10329A /* Assets.xcassets in Resources */,
 				EC3F781CD8F24FB08DB6BF6B /* PrivacyInfo.xcprivacy in Resources */,
+				501CCE82FB19E31BF5CF6258 /* Puzzles.json in Resources */,
+				BC3D05715CF5EE59CD291864 /* SOURCES.md in Resources */,
 				07B6A230024F80C1DD2856A3 /* nn-1111cefa1111.nnue in Resources */,
 				DA5A3ADE404A115357B096E9 /* nn-37f18f62d772.nnue in Resources */,
 			);
@@ -415,6 +440,9 @@
 				AE77C930BAFB349D530C7559 /* MoveHistoryView.swift in Sources */,
 				D469828696265DE3DAF7E36C /* PieceView.swift in Sources */,
 				F90337F9E3A029A5CA5E6209 /* PlayerStats.swift in Sources */,
+				8F1301AB9DA363952271133F /* Puzzle.swift in Sources */,
+				0635F27EEFB9CC6ADB8AC52A /* PuzzleCatalog.swift in Sources */,
+				DE60A530BB226A32D9ACDCD4 /* PuzzleViewModel.swift in Sources */,
 				6B9443EACF712CDB78EE8BA8 /* RetentionService.swift in Sources */,
 				6AF3EE021DE1988D3E24CF3C /* SavedGame.swift in Sources */,
 				E301FA970BDEF0E40BDA32A7 /* SquareView.swift in Sources */,

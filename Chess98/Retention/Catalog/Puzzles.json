@@ -1,0 +1,26 @@
+[
+  {
+    "id": "back-rank-001",
+    "fen": "6k1/5ppp/8/8/8/8/8/R6K w - - 0 1",
+    "solution": ["a1a8"],
+    "alternatives": null,
+    "title": "Back Rank Mate",
+    "hint": "The king has nowhere to run."
+  },
+  {
+    "id": "fools-mate-001",
+    "fen": "rnbqkbnr/pppp1ppp/8/4p3/6P1/5P2/PPPPP2P/RNBQKBNR b KQkq g3 0 2",
+    "solution": ["d8h4"],
+    "alternatives": null,
+    "title": "Fool's Mate",
+    "hint": "The opening is wide open for the queen."
+  },
+  {
+    "id": "queen-king-001",
+    "fen": "7k/5K2/8/6Q1/8/8/8/8 w - - 0 1",
+    "solution": ["g5g7"],
+    "alternatives": null,
+    "title": "Queen vs King",
+    "hint": "Bring the queen one square closer."
+  }
+]
