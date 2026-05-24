@@ -1,26 +1,4371 @@
 [
   {
-    "id": "back-rank-001",
-    "fen": "6k1/5ppp/8/8/8/8/8/R6K w - - 0 1",
-    "solution": ["a1a8"],
+    "id": "lichess-02ioO",
+    "fen": "4r1k1/1pr2pp1/4q1np/p2pPN2/b1pP3P/4P1Q1/1P4P1/2R2RK1 b - - 0 28",
+    "setupMove": "g6e7",
+    "solution": [
+      "g3g7"
+    ],
     "alternatives": null,
-    "title": "Back Rank Mate",
-    "hint": "The king has nowhere to run."
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
   },
   {
-    "id": "fools-mate-001",
-    "fen": "rnbqkbnr/pppp1ppp/8/4p3/6P1/5P2/PPPPP2P/RNBQKBNR b KQkq g3 0 2",
-    "solution": ["d8h4"],
+    "id": "lichess-0AbJG",
+    "fen": "8/5rk1/2R5/2p5/5p2/KP3R2/2P1r3/8 w - - 1 37",
+    "setupMove": "c2c3",
+    "solution": [
+      "f7a7",
+      "c6a6",
+      "a7a6"
+    ],
     "alternatives": null,
-    "title": "Fool's Mate",
-    "hint": "The opening is wide open for the queen."
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
   },
   {
-    "id": "queen-king-001",
-    "fen": "7k/5K2/8/6Q1/8/8/8/8 w - - 0 1",
-    "solution": ["g5g7"],
+    "id": "lichess-0Flch",
+    "fen": "rn1qkb1r/pp2ppp1/3p1n1p/2pP4/4N3/2P5/PP2QPPP/RNB1K2R b KQkq - 1 9",
+    "setupMove": "b8d7",
+    "solution": [
+      "e4d6"
+    ],
     "alternatives": null,
-    "title": "Queen vs King",
-    "hint": "Bring the queen one square closer."
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-0VzpD",
+    "fen": "8/4r3/2R5/3B1kp1/1P5p/5p1P/4K1P1/6b1 w - - 0 44",
+    "setupMove": "e2f3",
+    "solution": [
+      "e7e3"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-0ZK2g",
+    "fen": "r7/2p3pk/bpQ3Np/p4pqP/3P4/2N5/4K3/3R1R2 w - - 1 32",
+    "setupMove": "e2e1",
+    "solution": [
+      "g5e3",
+      "c3e2",
+      "e3e2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-0uiis",
+    "fen": "8/3Q2k1/8/2p1P1q1/2P1B3/3P4/7K/qb3r2 b - - 1 60",
+    "setupMove": "g7h6",
+    "solution": [
+      "d7h7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-1B4J7",
+    "fen": "r1b1rqk1/pp4p1/2p1p1Qp/3pN2n/3P4/2PB4/P1P2PPP/R3R1K1 b - - 5 16",
+    "setupMove": "h5f4",
+    "solution": [
+      "g6h7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-1YoIv",
+    "fen": "4r3/pb5k/1p5p/2p2N2/6p1/3Q4/Pb4NP/1R2B2K w - - 0 33",
+    "setupMove": "b1b2",
+    "solution": [
+      "e8e1",
+      "d3f1",
+      "e1f1"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-1gk3N",
+    "fen": "r1b2rk1/ppqnb1pp/2p1p3/4Pp2/1P1P2n1/P1NB4/2P3PP/R1BQNRK1 w - f6 0 13",
+    "setupMove": "e5f6",
+    "solution": [
+      "c7h2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-206Xe",
+    "fen": "r1bq1rk1/p1p3b1/1p2ppP1/3p2B1/3P3Q/2P1P3/PP1N1P2/R3K2R b KQ - 0 17",
+    "setupMove": "f6g5",
+    "solution": [
+      "h4h7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-27ieL",
+    "fen": "2r2k2/1Q6/p4p2/7P/5Pq1/8/PPP5/1K1R4 w - - 1 33",
+    "setupMove": "d1d7",
+    "solution": [
+      "g4g1",
+      "d7d1",
+      "g1d1"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-2OTfV",
+    "fen": "5b1Q/p1nk1p2/3p1P2/4p3/2Pn4/1P1q4/P2B1PB1/3RK3 w - - 7 29",
+    "setupMove": "g2f1",
+    "solution": [
+      "d4f3"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-2WwTq",
+    "fen": "r4rk1/1bq1b1p1/pp1pNn1p/4n3/P3P2B/6QP/1PP2PP1/R3R1K1 b - - 0 18",
+    "setupMove": "c7c2",
+    "solution": [
+      "g3g7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-2YtHg",
+    "fen": "r3k2r/1pp2p2/p3p2p/2P2b2/4n1pN/PQN1P1P1/1P1qKPP1/R6R w kq - 1 18",
+    "setupMove": "e2f1",
+    "solution": [
+      "d2f2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-2aUnL",
+    "fen": "5r1k/p5pp/6r1/3Q1pq1/P2P4/3BP1bP/1P3P1K/R1B2R2 w - - 0 28",
+    "setupMove": "f2g3",
+    "solution": [
+      "g5g3",
+      "h2h1",
+      "g3h3"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-3V40t",
+    "fen": "6nr/1pkr1pp1/pN2p1p1/2BpP3/6Pq/8/PPP2P1P/R2Q1RK1 w - - 3 17",
+    "setupMove": "b6d7",
+    "solution": [
+      "h4h2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-3gvNQ",
+    "fen": "r1b1k2r/1p1p1ppp/1qn1p3/p7/3Nn3/B1P5/PP3PPP/R2QKB1R w KQkq - 2 11",
+    "setupMove": "d4c6",
+    "solution": [
+      "b6f2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-3nDWd",
+    "fen": "1b1q3k/6pp/5p2/pp1P4/7B/P4Q1P/1r2rPP1/1R2R1K1 w - - 0 31",
+    "setupMove": "b1b2",
+    "solution": [
+      "e2e1"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-42Y1V",
+    "fen": "6k1/1p1bQ1pp/1bp3r1/3p1p2/1P1p1P2/1B1P2qP/2PB2P1/4R2K w - - 6 32",
+    "setupMove": "e7d7",
+    "solution": [
+      "g3g2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-44nEh",
+    "fen": "4r1k1/1p3pp1/p6p/3p1Q2/1P3B2/5qP1/P4b1P/5RK1 w - - 0 28",
+    "setupMove": "f1f2",
+    "solution": [
+      "e8e1",
+      "f2f1",
+      "f3f1"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-4MZV5",
+    "fen": "8/8/R6p/7k/4PP2/6PP/p5K1/1r6 b - - 2 37",
+    "setupMove": "a2a1q",
+    "solution": [
+      "g3g4",
+      "h5h4",
+      "a6h6"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-4VSeE",
+    "fen": "8/8/4p1k1/2b1Bp2/6p1/4P1PK/5P2/3B4 w - - 0 48",
+    "setupMove": "h3h4",
+    "solution": [
+      "c5e7",
+      "e5f6",
+      "e7f6"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-4aBRq",
+    "fen": "6k1/5p2/4pQpK/7p/4qP2/8/5P1P/8 b - - 1 38",
+    "setupMove": "g8f8",
+    "solution": [
+      "f6d8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-4bnUE",
+    "fen": "2rqnrk1/pb2b1p1/1p2p1N1/n1pp3Q/3P1P2/2P1P3/PP1N3P/R1B2RK1 b - - 0 16",
+    "setupMove": "f8f6",
+    "solution": [
+      "h5h8",
+      "g8f7",
+      "g6e5"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-4fXr9",
+    "fen": "r2Qkqnr/pp3pRp/1np5/4p1Bb/8/2N5/PPP1PPP1/2KR1B2 b kq - 4 15",
+    "setupMove": "a8d8",
+    "solution": [
+      "d1d8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-4iEA8",
+    "fen": "2r4k/pp4p1/5p1p/7Q/3qPBP1/5P1b/PP5P/2R3K1 w - - 5 30",
+    "setupMove": "g1h1",
+    "solution": [
+      "c8c1",
+      "f4c1",
+      "d4d1"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-4j17x",
+    "fen": "R7/5p2/P4k2/2r4p/4K1pP/3B2P1/8/6b1 w - - 4 38",
+    "setupMove": "a8f8",
+    "solution": [
+      "c5e5",
+      "e4f4",
+      "g1e3"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-4kBie",
+    "fen": "2k1rb1r/ppp1qppp/8/nQ6/4p1b1/2P1P1P1/P2PNPBP/1RB1R1K1 b - - 3 13",
+    "setupMove": "e7c5",
+    "solution": [
+      "b5e8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-4sr9F",
+    "fen": "3rk3/p2B1p1p/1p1R1P2/5r2/P3p3/5bP1/1P3K1P/2R5 b - - 0 25",
+    "setupMove": "d8d7",
+    "solution": [
+      "c1c8",
+      "d7d8",
+      "d6d8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-4ubNR",
+    "fen": "2r1r1k1/pp3pp1/7p/3BB3/2nP1Qn1/2P3Pq/P4P2/1R2R1K1 b - - 2 22",
+    "setupMove": "g7g5",
+    "solution": [
+      "f4f7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-57H4Y",
+    "fen": "r2q1rk1/pp2npp1/1bn1p3/3pP1NQ/5B2/7P/PP3PP1/2RR2K1 b - - 3 18",
+    "setupMove": "f7f6",
+    "solution": [
+      "h5h7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-59SB0",
+    "fen": "2r2rk1/1p3pp1/4pBq1/pP1P3B/4p3/P3P2b/3N1P1b/2RQR1K1 w - - 2 24",
+    "setupMove": "g1h2",
+    "solution": [
+      "g6g2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-5KTCL",
+    "fen": "r7/pp5p/3p3k/3Pq1p1/3n3p/4b2P/PP2N1K1/R2Q1R2 w - - 4 28",
+    "setupMove": "e2d4",
+    "solution": [
+      "e5g3",
+      "g2h1",
+      "g3h3"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-5QIw0",
+    "fen": "8/1Q1R1prk/1p2p1qp/2b5/8/2N3p1/PPP2P1P/5RK1 w - - 0 25",
+    "setupMove": "h2g3",
+    "solution": [
+      "g6g3",
+      "g1h1",
+      "g3h3"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-5VrYT",
+    "fen": "3r3k/pR4p1/2p1Bp1p/4p3/4P3/5P1P/PPP2b2/2K5 w - - 2 25",
+    "setupMove": "e6f5",
+    "solution": [
+      "f2e3",
+      "c1b1",
+      "d8d1"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-5ZVpP",
+    "fen": "1r3rk1/1pb2ppp/p1p5/P1Ppq3/1P6/2NQP3/5PPP/R4RK1 w - - 3 22",
+    "setupMove": "c3e2",
+    "solution": [
+      "e5h2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-5bISp",
+    "fen": "2r3k1/3R1pp1/p5Pp/4rN2/7P/8/1PP5/2KR4 b - - 0 32",
+    "setupMove": "e5f5",
+    "solution": [
+      "d7d8",
+      "c8d8",
+      "d1d8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-5hOTv",
+    "fen": "5K2/r3N3/5k2/8/8/8/4B3/8 w - - 7 63",
+    "setupMove": "e7c6",
+    "solution": [
+      "a7a8",
+      "c6b8",
+      "a8b8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-5i4rK",
+    "fen": "2rq1rk1/p3bppp/bp2N3/8/P1n1P3/1PQ3P1/5PBP/R2R2K1 b - - 0 18",
+    "setupMove": "d8e8",
+    "solution": [
+      "c3g7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-5kAdC",
+    "fen": "b5r1/8/1P3k2/P2pnp1p/3BpP2/1N2P2P/1Q4r1/2R3K1 w - - 0 46",
+    "setupMove": "g1f1",
+    "solution": [
+      "g2g1",
+      "f1f2",
+      "g8g2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-64F2W",
+    "fen": "r4r2/p1p2pk1/6p1/3pP3/6q1/1QP5/PP3P1K/R1B2R2 w - - 5 21",
+    "setupMove": "f2f3",
+    "solution": [
+      "f8h8",
+      "c1h6",
+      "h8h6"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-6LQF1",
+    "fen": "1r6/4kpp1/6p1/pB1p4/P2P4/1Q2P3/2R1nRPP/4q2K w - - 1 29",
+    "setupMove": "f2f1",
+    "solution": [
+      "e1f1"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-6LeTv",
+    "fen": "1rr3k1/1B3ppp/8/p3n3/1pp2P2/q1P4P/P1PQ1PP1/1K1RR3 b - - 1 27",
+    "setupMove": "b8b7",
+    "solution": [
+      "d2d8",
+      "c8d8",
+      "d1d8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-6QLB8",
+    "fen": "3b2k1/6pp/3p4/p1qN1r2/1pP1QpR1/1P3P2/P5Pr/5R1K w - - 0 31",
+    "setupMove": "h1h2",
+    "solution": [
+      "f5h5",
+      "g4h4",
+      "h5h4"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-6Rv12",
+    "fen": "6k1/5p2/p5p1/1p2R3/7P/2B3PK/PPP1pq2/3rR3 b - - 1 39",
+    "setupMove": "d1e1",
+    "solution": [
+      "e5e8",
+      "g8h7",
+      "e8h8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-6tOfh",
+    "fen": "8/6K1/8/5qpk/8/8/4Q3/8 b - - 39 73",
+    "setupMove": "g5g4",
+    "solution": [
+      "e2h2",
+      "h5g5",
+      "h2h6"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-70A2j",
+    "fen": "7k/2q3rp/1r1bQp2/p1p5/3pPB2/1P1P1P2/P7/R5RK b - - 2 35",
+    "setupMove": "d6f4",
+    "solution": [
+      "e6e8",
+      "g7g8",
+      "e8g8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-7KApu",
+    "fen": "8/8/3N4/3P2k1/3P1p2/r2K1B2/6P1/8 w - - 5 66",
+    "setupMove": "d3e4",
+    "solution": [
+      "a3e3"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-7THmK",
+    "fen": "r3r1k1/ppp1qppp/3n4/4P2R/8/2PQ4/PP3PPP/R5K1 b - - 4 25",
+    "setupMove": "d6c8",
+    "solution": [
+      "d3h7",
+      "g8f8",
+      "h7h8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-7W06C",
+    "fen": "k2r4/pp5p/8/2R2Q2/1P1qn3/P7/5PPP/5RK1 w - - 1 32",
+    "setupMove": "f1c1",
+    "solution": [
+      "d4d1",
+      "c1d1",
+      "d8d1"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-7Y783",
+    "fen": "3r3k/pb2qR1p/1p5r/2p1p2N/2P5/8/PP2B1PP/5RK1 b - - 1 24",
+    "setupMove": "e7h4",
+    "solution": [
+      "f7f8",
+      "d8f8",
+      "f1f8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-7b9yn",
+    "fen": "1r4k1/p4Pp1/1np5/8/5Pn1/1B1P2Pq/PP1Q4/6K1 b - - 0 30",
+    "setupMove": "g8f8",
+    "solution": [
+      "d2b4",
+      "c6c5",
+      "b4c5"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-7mxaw",
+    "fen": "r3kbnr/pb1p1ppp/4p3/2p3B1/8/1P1BP3/P1P2PPP/RN3RK1 b kq - 1 10",
+    "setupMove": "d7d5",
+    "solution": [
+      "d3b5",
+      "b7c6",
+      "b5c6"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-7o3Lj",
+    "fen": "2krr3/ppp2ppp/1q1b4/N4b2/1P2n3/P4BP1/1B2PPKP/R1Q4R w - - 11 20",
+    "setupMove": "a5c4",
+    "solution": [
+      "b6f2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-7t210",
+    "fen": "5rk1/1p3pp1/7p/2r2q2/P2Qp3/6PP/4N3/R5RK w - - 4 32",
+    "setupMove": "a1f1",
+    "solution": [
+      "f5h3"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-7vUwV",
+    "fen": "r1b3kr/pp2q1pp/2p5/2P5/2p5/P4Q2/3PBPPP/b1B1R1K1 b - - 1 15",
+    "setupMove": "e7c5",
+    "solution": [
+      "e2c4",
+      "c8e6",
+      "c4e6"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-88iQl",
+    "fen": "8/3r1kp1/4R3/2p1RPP1/8/2r5/P2p2K1/8 b - - 0 45",
+    "setupMove": "d2d1q",
+    "solution": [
+      "g5g6",
+      "f7g8",
+      "e6e8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-8EQoJ",
+    "fen": "rr3B2/5p1k/p7/7P/2ppq3/6Q1/PP3P2/K5R1 b - - 1 32",
+    "setupMove": "b8f8",
+    "solution": [
+      "g3g7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-8FnXI",
+    "fen": "1q3r2/4Np1k/4PQpp/3P4/8/p5PP/7K/8 b - - 0 44",
+    "setupMove": "f7e6",
+    "solution": [
+      "f6g6",
+      "h7h8",
+      "g6h6"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-8ZdhN",
+    "fen": "r4r1k/3Q2pp/p2RP3/1p6/1P6/2n5/P1P3PP/4RqK1 w - - 5 24",
+    "setupMove": "e1f1",
+    "solution": [
+      "c3e2",
+      "g1h1",
+      "f8f1"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-8oGPV",
+    "fen": "2r3r1/p2R1pBp/2k2Pb1/2p5/5p2/1PP5/6PP/3R3K b - - 7 31",
+    "setupMove": "a7a5",
+    "solution": [
+      "d1d6",
+      "c6b5",
+      "d7b7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-8q0lP",
+    "fen": "3r2k1/p1p3p1/4Q3/5p2/8/1P1q2P1/PB5P/6K1 b - - 1 37",
+    "setupMove": "g8h8",
+    "solution": [
+      "e6h6",
+      "h8g8",
+      "h6g7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-8yFW2",
+    "fen": "5k2/Rb5p/6p1/1B3p2/2P5/1P2P3/3b2PP/1r3NK1 w - - 1 44",
+    "setupMove": "a7b7",
+    "solution": [
+      "d2e3",
+      "g1h1",
+      "b1f1"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-8zQQu",
+    "fen": "8/5p2/4p1p1/3r1k1p/R4P2/5KPP/8/8 b - - 10 50",
+    "setupMove": "f7f6",
+    "solution": [
+      "g3g4",
+      "h5g4",
+      "h3g4"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-90wzv",
+    "fen": "3r2k1/p1p1q1pp/1rB5/2K1Np2/5B2/3P2P1/PPP4P/RN1Q3R w - - 3 20",
+    "setupMove": "c5c4",
+    "solution": [
+      "e7b4"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-9EE9y",
+    "fen": "3r1r2/p1p1k1pp/1p6/4b3/5R2/8/PPP3PP/R1B3K1 w - - 0 19",
+    "setupMove": "f4e4",
+    "solution": [
+      "d8d1",
+      "e4e1",
+      "d1e1"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-9lBZS",
+    "fen": "4Q3/p1p2p1p/2p1kBp1/q2p4/2b5/5N1P/P4rPK/8 b - - 1 28",
+    "setupMove": "e6f6",
+    "solution": [
+      "e8e5"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-A4c3C",
+    "fen": "8/R7/3k2R1/2p1pr2/P1r5/3pK3/P7/8 b - - 1 48",
+    "setupMove": "d6d5",
+    "solution": [
+      "a7d7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-A9Fx2",
+    "fen": "7k/pp3r1p/5p2/4bQ2/P3B3/3P3P/1q4P1/5R1K w - - 2 30",
+    "setupMove": "g2g4",
+    "solution": [
+      "b2h2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-ALxy3",
+    "fen": "2r5/1Rb1kpp1/3qp2p/N7/3P4/2nP3P/3Q1PP1/R5K1 w - - 1 30",
+    "setupMove": "a5c4",
+    "solution": [
+      "d6h2",
+      "g1f1",
+      "h2h1"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-AfVpk",
+    "fen": "2kr4/1pp1qp1p/3b2b1/p7/2PP4/P4N1P/1P1N1KP1/R2Q1B1R w - - 1 18",
+    "setupMove": "f2g1",
+    "solution": [
+      "e7e3"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-B9VdR",
+    "fen": "4rnk1/pp3r2/7R/2Pp2PQ/1P1b1p2/3q1P2/P3p1K1/4B2R b - - 3 42",
+    "setupMove": "f7g7",
+    "solution": [
+      "h6h8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-BFQIc",
+    "fen": "4r3/5p2/5N1k/1p1Pb1pp/4p3/1P2Q2R/r4PP1/6K1 w - - 0 35",
+    "setupMove": "f6e8",
+    "solution": [
+      "a2a1",
+      "e3c1",
+      "a1c1"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-BFs0F",
+    "fen": "r1bq1rk1/p4ppp/p1p1p3/2P5/3Pp3/4PNP1/PPQ2PP1/R3K2R b KQ - 1 12",
+    "setupMove": "e4f3",
+    "solution": [
+      "c2h7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-BInLS",
+    "fen": "r2br1k1/pb1p1pp1/1p2qP1N/2pnP2p/8/3P2Q1/P5PP/2BR1RK1 b - - 1 27",
+    "setupMove": "g8h7",
+    "solution": [
+      "g3g7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-BWPuu",
+    "fen": "8/1q4p1/p3kp1p/4p3/P1Q5/7P/6P1/7K b - - 12 46",
+    "setupMove": "e6f5",
+    "solution": [
+      "c4g4"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-CJJ4d",
+    "fen": "r4Bk1/ppp2p1p/3bp1p1/8/3P1n2/2P2Q2/PPB2PPq/R3RK2 w - - 2 18",
+    "setupMove": "f8d6",
+    "solution": [
+      "h2h1"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-CJK3l",
+    "fen": "8/3k1p1Q/p2p4/1q1Np2R/1p2P3/P4P2/1PP3P1/1K1r4 w - - 1 28",
+    "setupMove": "b1a2",
+    "solution": [
+      "b5c4",
+      "b2b3",
+      "c4c2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-CT8Bo",
+    "fen": "3q3k/1p4p1/2p4p/p2pBQ2/P2P3P/n1P2P2/2P1r1P1/2R3K1 b - - 2 34",
+    "setupMove": "d8h4",
+    "solution": [
+      "f5f8",
+      "h8h7",
+      "f8g7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-CWiNE",
+    "fen": "r2q1r1k/1pp3p1/p1np3p/2b1pp2/P1B1P1b1/2NP1N2/1PPQ1PK1/R1B4R b - - 1 13",
+    "setupMove": "f5e4",
+    "solution": [
+      "h1h6",
+      "g7h6",
+      "d2h6"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-CgZMJ",
+    "fen": "1r3rk1/pq3ppp/3p1n2/p2Pp3/4PP2/PpN1BQ2/6PP/KR5R w - - 0 22",
+    "setupMove": "f4e5",
+    "solution": [
+      "b3b2",
+      "b1b2",
+      "b7b2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-CkFd3",
+    "fen": "8/5R2/5P2/P7/1P6/4k2p/r7/4K3 w - - 1 62",
+    "setupMove": "f7h7",
+    "solution": [
+      "a2a1"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-CsAzo",
+    "fen": "7k/6p1/4p3/1pp3b1/3pQ1PK/pP1P4/P1P5/B4q2 w - - 10 50",
+    "setupMove": "h4g5",
+    "solution": [
+      "f1f6",
+      "g5h5",
+      "f6h6"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-Ctp2a",
+    "fen": "2R5/6p1/5pk1/3ppP2/2p3Pp/4P2P/2r5/5K2 b - - 0 42",
+    "setupMove": "g6h6",
+    "solution": [
+      "c8h8",
+      "h6g5",
+      "h8h5"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-D1Gh4",
+    "fen": "8/8/3R1kpB/1pP2p1p/8/1P3K2/2r4b/8 b - - 3 44",
+    "setupMove": "f6e5",
+    "solution": [
+      "h6g7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-D6k8k",
+    "fen": "r1bq1k1r/ppp1b1p1/2np1n1p/7B/4P3/1QN2N2/PP3PPP/R1B2RK1 b - - 2 10",
+    "setupMove": "c6a5",
+    "solution": [
+      "b3f7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-DAIU5",
+    "fen": "8/p5b1/6p1/2N1pk1p/4N3/1P3K1P/1r4P1/8 b - - 5 41",
+    "setupMove": "g7h6",
+    "solution": [
+      "g2g4",
+      "h5g4",
+      "h3g4"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-DGbg2",
+    "fen": "r2q1rk1/5p2/bp2P2R/p3B2p/2P1P1pN/3p2P1/P3Q1BP/1R4K1 b - - 0 23",
+    "setupMove": "d3e2",
+    "solution": [
+      "h6h8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-DJ7d8",
+    "fen": "8/pQ3pkp/p5p1/8/P7/2P1b2P/1P1r2r1/5RK1 w - - 0 41",
+    "setupMove": "g1h1",
+    "solution": [
+      "g2h2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-DOoJJ",
+    "fen": "1Q6/6pk/4pq2/3b3P/P6K/R6P/5P2/8 w - - 17 45",
+    "setupMove": "h4g3",
+    "solution": [
+      "f6g5",
+      "g3h2",
+      "g5g2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-Dmp45",
+    "fen": "3rr1k1/pb1B1p1p/1p3p2/1q2p1N1/4P1Q1/3P3P/P1P1n1P1/R6K b - - 3 22",
+    "setupMove": "b5d7",
+    "solution": [
+      "g5e6",
+      "g8h8",
+      "g4g7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-EOrQe",
+    "fen": "3kr3/pR4pp/3br3/3Q1p2/3p1B2/3P4/PP2qPPP/5RK1 w - - 1 21",
+    "setupMove": "f4d6",
+    "solution": [
+      "e2f1",
+      "g1f1",
+      "e6e1"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-EmjZs",
+    "fen": "6k1/5pp1/6p1/3R4/PR6/r6P/2r3P1/6K1 b - - 2 38",
+    "setupMove": "a3a2",
+    "solution": [
+      "d5d8",
+      "g8h7",
+      "b4h4"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-Ey7p3",
+    "fen": "5r2/6kp/1p6/6p1/1b1Pp3/1PNbn1P1/PQ1R3P/2R2qK1 w - - 6 32",
+    "setupMove": "c1f1",
+    "solution": [
+      "f8f1"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-FIuK8",
+    "fen": "6R1/p2r1p2/5B1p/5b1k/8/7P/Pn4PK/8 b - - 5 35",
+    "setupMove": "b2d3",
+    "solution": [
+      "g2g4",
+      "f5g4",
+      "h3g4"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-FKOA5",
+    "fen": "1k1r3r/p1p2p2/2Q3pq/3P4/6p1/4P1P1/PPP2R1P/5RK1 w - - 3 24",
+    "setupMove": "f2f7",
+    "solution": [
+      "h6h2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-FLJqg",
+    "fen": "r2q1b1Q/8/2bpnNk1/5p2/2P1pP2/4P3/PB5P/7K b - - 3 37",
+    "setupMove": "f8h6",
+    "solution": [
+      "h8h7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-FRFD4",
+    "fen": "8/8/6p1/5k1p/3R1p1K/5r2/P4P1P/8 w - - 0 46",
+    "setupMove": "d4d2",
+    "solution": [
+      "g6g5",
+      "h4h5",
+      "f3h3"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-FUgjy",
+    "fen": "r1b2rk1/ppqn1pb1/3n3p/2pPp1N1/2P4Q/2NBP3/PP4PP/R1B2RK1 b - - 0 15",
+    "setupMove": "h6g5",
+    "solution": [
+      "h4h7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-G0wZN",
+    "fen": "5Q2/p4ppk/1p4b1/2p4p/7P/1PBP4/PKP2q2/8 b - - 3 34",
+    "setupMove": "g6d3",
+    "solution": [
+      "f8g7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-G1NLb",
+    "fen": "8/ppR5/3rp1k1/5p2/6pP/1r4P1/7K/4R3 b - - 1 42",
+    "setupMove": "d6d5",
+    "solution": [
+      "e1e6",
+      "g6h5",
+      "c7h7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-GCJeP",
+    "fen": "r3r1k1/1p1q3p/p2p2pB/2pP2P1/2PbR3/1P3Q1P/P5K1/5R2 b - - 2 26",
+    "setupMove": "e8e4",
+    "solution": [
+      "f3f8",
+      "a8f8",
+      "f1f8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-GrdCp",
+    "fen": "r2r4/1bp1kpp1/pp2p2p/3q4/3b4/P2B1N1P/1PP1QPP1/R3R1K1 w - - 0 18",
+    "setupMove": "f3d4",
+    "solution": [
+      "d5g2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-Gz00N",
+    "fen": "rn3k1r/pp3ppp/2pp4/6q1/2BN4/5Q1b/PPP2PPP/R4RK1 b - - 5 12",
+    "setupMove": "h3g4",
+    "solution": [
+      "f3f7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-H3ACp",
+    "fen": "4r1k1/pp3p1p/2p2Qp1/8/2Pp4/P2P2qP/1RP2P1K/1R2r3 w - - 0 23",
+    "setupMove": "f2g3",
+    "solution": [
+      "e8e2",
+      "f6f2",
+      "e2f2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-H7I38",
+    "fen": "r2q1r2/pbp3p1/1p2k2p/n2nQ3/2BP1B2/2P5/P1P2PPP/R3R1K1 b - - 0 17",
+    "setupMove": "e6f7",
+    "solution": [
+      "e5e6"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-HD2tv",
+    "fen": "2kr2nr/Qpp2Bpp/8/8/1b2P3/2N4P/P2q1PP1/5RK1 b - - 0 18",
+    "setupMove": "b4c3",
+    "solution": [
+      "f7e6",
+      "d8d7",
+      "a7a8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-HFdgM",
+    "fen": "5r1k/1p4p1/p3p3/3pP2p/3P1q1P/2P3Q1/5PP1/3RK3 w - - 3 33",
+    "setupMove": "g3g6",
+    "solution": [
+      "f4f2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-HLHJy",
+    "fen": "2k1q1rr/p3bp2/2p2n2/2ppQ1pp/8/PB1P2BP/1PP2PP1/R4RK1 b - - 1 18",
+    "setupMove": "f6d7",
+    "solution": [
+      "e5c7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-HXN69",
+    "fen": "Q7/ppk1b3/2p1P3/8/8/8/PP3RPP/3q2K1 w - - 1 28",
+    "setupMove": "f2f1",
+    "solution": [
+      "e7c5",
+      "g1h1",
+      "d1f1"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-Hc24L",
+    "fen": "3rr1k1/7Q/1n2p3/5pN1/2q5/4b1P1/PP3PP1/4R1K1 b - - 0 32",
+    "setupMove": "g8f8",
+    "solution": [
+      "h7f7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-HfTVT",
+    "fen": "5r2/1q3p1k/4p2p/p2pP3/2pP4/1rP2P2/3Q1K2/4R2R b - - 3 32",
+    "setupMove": "b3b2",
+    "solution": [
+      "h1h6",
+      "h7g8",
+      "e1g1"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-Hh05K",
+    "fen": "7k/p1pp4/1p3n1P/3P4/4N3/3qP3/Pn2KP2/2B3Q1 w - - 5 32",
+    "setupMove": "e2e1",
+    "solution": [
+      "d3d1"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-HjxEo",
+    "fen": "6k1/pR6/2p3P1/3p4/3b4/1B3n2/PPPKNr2/R1B2r2 w - - 3 24",
+    "setupMove": "d2d3",
+    "solution": [
+      "f1d1",
+      "c1d2",
+      "d1d2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-Hl91g",
+    "fen": "4r3/p1Q5/1p4pk/5b2/5PP1/2P3Kp/PB4qP/R4R2 w - - 2 29",
+    "setupMove": "g3h4",
+    "solution": [
+      "g2g4"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-Hyh5C",
+    "fen": "r6k/pp3Q1p/3p2pB/8/3b4/3q4/6PP/5R1K b - - 5 28",
+    "setupMove": "d3e4",
+    "solution": [
+      "f7f8",
+      "a8f8",
+      "f1f8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-I6HjV",
+    "fen": "r4rk1/p4ppp/1bpP4/1p6/1P2P3/P1N2Bq1/2P3b1/R2Q1R1K w - - 0 19",
+    "setupMove": "f3g2",
+    "solution": [
+      "g3h4",
+      "g2h3",
+      "h4h3"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-IMfWU",
+    "fen": "2kr3r/p1p2p2/1pP5/5bp1/Q7/2q2PPp/P4N1P/R3R1K1 b - - 0 28",
+    "setupMove": "c3f3",
+    "solution": [
+      "a4a6",
+      "c8b8",
+      "a6b7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-IRmcg",
+    "fen": "5rk1/3pbrp1/p1q1p2p/1p2B3/3P1RQ1/2P5/PP4PP/5RK1 b - - 7 21",
+    "setupMove": "f7f4",
+    "solution": [
+      "g4g7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-ISLhJ",
+    "fen": "8/pQp1kpR1/3p3p/2p5/8/P4B2/1q2rK2/6R1 w - - 0 34",
+    "setupMove": "f2f1",
+    "solution": [
+      "e2f2",
+      "f1e1",
+      "b2d2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-IXbe4",
+    "fen": "6k1/1b2pp1p/p5p1/1p6/3Q2N1/qP2P2P/5PP1/2rB2K1 b - - 3 26",
+    "setupMove": "a3d6",
+    "solution": [
+      "g4h6",
+      "g8f8",
+      "d4h8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-Ikoap",
+    "fen": "7k/1p2p3/p1q3pp/8/1Q2NP2/4n2P/PP6/1K1r2R1 w - - 2 35",
+    "setupMove": "g1d1",
+    "solution": [
+      "c6c2",
+      "b1a1",
+      "c2d1"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-IlOHS",
+    "fen": "3q1r1k/1p6/4N1Qp/3p4/p1r5/2P5/PP3PPP/4R1K1 b - - 0 25",
+    "setupMove": "f8f6",
+    "solution": [
+      "g6g7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-J38YU",
+    "fen": "5rk1/4R1p1/7p/p1P5/2NPpB2/2Q1P2q/P5p1/4R1K1 w - - 5 30",
+    "setupMove": "f4h2",
+    "solution": [
+      "f8f1",
+      "e1f1",
+      "g2f1q"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-JBPaY",
+    "fen": "r1b4k/ppp2Qpp/5n2/2b5/4BP1q/3PP3/PP3P1P/R4R1K b - - 4 17",
+    "setupMove": "f6e4",
+    "solution": [
+      "f7e8",
+      "c5f8",
+      "e8f8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-JIpTg",
+    "fen": "r1bq1rBk/1pp2pb1/p1n1p3/3p2p1/3P4/2P1PNP1/PPQN2P1/R3K2R b KQ - 3 14",
+    "setupMove": "h8g8",
+    "solution": [
+      "c2h7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-JQ2Q3",
+    "fen": "5k2/1p2ppb1/3P2p1/3P3p/1P1q2nP/6P1/r2BQPB1/2R3K1 b - - 0 28",
+    "setupMove": "e7d6",
+    "solution": [
+      "c1c8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-JanW7",
+    "fen": "8/1b5k/3R4/Bp4p1/1P3N2/6P1/5P2/2r3K1 w - - 1 39",
+    "setupMove": "g1h2",
+    "solution": [
+      "c1h1"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-JjqkA",
+    "fen": "r2q1r2/pp1n1pk1/2pp1bN1/6p1/2PP4/6PQ/PP3PP1/2R1RBK1 b - - 0 20",
+    "setupMove": "g7g6",
+    "solution": [
+      "f1d3",
+      "g6g7",
+      "h3h7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-JkCvE",
+    "fen": "r1b2k1r/ppN2ppp/2q1Pnn1/8/1b2P3/6B1/PP2KPPP/R2Q1BNR w - - 1 13",
+    "setupMove": "a2a3",
+    "solution": [
+      "c6e4"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-JtBTf",
+    "fen": "4r1k1/5p1p/2p3p1/2P2b2/7Q/1P2B3/Pq3PPP/2R3K1 w - - 7 30",
+    "setupMove": "h4d4",
+    "solution": [
+      "b2c1",
+      "e3c1",
+      "e8e1"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-JzfEl",
+    "fen": "r1b2rk1/1pp2p2/p1np1qpQ/2b1p1p1/2B1P3/P1PP4/1P3PPP/R1B1RNK1 w - - 2 14",
+    "setupMove": "c1g5",
+    "solution": [
+      "f6f2",
+      "g1h1",
+      "f2g1"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-K3NHB",
+    "fen": "4r1k1/1pp2ppp/3p3r/p1bQn3/2P4q/1P2P1N1/PBB2Pb1/R4RK1 w - - 0 18",
+    "setupMove": "d5g2",
+    "solution": [
+      "e5f3",
+      "g2f3",
+      "h4h2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-K8zKK",
+    "fen": "5r2/3q2kp/1pr1p1pQ/p2p1p2/P2P2PR/1PP2P1P/8/R5K1 b - - 1 31",
+    "setupMove": "g7h8",
+    "solution": [
+      "h6f8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-KH0WK",
+    "fen": "2r2rk1/5ppp/4p3/3p2Q1/3B4/5P2/q5PP/4R1K1 b - - 1 27",
+    "setupMove": "a2c2",
+    "solution": [
+      "g5g7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-LCAE2",
+    "fen": "r4r1k/4R1pp/p1np4/1p6/8/1B1Q4/PPP2qPP/3R3K w - - 1 19",
+    "setupMove": "e7e2",
+    "solution": [
+      "f2f1",
+      "d1f1",
+      "f8f1"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-LFNQ7",
+    "fen": "4k3/7Q/5p2/p7/P7/5NPK/1P3nP1/3q4 w - - 0 33",
+    "setupMove": "h3h4",
+    "solution": [
+      "d1h1",
+      "f3h2",
+      "h1h2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-LL7oq",
+    "fen": "4k2r/4b3/p2BR3/6p1/PQ1P3p/1P3P2/5P1P/2q3K1 w k - 1 27",
+    "setupMove": "g1g2",
+    "solution": [
+      "h4h3",
+      "g2g3",
+      "c1g1"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-LMyT3",
+    "fen": "r1bqk2r/ppp2ppp/2np4/3Qp3/2B1n2P/2P2N2/PPP2PP1/R1B2RK1 b kq - 1 8",
+    "setupMove": "c8f5",
+    "solution": [
+      "d5f7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-LNoQj",
+    "fen": "r2q2kr/ppp3pn/2n5/2b1N2p/4P1b1/1QPP4/PP4PP/RNB2R1K b - - 2 12",
+    "setupMove": "g4e6",
+    "solution": [
+      "b3e6"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-LOaGf",
+    "fen": "4rbk1/pp4p1/2pp3B/8/2n1P1Q1/PqN4P/1P4P1/5RK1 b - - 5 25",
+    "setupMove": "c4e5",
+    "solution": [
+      "f1f8",
+      "e8f8",
+      "g4g7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-LWpz8",
+    "fen": "rnbqk2r/ppp4p/3bp3/3pNpp1/3PBB2/2P1P3/PP3PPP/RN1QK2R b KQkq - 0 9",
+    "setupMove": "g5f4",
+    "solution": [
+      "d1h5",
+      "e8f8",
+      "h5f7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-LXUy0",
+    "fen": "r1b2k1r/1ppp1p1p/p1n5/2q2N2/4n3/P1N5/1PP2PPP/R2QKB1R w KQ - 0 12",
+    "setupMove": "d1g4",
+    "solution": [
+      "c5f2",
+      "e1d1",
+      "f2d2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-LbDTN",
+    "fen": "r1b2Qk1/p4ppp/1p6/8/2P5/2P3B1/PPq2PPP/R3R1K1 b - - 0 17",
+    "setupMove": "g8f8",
+    "solution": [
+      "g3d6",
+      "f8g8",
+      "e1e8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-LmMVQ",
+    "fen": "8/7k/4R3/7p/PP4p1/1r4P1/7r/2KR4 b - - 7 44",
+    "setupMove": "b3b4",
+    "solution": [
+      "d1d7",
+      "h7h8",
+      "e6e8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-MBW71",
+    "fen": "7k/2q3pp/1p1n1p2/3Q4/3P4/P3P1PP/1P3P1K/8 b - - 0 29",
+    "setupMove": "d6c4",
+    "solution": [
+      "d5a8",
+      "c7b8",
+      "a8b8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-MPjRE",
+    "fen": "r3r1k1/pp3pp1/4pqp1/6N1/2Pp3Q/8/PP4PP/5RK1 b - - 1 20",
+    "setupMove": "f6e5",
+    "solution": [
+      "h4h7",
+      "g8f8",
+      "f1f7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-MQK2t",
+    "fen": "r2r2k1/pp3pp1/3p1q1p/8/1P6/2PQ4/P1Bn1PPP/4RRK1 b - - 2 23",
+    "setupMove": "d2f1",
+    "solution": [
+      "d3h7",
+      "g8f8",
+      "h7h8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-MRQnX",
+    "fen": "r1b1kbnr/2Np1ppp/p1p5/1p2q3/3pP3/1B3Q2/PPPP1PPP/R1B1K2R b KQkq - 1 10",
+    "setupMove": "e5c7",
+    "solution": [
+      "f3f7",
+      "e8d8",
+      "f7f8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-MSs0H",
+    "fen": "1n3rk1/p2p1p1p/1p2pp2/2b1P3/4Qnb1/3B4/PPP1N2P/R2KB1q1 b - - 5 18",
+    "setupMove": "f4e2",
+    "solution": [
+      "e4h7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-MTCGa",
+    "fen": "8/1p4r1/p4Q1k/4P1p1/3Pp2q/1P1nP2P/P6K/6R1 b - - 4 34",
+    "setupMove": "g7g6",
+    "solution": [
+      "f6h8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-N0654",
+    "fen": "3r2r1/5p2/p3pPPk/1p2P3/4p3/8/1P2K1R1/6R1 b - - 0 39",
+    "setupMove": "g8g6",
+    "solution": [
+      "g2h2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-NLDBd",
+    "fen": "r1b1k2r/p4ppp/2pq4/1p1P4/4p1n1/PBP1B3/2P2PPP/R2Q1RK1 w kq - 1 14",
+    "setupMove": "d5c6",
+    "solution": [
+      "d6h2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-NehjM",
+    "fen": "8/5k2/2p1bp2/2Npp1p1/1P4Pp/2PR1r1K/2R4P/6r1 w - - 0 36",
+    "setupMove": "d3f3",
+    "solution": [
+      "e6g4"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-NgJNL",
+    "fen": "1r2r1k1/p1p2p1p/b5p1/2RB1P2/8/1P4Q1/4q1PP/3R3K w - - 1 23",
+    "setupMove": "f5g6",
+    "solution": [
+      "e2d1",
+      "g3e1",
+      "e8e1"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-NwBWe",
+    "fen": "r2qkbnr/1pp2p2/2np3p/PB1N2p1/3PPpb1/5N2/2P3PP/R1BQ1RK1 b kq - 0 13",
+    "setupMove": "g8e7",
+    "solution": [
+      "d5f6"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-O4xad",
+    "fen": "2r2rk1/1p3pp1/p7/4b1P1/3R2QB/1N2p3/PPq4P/K6R w - - 4 29",
+    "setupMove": "h1c1",
+    "solution": [
+      "c2c1",
+      "b3c1",
+      "c8c1"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-OnoUh",
+    "fen": "2r3k1/3bQp1p/4p3/qp3p2/3P1P2/pP2R3/P1B3PP/2K5 b - - 5 29",
+    "setupMove": "a5c7",
+    "solution": [
+      "e3g3",
+      "g8h8",
+      "e7f6"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-P9G4F",
+    "fen": "r7/1pq1pQ1k/n2p2p1/8/4P3/pPb1r3/P1P5/2KR4 b - - 1 25",
+    "setupMove": "c3g7",
+    "solution": [
+      "d1h1",
+      "e3h3",
+      "h1h3"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-PIhHx",
+    "fen": "5k1r/2Rb4/pr3qp1/3B1n1p/5P2/8/1PPQ4/2KR4 w - - 0 29",
+    "setupMove": "c7d7",
+    "solution": [
+      "f6b2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-PO11l",
+    "fen": "8/5R2/4p3/1B4pk/P6p/4RP2/4K3/6rr w - - 1 50",
+    "setupMove": "b5d3",
+    "solution": [
+      "g1g2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-PS1Zc",
+    "fen": "2r1r1k1/1p4p1/p5pp/3p1p2/1P1P1b2/2PBN2q/P2Q1P2/2R1R1K1 w - - 0 27",
+    "setupMove": "d3f1",
+    "solution": [
+      "h3h2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-Q9hyS",
+    "fen": "r1b3k1/p1b3pp/1q6/3p1p1Q/4nPr1/2p1R1P1/PP5P/R1B3K1 b - - 1 27",
+    "setupMove": "c3b2",
+    "solution": [
+      "h5e8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-QAPJp",
+    "fen": "r4q1r/pbpk2pp/1pnb1p2/4pP1Q/2B5/4N3/PPP2PPP/R1B2RK1 b - - 8 16",
+    "setupMove": "a8d8",
+    "solution": [
+      "c4e6",
+      "d7e7",
+      "e3d5"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-QfpDJ",
+    "fen": "1r4k1/6pp/p6r/q1p1PQ2/2Pp4/6P1/P4R1P/5RK1 b - - 0 30",
+    "setupMove": "a5c7",
+    "solution": [
+      "f5f8",
+      "b8f8",
+      "f2f8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-RAusD",
+    "fen": "4r1k1/2q2pp1/7p/p1pP1N2/PpP3Q1/2b4P/2R2PP1/3Rr1K1 w - - 5 33",
+    "setupMove": "d1e1",
+    "solution": [
+      "e8e1"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-RIbLS",
+    "fen": "r4rk1/7p/1qp1nPpQ/3p2N1/p7/2N5/PP3P1P/1R4K1 b - - 3 27",
+    "setupMove": "e6g5",
+    "solution": [
+      "h6g7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-ROXmM",
+    "fen": "8/5Bp1/5p1k/8/4R3/1P2KP1p/6qP/8 b - - 3 44",
+    "setupMove": "g2h2",
+    "solution": [
+      "e4h4",
+      "h6g5",
+      "h4h5"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-RSwzO",
+    "fen": "7k/5Q1p/p2pB1pq/4b3/2p5/2P3PP/5P1K/8 b - - 2 36",
+    "setupMove": "h6g7",
+    "solution": [
+      "f7e8",
+      "g7f8",
+      "e8f8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-RTEfm",
+    "fen": "r5kr/1ppbR3/p2p1P1n/6N1/3P2P1/2P4P/P4P2/6K1 b - - 2 26",
+    "setupMove": "d7e8",
+    "solution": [
+      "e7g7",
+      "g8f8",
+      "g5e6"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-Rlt8A",
+    "fen": "r1bq1rk1/ppp1bpp1/5n1p/4n1B1/3pP3/2PP4/PP1NN1PP/R2QKB1R w KQ - 0 10",
+    "setupMove": "g5f6",
+    "solution": [
+      "e5d3"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-SbvpN",
+    "fen": "2k4r/p3Q3/2p1Pn2/8/q4BP1/5P2/4BK2/8 b - - 0 29",
+    "setupMove": "a4f4",
+    "solution": [
+      "e2a6",
+      "c8b8",
+      "e7b7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-Sh0jE",
+    "fen": "3r4/4ppk1/6p1/4Pn2/p4n1P/3B1P1R/PPP5/1NK5 w - - 2 24",
+    "setupMove": "d3f5",
+    "solution": [
+      "f4e2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-SzhgC",
+    "fen": "rnb2k2/6pQ/p3pbPR/8/1p3q2/2N2N2/PP1R1PP1/2K5 b - - 2 22",
+    "setupMove": "b4c3",
+    "solution": [
+      "h7h8",
+      "f8e7",
+      "h8d8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-TDOo2",
+    "fen": "rnq2b1k/pp3RpB/6QB/3pP3/2nN2b1/2N5/PP4PP/6K1 b - - 5 22",
+    "setupMove": "c4e5",
+    "solution": [
+      "h6g7",
+      "f8g7",
+      "g6g7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-TF93f",
+    "fen": "r3r1k1/pp2bR2/4q1pQ/3p4/3P4/2P4P/PP4P1/5RK1 b - - 0 33",
+    "setupMove": "e7f8",
+    "solution": [
+      "h6h7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-TK6Fy",
+    "fen": "2r3k1/pp3pp1/2n2n1p/5B2/8/2q3BP/P3QP2/4R1K1 b - - 3 26",
+    "setupMove": "c8e8",
+    "solution": [
+      "e2e8",
+      "f6e8",
+      "e1e8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-TTe3A",
+    "fen": "5rk1/5ppp/2b5/6q1/2Qp4/5P2/BPP3PP/4R1K1 b - - 0 28",
+    "setupMove": "c6f3",
+    "solution": [
+      "c4f7",
+      "f8f7",
+      "e1e8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-TtwCs",
+    "fen": "2R5/p7/4Nkpp/4pp2/3p3P/1P1P1PK1/P4QP1/3q3r w - - 2 39",
+    "setupMove": "e6d4",
+    "solution": [
+      "f5f4",
+      "g3g4",
+      "h6h5"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-UAHYf",
+    "fen": "6k1/5p2/1p2q3/r6p/1Q1p1P1K/6PP/3R4/8 w - - 3 40",
+    "setupMove": "b4d4",
+    "solution": [
+      "e6e7",
+      "d4f6",
+      "e7f6"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-UCpBq",
+    "fen": "1Q6/4r3/1p3q1k/p4pp1/4p3/4P1P1/4BPK1/8 b - - 1 55",
+    "setupMove": "e7g7",
+    "solution": [
+      "b8h8",
+      "g7h7",
+      "h8f6"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-UabDt",
+    "fen": "r1b2rk1/p4ppp/1p1bp3/4q3/3NB3/2P5/PP2QPPP/R4RK1 w - - 2 19",
+    "setupMove": "e4a8",
+    "solution": [
+      "e5h2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-Ucjng",
+    "fen": "4rrk1/p1q1bpp1/2p5/1p1n2Nb/2PPNp1P/5P2/PPQ1B3/1K1R3R b - - 0 22",
+    "setupMove": "d5e3",
+    "solution": [
+      "e4f6",
+      "e7f6",
+      "c2h7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-UfMUC",
+    "fen": "2k3r1/pp3p2/2pqp1r1/1P1p3p/P2P4/2P2n1B/4P2Q/R6K w - - 0 27",
+    "setupMove": "h2d6",
+    "solution": [
+      "g6g1",
+      "a1g1",
+      "g8g1"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-UhiU4",
+    "fen": "rR3k1q/4pr2/3p2Q1/p2P4/2Pp1Pp1/8/P1B3P1/1R4K1 b - - 2 32",
+    "setupMove": "a8b8",
+    "solution": [
+      "b1b8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-UimXs",
+    "fen": "rn1q1rk1/ppp1Nb1p/3b1p2/3p3Q/3P4/2PB4/PP3PPP/RN3RK1 b - - 2 13",
+    "setupMove": "d8e7",
+    "solution": [
+      "h5h7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-UqW5E",
+    "fen": "r3kb1r/1pqQ1pp1/2p3b1/4p1B1/p3nP1P/2N4B/PPP1N3/2KR3R b kq - 0 16",
+    "setupMove": "c7d7",
+    "solution": [
+      "h3d7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-V6clr",
+    "fen": "r7/2qb3k/p1pbprNp/7P/3Pp1Q1/2P5/PP3P2/R3K1R1 b Q - 2 21",
+    "setupMove": "e6e5",
+    "solution": [
+      "g6f8",
+      "a8f8",
+      "g4g7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-VZjlY",
+    "fen": "r3r2k/3bqB1Q/p4n2/1pP1p1N1/8/7R/PP3PPP/5RK1 b - - 0 25",
+    "setupMove": "f6h7",
+    "solution": [
+      "h3h7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-W0GLS",
+    "fen": "r4rk1/ppp2ppp/8/3qP3/3n4/2PB3b/PP5P/R1BQ1RK1 w - - 0 14",
+    "setupMove": "c3d4",
+    "solution": [
+      "d5g2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-WHLdW",
+    "fen": "8/5R2/3pn3/Q7/1prk4/8/PP4rP/Kq6 w - - 0 38",
+    "setupMove": "a1b1",
+    "solution": [
+      "g2g1",
+      "f7f1",
+      "g1f1"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-WJTFs",
+    "fen": "4k3/1p3pp1/2p1p1p1/4b3/p1B3P1/4q2K/PP6/1R1Q1R2 w - - 1 23",
+    "setupMove": "d1f3",
+    "solution": [
+      "e3h6",
+      "h3g2",
+      "h6h2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-WRRZK",
+    "fen": "2r1r1k1/3q3p/1p4pB/p7/3PpQn1/P3P2R/1P5P/5RK1 b - - 3 32",
+    "setupMove": "c8c6",
+    "solution": [
+      "f4f8",
+      "e8f8",
+      "f1f8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-WS2rt",
+    "fen": "r3r1k1/3b1ppp/3p4/2p5/Np5q/1P2PQ1P/PBN5/5RK1 b - - 1 20",
+    "setupMove": "d7h3",
+    "solution": [
+      "f3f7",
+      "g8h8",
+      "f7g7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-WZFk6",
+    "fen": "4N2k/1p4pp/p7/2pB4/3npbb1/2B5/PPP3PP/1K6 b - - 5 27",
+    "setupMove": "d4e2",
+    "solution": [
+      "c3g7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-WsICt",
+    "fen": "3r2k1/1Q4pp/5p2/6q1/5K2/P4P1P/1b6/3RR3 w - - 1 30",
+    "setupMove": "f4e4",
+    "solution": [
+      "f6f5"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-Wvh1b",
+    "fen": "8/6pk/8/P3Q1pp/5nq1/6P1/1P3PKP/5R2 w - - 7 38",
+    "setupMove": "g2h1",
+    "solution": [
+      "g4f3",
+      "h1g1",
+      "f4h3"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-XFdO9",
+    "fen": "8/2Q4p/6pk/2P5/1P6/6PK/7P/5q2 w - - 1 55",
+    "setupMove": "h3g4",
+    "solution": [
+      "f1f5",
+      "g4h4",
+      "g6g5"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-XwK3I",
+    "fen": "2rr2k1/1b3ppp/p3pbq1/1p3n2/3P1P2/4B1N1/PPN3PP/2RQ1RK1 w - - 1 20",
+    "setupMove": "g3f5",
+    "solution": [
+      "g6g2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-Y89AA",
+    "fen": "8/3B2p1/6kp/4b3/P1P5/1R3PK1/r6P/8 w - - 4 33",
+    "setupMove": "g3h3",
+    "solution": [
+      "a2h2",
+      "h3g4",
+      "h6h5"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-Y8KkE",
+    "fen": "3r3k/p4p1p/1pQ5/2p2p1p/2P5/6RK/PP6/3q4 b - - 1 35",
+    "setupMove": "d1d7",
+    "solution": [
+      "c6f6"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-Y9YKF",
+    "fen": "2kr3r/ppp2ppp/2n1p2q/b2P4/4Q3/2P4N/PP3BPP/R3KB1R w KQ - 1 14",
+    "setupMove": "d5c6",
+    "solution": [
+      "h6d2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-YBmw7",
+    "fen": "5rk1/pR3ppp/q2p4/2b1r3/8/PQ2BP2/2N2P1P/5RK1 w - - 3 22",
+    "setupMove": "e3c5",
+    "solution": [
+      "e5g5",
+      "g1h1",
+      "a6f1"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-YDkn1",
+    "fen": "4r1k1/p3qppp/1npb4/8/8/1P3b1P/P1QN1PP1/R1B3K1 w - - 0 20",
+    "setupMove": "d2f3",
+    "solution": [
+      "e7e1",
+      "f3e1",
+      "e8e1"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-YENU9",
+    "fen": "2krn2r/Bppqb3/4bp2/8/2N4p/PP1PP2p/4BPP1/2RQ1RK1 b - - 0 18",
+    "setupMove": "h3g2",
+    "solution": [
+      "c4b6"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-YGePq",
+    "fen": "8/pp6/2k4r/3b4/5P2/1P1Qp3/P5R1/6K1 w - - 1 50",
+    "setupMove": "g2e2",
+    "solution": [
+      "h6h1"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-Yeprw",
+    "fen": "r5k1/pp3p2/2q2Pp1/4p1Np/1b1P3Q/8/PPr3PP/1R3R1K w - - 2 24",
+    "setupMove": "d4e5",
+    "solution": [
+      "c6g2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-YsK1h",
+    "fen": "r5k1/1b2r1p1/p2qB2p/1pp1NP2/3Pn3/P1P3Q1/6RP/5RK1 b - - 0 26",
+    "setupMove": "e7e6",
+    "solution": [
+      "g3g7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-ZBKXs",
+    "fen": "1r4k1/5p1p/4p1p1/1q1pP3/3Q4/5P2/p1nR2PP/K1R5 w - - 2 30",
+    "setupMove": "d2c2",
+    "solution": [
+      "b5b1",
+      "c1b1",
+      "a2b1q"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-ZSGxM",
+    "fen": "8/3b4/p2Qn1kp/8/1pP1P2q/5r2/PBP2PpP/3RR1K1 w - - 1 32",
+    "setupMove": "d6e5",
+    "solution": [
+      "h4f2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-Zrics",
+    "fen": "4r3/p1p2kpp/8/1p3bq1/1b1p4/3P1Q2/PP1BBPPP/RN2K2R w KQ - 5 17",
+    "setupMove": "d2b4",
+    "solution": [
+      "g5c1"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-aJ5e9",
+    "fen": "3r3k/pp6/b5Q1/4q2p/2p5/2N4P/PP6/5R1K b - - 1 34",
+    "setupMove": "d8g8",
+    "solution": [
+      "g6h6"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-aLmyY",
+    "fen": "r1b5/pp1pN1pk/4p3/q7/3P4/P3P1p1/1PQ2rPP/R5KR b - - 0 20",
+    "setupMove": "f2c2",
+    "solution": [
+      "h2g3",
+      "a5h5",
+      "h1h5"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-aX9Rb",
+    "fen": "1r4k1/5pp1/4p1p1/8/R7/7P/2Q3PK/5q2 b - - 2 39",
+    "setupMove": "b8b1",
+    "solution": [
+      "c2c8",
+      "g8h7",
+      "a4h4"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-agweb",
+    "fen": "r3r1k1/1p1b1pp1/1q1p3p/3Pp2n/p1P1P3/1P3N1P/P2NQ1P1/R4R1K w - - 1 21",
+    "setupMove": "f3h2",
+    "solution": [
+      "h5g3"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-aiWH5",
+    "fen": "r1b1r1k1/pp3ppp/2n2n2/q2p1P2/3P2N1/P1PB4/1BQ3PP/4RRK1 b - - 4 18",
+    "setupMove": "f6g4",
+    "solution": [
+      "e1e8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-aol4C",
+    "fen": "1r2k2r/1b3pbp/p1q1pnp1/1pP5/8/2P1BN2/PP3PPP/RN1Q1RK1 w k - 3 15",
+    "setupMove": "f3d4",
+    "solution": [
+      "c6g2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-b8DNo",
+    "fen": "r4rk1/1bq2pp1/p3p2Q/1pnp2R1/3P4/2PB3P/PP3PP1/R5K1 b - - 0 19",
+    "setupMove": "c5d3",
+    "solution": [
+      "h6g7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-bB0W2",
+    "fen": "5b1k/R1Q5/3p1q2/3PpN2/4P1pp/3B1b2/6rP/5K2 b - - 7 43",
+    "setupMove": "g2h2",
+    "solution": [
+      "c7h7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-bPFf1",
+    "fen": "r2k2N1/pb1nb3/1p2B2R/4P3/2pPq3/2P3P1/P1P4P/R1BQ2K1 w - - 3 24",
+    "setupMove": "g8e7",
+    "solution": [
+      "e4g2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-bR9Xq",
+    "fen": "1b3r2/p2k4/Pp5p/1Np3p1/2P5/2BR2nP/5r2/3R2K1 b - - 0 42",
+    "setupMove": "d7c6",
+    "solution": [
+      "d3d6",
+      "b8d6",
+      "d1d6"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-bmM9W",
+    "fen": "3r4/8/p1kpRK1r/1p3P2/8/8/PP6/3R4 w - - 1 39",
+    "setupMove": "f6e7",
+    "solution": [
+      "d8d7",
+      "e7f8",
+      "h6h8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-brh8h",
+    "fen": "5Nk1/p4pp1/1p5p/2bN4/2P1P3/3n2Pb/P4P1P/1R4KB w - - 1 27",
+    "setupMove": "f8d7",
+    "solution": [
+      "c5f2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-cEYWa",
+    "fen": "7k/p1PQ3p/1p3p1q/1P6/4b3/P3PPp1/8/5R1K w - - 1 39",
+    "setupMove": "h1g1",
+    "solution": [
+      "h6h2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-cFthG",
+    "fen": "rnb1k2r/pppp1pp1/3b4/8/3PB3/4N1pq/PPP2P1P/RNBQ1RK1 w kq - 0 12",
+    "setupMove": "f2g3",
+    "solution": [
+      "h3h2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-cRjL2",
+    "fen": "r4r1k/1p3P1p/3bPQq1/p2p4/6PP/7K/1B6/2R5 b - - 0 31",
+    "setupMove": "g6f6",
+    "solution": [
+      "b2f6"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-cZZMr",
+    "fen": "2k2brr/1pp2p2/p3q2p/3Np1P1/4P2P/2Q5/PPP2P2/2KR3R b - - 1 20",
+    "setupMove": "h6g5",
+    "solution": [
+      "c3c7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-cw7cp",
+    "fen": "6k1/1bp2q2/p2p2pp/1p3r2/3B1P2/2P1Q3/1P5P/5RK1 b - - 2 27",
+    "setupMove": "f7d5",
+    "solution": [
+      "e3e8",
+      "f5f8",
+      "e8g6"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-dFuUA",
+    "fen": "1R6/2r3kp/4Bpp1/2q1p3/8/3p2QP/2P3P1/7K b - - 1 32",
+    "setupMove": "d3c2",
+    "solution": [
+      "b8g8",
+      "g7h6",
+      "g3h4"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-dGx6b",
+    "fen": "5k2/Q5p1/3p1p1q/p3p3/2r5/6P1/P1P4P/1R4K1 b - - 0 31",
+    "setupMove": "c4c2",
+    "solution": [
+      "b1b8",
+      "c2c8",
+      "b8c8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-dIjWH",
+    "fen": "4r1k1/1p2qppp/3p4/pNb1n3/2P5/P3P1Rb/1PQBr3/2K3R1 b - - 1 21",
+    "setupMove": "e2d2",
+    "solution": [
+      "g3g7",
+      "g8h8",
+      "c2h7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-dMB6M",
+    "fen": "4r1k1/3p1p1p/p1b3p1/1p3n2/5Q2/1B5P/PP3PP1/6K1 w - - 0 25",
+    "setupMove": "g2g4",
+    "solution": [
+      "e8e1",
+      "g1h2",
+      "e1h1"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-dWDL1",
+    "fen": "r1b4k/ppp2ppp/2p3n1/4P2Q/8/3B3P/PPP2qP1/R1B4K b - - 0 18",
+    "setupMove": "g6h4",
+    "solution": [
+      "h5h7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-dv9kK",
+    "fen": "2r3k1/1p3ppp/1r2b3/p3p2P/4B1P1/1P3P2/1KPR4/3R4 b - - 1 31",
+    "setupMove": "a5a4",
+    "solution": [
+      "d2d8",
+      "c8d8",
+      "d1d8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-eNpsX",
+    "fen": "5r2/5kp1/p1p1p1Qp/P1Npb3/1P1q4/3B3P/6P1/7K b - - 3 30",
+    "setupMove": "f7e7",
+    "solution": [
+      "g6e6",
+      "e7d8",
+      "e6d7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-eUVSx",
+    "fen": "b2r1r1k/2p3pp/2p1R3/p1N5/2QP4/1PP5/P4qPP/4R2K w - - 2 24",
+    "setupMove": "e6e2",
+    "solution": [
+      "f2f1",
+      "e1f1",
+      "f8f1"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-efvHT",
+    "fen": "r2qkb1r/pp1nnp2/4p1p1/1N1p2Pp/3P1B1P/3Q1P2/PPP5/2KR2NR b kq - 1 14",
+    "setupMove": "a8c8",
+    "solution": [
+      "b5d6"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-esrt7",
+    "fen": "r1b1kbnr/ppp2ppp/2N5/8/3q1B2/2N5/PPP3PP/R2QKB1R b KQkq - 0 9",
+    "setupMove": "d4f4",
+    "solution": [
+      "d1d8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-f4ZN7",
+    "fen": "r7/3pk3/PKnb4/7R/2P5/2BP3P/8/8 w - - 5 51",
+    "setupMove": "c4c5",
+    "solution": [
+      "a8b8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-f4ft1",
+    "fen": "2k3r1/1pp2R2/p2p1P2/5P1p/PP5p/7K/3r4/R2N4 w - - 3 36",
+    "setupMove": "h3h4",
+    "solution": [
+      "d2h2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-f5L0O",
+    "fen": "r2q1bkr/pp2p2p/4b1p1/1B6/3nQ3/1P6/PBPP1PPP/R3K2R b KQ - 4 14",
+    "setupMove": "d4b5",
+    "solution": [
+      "e4e6"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-fDnRg",
+    "fen": "8/1R5R/r1kp1r1p/p5p1/4P3/2P3P1/5PK1/8 b - - 4 34",
+    "setupMove": "a5a4",
+    "solution": [
+      "h7c7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-fay0e",
+    "fen": "r1b1kb1r/ppp1qppp/3p4/3N4/2Qn4/2n5/PPPP1PPP/RNB1KB1R w KQkq - 4 9",
+    "setupMove": "d5e7",
+    "solution": [
+      "d4c2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-frg8g",
+    "fen": "4r1k1/4pp2/b2p2pQ/p2P2N1/2P5/2R4P/1q4PK/2r5 b - - 1 35",
+    "setupMove": "b2c3",
+    "solution": [
+      "h6h7",
+      "g8f8",
+      "h7f7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-gfXsl",
+    "fen": "1r1q1r2/ppp3pk/2np1pNp/3Bp3/4P3/P2PP2P/1PP2QP1/R4RK1 b - - 0 16",
+    "setupMove": "h7g6",
+    "solution": [
+      "f2f5"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-gmsEM",
+    "fen": "r5k1/pppqn2p/3R2pQ/2Pp4/3B4/PP2P1P1/7P/6K1 b - - 4 29",
+    "setupMove": "c7d6",
+    "solution": [
+      "h6g7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-gt4hu",
+    "fen": "6r1/8/2N5/2k5/K7/1R6/8/8 w - - 20 87",
+    "setupMove": "c6e7",
+    "solution": [
+      "g8a8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-gwtbj",
+    "fen": "1k1r4/2p3Qp/p7/2p5/5P2/2N5/Pq4PP/R6K w - - 0 27",
+    "setupMove": "a1b1",
+    "solution": [
+      "b2b1",
+      "c3b1",
+      "d8d1"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-h4chz",
+    "fen": "r1b3rk/p1pn2bp/1p2pqp1/3pN3/2PPpP2/BP2P3/P2NQ1PP/R4RK1 b - - 0 15",
+    "setupMove": "f6h4",
+    "solution": [
+      "e5f7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-hC4r0",
+    "fen": "2k5/ppp2Rb1/4P2p/6p1/8/2P3K1/P3r1PP/8 b - - 2 30",
+    "setupMove": "g7c3",
+    "solution": [
+      "f7f8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-hMSpN",
+    "fen": "5k2/1R6/1p3Kp1/4P3/7r/8/8/8 b - - 1 48",
+    "setupMove": "h4b4",
+    "solution": [
+      "b7b8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-hMj01",
+    "fen": "rnb1k1nr/pp1p1ppp/1q2p3/2b5/8/2N5/PPPBPPPP/R2QKBNR w KQkq - 2 5",
+    "setupMove": "g1f3",
+    "solution": [
+      "c5f2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-hPt3U",
+    "fen": "k2r3r/pp4p1/4N3/4Q1P1/2p3P1/3q4/P4RK1/R7 w - - 8 28",
+    "setupMove": "e6d8",
+    "solution": [
+      "d3h3",
+      "g2g1",
+      "h3h1"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-hZnqa",
+    "fen": "5r1k/1p4p1/p1pp3p/4p3/4K1PP/2PP4/PP3Pn1/3RR3 w - - 1 27",
+    "setupMove": "e1h1",
+    "solution": [
+      "f8f4"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-haysC",
+    "fen": "5r1k/6p1/3p3p/3Q2b1/1pB5/1P5n/1NP3PP/R5qK w - - 9 33",
+    "setupMove": "a1g1",
+    "solution": [
+      "h3f2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-hbKHH",
+    "fen": "8/1r3pk1/4p1p1/7p/2RN4/KP1n2P1/5P1P/8 w - - 9 35",
+    "setupMove": "c4c2",
+    "solution": [
+      "b7a7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-hbkzW",
+    "fen": "r4r1k/1bpqbppN/p1n2n2/1p2pN2/4p3/1B1P2QP/PPP2PP1/R1B2RK1 b - - 0 16",
+    "setupMove": "h8h7",
+    "solution": [
+      "g3g7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-hhlSm",
+    "fen": "rb2r1k1/pp3pp1/2p4p/5Q2/N1NP3q/P3P2P/1P4p1/2R2R1K w - - 0 22",
+    "setupMove": "h1g2",
+    "solution": [
+      "h4g3",
+      "g2h1",
+      "g3h2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-hpkNr",
+    "fen": "1k1r4/ppp4p/3p4/1N1Q2p1/P3P3/3Pqp2/1PP5/R4K2 w - - 0 29",
+    "setupMove": "d5d4",
+    "solution": [
+      "e3e2",
+      "f1g1",
+      "e2g2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-i2sNG",
+    "fen": "5r1k/pb2q1p1/1p2p3/2n1P1NQ/3pB2P/4R1r1/PP6/R6K b - - 1 26",
+    "setupMove": "h8g8",
+    "solution": [
+      "h5h7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-i53Hn",
+    "fen": "5b2/p4B1k/5q1p/4p2Q/P2p2r1/3P1P1P/1Pr3P1/R1B3K1 w - - 0 26",
+    "setupMove": "f3g4",
+    "solution": [
+      "f6f2",
+      "g1h2",
+      "f2g2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-iQwrI",
+    "fen": "1k6/2PB4/1P5p/K7/6p1/8/6nP/5q2 b - - 0 48",
+    "setupMove": "b8b7",
+    "solution": [
+      "c7c8q"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-iTUD4",
+    "fen": "r3r1k1/pbp1qp2/1p3nBP/3p2Q1/3P4/2P1P3/P4PP1/R3K2R b KQ - 0 18",
+    "setupMove": "f6h7",
+    "solution": [
+      "g6h7",
+      "g8h7",
+      "g5g7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-icAPy",
+    "fen": "2r2rk1/2q1bppp/p1n1b3/1p5R/8/P3BN2/1PQ1BPPP/R5K1 b - - 2 18",
+    "setupMove": "c6a5",
+    "solution": [
+      "c2h7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-ii3Ul",
+    "fen": "r1b4k/1p4pp/2pp2Bq/p3p3/PP2P1nN/1QPP2P1/3N3P/5R1K b - - 0 19",
+    "setupMove": "h7g6",
+    "solution": [
+      "f1f8",
+      "h8h7",
+      "b3g8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-ilYj6",
+    "fen": "Q5k1/2p2ppp/pp6/2p3q1/P7/2P4P/1P3PP1/3rR1K1 b - - 0 21",
+    "setupMove": "d1d8",
+    "solution": [
+      "e1e8",
+      "d8e8",
+      "a8e8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-iuYXo",
+    "fen": "3r3k/5Q2/4p1p1/p2bP1qp/Pp6/1P1P3P/1PR3P1/5R1K w - - 3 40",
+    "setupMove": "c2c7",
+    "solution": [
+      "g5g2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-j0HDJ",
+    "fen": "8/1R3p2/6kp/6p1/5rPP/6K1/5P2/8 b - - 0 45",
+    "setupMove": "f7f6",
+    "solution": [
+      "h4h5"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-jLN5E",
+    "fen": "r3r1k1/5ppp/ppp5/3pP3/1P4n1/PN3QPq/1BP2P1P/R4RK1 w - - 1 22",
+    "setupMove": "e5e6",
+    "solution": [
+      "h3h2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-jLzoT",
+    "fen": "1nrq1rk1/pb2bpp1/1p2p2p/4P3/3P4/P2Q1NN1/1P4PP/RB3RK1 b - - 6 18",
+    "setupMove": "b7a6",
+    "solution": [
+      "d3h7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-joqsH",
+    "fen": "1Q1k4/2N1pp2/2pp1qpr/p7/N1P3pP/P7/3K1P2/8 b - - 1 29",
+    "setupMove": "d8d7",
+    "solution": [
+      "a4b6"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-jpfGf",
+    "fen": "r1b1k2r/pp2n2p/2nb1N2/2p1p1B1/2B1P3/2P2P2/PP3P1P/R4RK1 b kq - 4 16",
+    "setupMove": "e8f8",
+    "solution": [
+      "g5h6"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-k7tcl",
+    "fen": "q3k2r/5pbp/p2B2p1/2p1p3/8/3P2Pb/PPQ1PP1P/R4RK1 w k - 2 17",
+    "setupMove": "c2c5",
+    "solution": [
+      "a8g2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-kXY4A",
+    "fen": "6k1/5p2/5P1p/3B2p1/p1P5/2r3PK/r7/4R3 b - - 1 33",
+    "setupMove": "a2a3",
+    "solution": [
+      "e1e8",
+      "g8h7",
+      "d5e4"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-kd3LS",
+    "fen": "k7/p4p2/Pn5R/6p1/2n1P3/8/5PPP/3r2NK b - - 0 32",
+    "setupMove": "d1e1",
+    "solution": [
+      "h6h8",
+      "b6c8",
+      "h8c8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-km38K",
+    "fen": "2B5/8/2P2pp1/p3b1k1/P3Pq2/7Q/6P1/3R1r1K w - - 7 44",
+    "setupMove": "d1f1",
+    "solution": [
+      "f4f1"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-l8AZl",
+    "fen": "r4rk1/ppp1nppp/6q1/2b1P3/2B1P3/2N2P1b/PPPR3P/R1BQ3K w - - 5 14",
+    "setupMove": "c3e2",
+    "solution": [
+      "g6g2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-lBGB6",
+    "fen": "3r4/1Q3k2/3P2pp/1p3p2/5b2/2q4P/5PP1/R5K1 b - - 1 38",
+    "setupMove": "f7f6",
+    "solution": [
+      "b7e7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-lDApR",
+    "fen": "1k6/pb5R/1p1p4/8/2pNp3/P1BnP3/1P2K3/6r1 b - - 1 34",
+    "setupMove": "b7c8",
+    "solution": [
+      "d4c6",
+      "b8a8",
+      "h7a7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-lVaJt",
+    "fen": "3r1r1k/pR4p1/2p2n1p/3qn3/B7/6Q1/6PP/1R5K b - - 9 34",
+    "setupMove": "d5d4",
+    "solution": [
+      "g3g7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-lWGMR",
+    "fen": "8/5kp1/1R5p/8/6P1/2r3KP/8/8 w - - 8 60",
+    "setupMove": "g3h4",
+    "solution": [
+      "g7g5",
+      "h4h5",
+      "c3h3"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-laSgv",
+    "fen": "r3k3/pp1nP3/2p5/3p1B2/5B2/1PP4r/P7/4R1K1 b q - 0 27",
+    "setupMove": "h3c3",
+    "solution": [
+      "f5g6"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-lgjKY",
+    "fen": "r1b1NQ2/ppk1rN2/1qn1p3/8/3p1P2/2P5/PP3bPP/R1BK3R b - - 1 24",
+    "setupMove": "e7e8",
+    "solution": [
+      "f8d6"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-m33Sw",
+    "fen": "r1bq2k1/ppp2ppp/3b4/4r2Q/8/2P5/P1P2PPP/2KR1B1R w - - 0 13",
+    "setupMove": "h5e5",
+    "solution": [
+      "d6a3",
+      "c1b1",
+      "d8d1"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-m77Sp",
+    "fen": "3r3k/1p6/p1b1Q2p/q3p3/8/P6P/1P3PP1/2R3K1 b - - 4 33",
+    "setupMove": "d8g8",
+    "solution": [
+      "e6h6"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-m9tg8",
+    "fen": "7k/7p/PN1p4/4bp2/1P2b2P/8/7K/R3nR2 w - - 3 34",
+    "setupMove": "h2h3",
+    "solution": [
+      "e4g2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-mMpzb",
+    "fen": "rn1qk1nr/1b1p2pp/1pp1pp2/p3N2Q/B3P3/2P5/PPP2PPP/R1B1K2R b KQkq - 1 9",
+    "setupMove": "e8f8",
+    "solution": [
+      "h5f7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-mc5zG",
+    "fen": "r2q1r2/1b3p1Q/2nbpk2/1p1p4/2pP4/P4N1P/3B1PP1/RB3RK1 b - - 0 18",
+    "setupMove": "f8h8",
+    "solution": [
+      "d2g5"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-mkuXp",
+    "fen": "3r1q1r/1kBbn3/Q1n2p2/2Pp3p/6pP/4P3/PP3PP1/R3KB1R b KQ - 0 21",
+    "setupMove": "b7c7",
+    "solution": [
+      "a6b6",
+      "c7c8",
+      "f1a6"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-mznqH",
+    "fen": "rn3k1r/p1p1n1pp/1p1pPq2/3P3Q/b1B2P2/B1P4N/P1P4P/2KR4 b - - 2 15",
+    "setupMove": "f6c3",
+    "solution": [
+      "h5f7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-nBfY6",
+    "fen": "5B1r/3p1Qpk/4p1p1/4P1Rp/b6P/3q1P1K/6P1/8 b - - 9 35",
+    "setupMove": "h8g8",
+    "solution": [
+      "g5h5",
+      "g6h5",
+      "f7h5"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-nCMo5",
+    "fen": "3r4/3r2k1/4N1p1/8/6P1/2K2R2/8/8 b - - 3 52",
+    "setupMove": "g7h6",
+    "solution": [
+      "f3h3"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-nxS8F",
+    "fen": "6k1/5ppp/2p2p2/8/3P1q2/7P/Pr3P1K/R5QR w - - 8 39",
+    "setupMove": "g1g3",
+    "solution": [
+      "b2f2",
+      "h2g1",
+      "f4g3"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-oVabq",
+    "fen": "3rnrk1/p3b3/4p1PQ/8/4p3/q1P5/P1P1KP1P/3R3R b - - 0 24",
+    "setupMove": "d8d1",
+    "solution": [
+      "h6h7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-ogPu5",
+    "fen": "6k1/5p2/1p4p1/5p1p/r5qP/4r1P1/PQ4R1/2R3K1 b - - 1 33",
+    "setupMove": "e3g3",
+    "solution": [
+      "c1c8",
+      "g8h7",
+      "b2h8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-omOIY",
+    "fen": "6k1/p4pp1/8/8/8/3r4/P1pN1PPP/2R3K1 w - - 0 28",
+    "setupMove": "d2b3",
+    "solution": [
+      "d3d1",
+      "c1d1",
+      "c2d1q"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-oySfl",
+    "fen": "8/3Q2p1/1p4kp/3p4/P2P2P1/2q5/4K3/8 b - - 5 45",
+    "setupMove": "c3d4",
+    "solution": [
+      "d7f5"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-pHcoM",
+    "fen": "2R2nk1/1p3rpp/4Q1p1/1B1pp3/8/6PP/5q2/7K b - - 1 38",
+    "setupMove": "f2f5",
+    "solution": [
+      "c8f8",
+      "g8f8",
+      "e6e8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-pL7tH",
+    "fen": "r4k1r/2p2ppp/pn3n2/5bN1/2K5/1BP5/PP3bPP/RNB2R2 w - - 2 18",
+    "setupMove": "c4b4",
+    "solution": [
+      "a6a5",
+      "b4a3",
+      "f2c5"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-pbEKV",
+    "fen": "5rk1/ppR2rp1/4Qb1p/4p3/8/4P1B1/Pq3PPP/2R3K1 w - - 0 26",
+    "setupMove": "c7f7",
+    "solution": [
+      "b2c1"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-pddj8",
+    "fen": "6k1/2pb1ppp/3b1n2/8/2BP4/2N1P3/1q5P/2Q2RrK w - - 2 25",
+    "setupMove": "h1g1",
+    "solution": [
+      "b2h2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-pgeT8",
+    "fen": "r4r1k/2p4p/pq4pQ/1p2np2/4N3/1BPnP2P/PP4P1/3R1RK1 b - - 2 25",
+    "setupMove": "f5e4",
+    "solution": [
+      "f1f8",
+      "a8f8",
+      "h6f8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-plObC",
+    "fen": "1q3b2/4N1pk/3pQ2p/3P4/2P5/1p1P2PP/r1b3BK/5R2 b - - 7 33",
+    "setupMove": "c2d3",
+    "solution": [
+      "e6g8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-pupUR",
+    "fen": "r4N1k/pp4pQ/1q1P1n1p/2b5/2B2pP1/7P/PP3R2/R4NK1 b - - 6 27",
+    "setupMove": "f6h7",
+    "solution": [
+      "f8g6"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-qCJU0",
+    "fen": "2r5/Q3pk1p/4bpp1/8/8/Pq6/1P1R2PP/K3R3 w - - 3 30",
+    "setupMove": "e1e6",
+    "solution": [
+      "c8c1"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-qLgVQ",
+    "fen": "2Q5/6kp/4R1p1/5p2/5qn1/1P6/1P2QPPP/4R1K1 w - - 1 39",
+    "setupMove": "e6e8",
+    "solution": [
+      "f4h2",
+      "g1f1",
+      "h2h1"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-qUy9O",
+    "fen": "r3k1nr/pp3ppp/1q2p3/3pP2b/3n4/PQ2B2P/1P1N1PP1/R3KB1R w KQkq - 0 13",
+    "setupMove": "b3b6",
+    "solution": [
+      "d4c2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-qV08N",
+    "fen": "2rq1r2/pp4pp/6k1/1Q3b2/5RP1/7P/P4P2/R5K1 b - - 0 27",
+    "setupMove": "f5d3",
+    "solution": [
+      "b5h5"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-qgKrL",
+    "fen": "7k/2R4p/1p6/n3p3/P4r2/7P/5bK1/3R4 b - - 3 35",
+    "setupMove": "a5c4",
+    "solution": [
+      "d1d8",
+      "f4f8",
+      "d8f8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-qmyc3",
+    "fen": "r5k1/2p1rpp1/p1nq3p/2p1p3/2P2P2/1P1P2QP/PB4P1/4RRK1 b - - 0 20",
+    "setupMove": "e5f4",
+    "solution": [
+      "g3g7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-qwma0",
+    "fen": "rk6/pb1nq3/2pNp3/Qp2P3/P1pP4/3n4/1P3PP1/1K3R2 b - - 0 23",
+    "setupMove": "e7h7",
+    "solution": [
+      "a5d8",
+      "b7c8",
+      "d8c8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-rEQPB",
+    "fen": "r1k3rQ/pp1R1p2/q3pN2/3pP3/3P4/8/P1PN1PP1/4K2R b K - 10 29",
+    "setupMove": "g8h8",
+    "solution": [
+      "h1h8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-rILdN",
+    "fen": "3r2rk/pp1b2p1/2p1p1Rp/7P/4QP1q/2PB4/PPP5/2K5 b - - 2 27",
+    "setupMove": "d7e8",
+    "solution": [
+      "g6h6",
+      "g7h6",
+      "e4h7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-rPdLn",
+    "fen": "4rk2/4Npp1/p6p/1r6/8/8/P4PPP/2R1R1K1 b - - 0 24",
+    "setupMove": "e8e7",
+    "solution": [
+      "c1c8",
+      "e7e8",
+      "e1e8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-rSny0",
+    "fen": "r4qk1/p2np1bp/1p1p2p1/8/4n3/2B5/PP3PP1/R2QKB1R w KQ - 0 17",
+    "setupMove": "c3g7",
+    "solution": [
+      "f8f2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-s2OHD",
+    "fen": "8/4R3/2r3p1/5kP1/2p4K/7p/3R2b1/8 b - - 4 42",
+    "setupMove": "c4c3",
+    "solution": [
+      "d2f2",
+      "g2f3",
+      "f2f3"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-s8NGj",
+    "fen": "6r1/p4q2/2p4k/2p1pP1P/3p1nQ1/2PP4/PP6/6RK w - - 0 41",
+    "setupMove": "g4g8",
+    "solution": [
+      "f7h5"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-sFx2R",
+    "fen": "6k1/p5pp/6b1/2q1PB2/5Pn1/2P3R1/P5PP/1Q4K1 w - - 1 30",
+    "setupMove": "g1f1",
+    "solution": [
+      "c5f2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-sOLji",
+    "fen": "4Q3/8/8/3N4/2p1Q1Pk/P7/1r2KR2/6q1 w - - 0 56",
+    "setupMove": "e2e3",
+    "solution": [
+      "g1f2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-sfDMI",
+    "fen": "r1b2rk1/ppb1nppp/2nqp3/8/4P3/1NN5/PP2BPPP/R1BQ1RK1 w - - 0 12",
+    "setupMove": "c3b5",
+    "solution": [
+      "d6h2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-swqET",
+    "fen": "rn1q3r/3bk1pp/2p2pn1/1p2pP1Q/p2pP3/P2P4/P1PB2PP/R4RK1 b - - 0 18",
+    "setupMove": "g6f4",
+    "solution": [
+      "d2b4",
+      "c6c5",
+      "b4c5"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-sxmMP",
+    "fen": "2k4r/1pp2Q2/p4p2/3p4/7p/3P1q2/PPP5/4R1K1 b - - 1 25",
+    "setupMove": "h4h3",
+    "solution": [
+      "e1e8",
+      "h8e8",
+      "f7e8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-t41Xv",
+    "fen": "6k1/8/3p2P1/PR6/2p4P/1pb5/3r4/1K3R2 w - - 0 40",
+    "setupMove": "f1f7",
+    "solution": [
+      "d2d1"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-tD80D",
+    "fen": "7r/4kpb1/1Q1p1q1p/4p1p1/8/P4N1P/1Pr2PP1/R1B1R1K1 w - - 0 24",
+    "setupMove": "f3d4",
+    "solution": [
+      "f6f2",
+      "g1h2",
+      "f2g2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-tIKQp",
+    "fen": "Nnb2b1r/1qB1kppp/p2p1n2/4p3/4P3/p7/PPP2PPP/R2QKB1R b KQ - 2 13",
+    "setupMove": "b7a8",
+    "solution": [
+      "d1d6",
+      "e7e8",
+      "d6d8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-tZWAR",
+    "fen": "2r3k1/p1r2ppp/QpR1p1q1/3n4/3P4/P3PN2/1B3PPP/2R3K1 b - - 0 19",
+    "setupMove": "c7c6",
+    "solution": [
+      "a6c8",
+      "c6c8",
+      "c1c8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-ti1SU",
+    "fen": "r4rk1/1b1pbp2/p1n1p3/1p2q1NQ/8/P2B2P1/1PP2PP1/R4RK1 b - - 0 18",
+    "setupMove": "e5g5",
+    "solution": [
+      "h5h7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-uFeJr",
+    "fen": "4r1k1/pp3ppp/2p5/8/2Pp4/3P2Pq/PQP1rP1P/R3RK2 w - - 6 22",
+    "setupMove": "f1g1",
+    "solution": [
+      "e2e1",
+      "a1e1",
+      "e8e1"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-uNOUU",
+    "fen": "1br1r1k1/pp3pB1/8/2pP1q2/7R/2P2N1P/PP1Q1P2/6K1 b - - 0 25",
+    "setupMove": "f5f3",
+    "solution": [
+      "h4h8",
+      "g8g7",
+      "d2h6"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-udel8",
+    "fen": "5rk1/5p1p/6p1/1Bp1q2n/3pP3/3PbP2/1PP3PP/R2Q1R1K w - - 0 21",
+    "setupMove": "f1e1",
+    "solution": [
+      "h5g3",
+      "h2g3",
+      "e5h5"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-ug4O8",
+    "fen": "6qk/pp2Q2p/2p5/3r3P/1P1b4/P1p5/6P1/4RR1K w - - 1 39",
+    "setupMove": "f1f8",
+    "solution": [
+      "d5h5",
+      "e7h4",
+      "h5h4"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-utRUN",
+    "fen": "5r1k/pp2RN1p/1np2p2/5N2/3P1q2/3B4/PPP2PP1/6K1 b - - 0 21",
+    "setupMove": "f8f7",
+    "solution": [
+      "e7e8",
+      "f7f8",
+      "e8f8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-v9l7u",
+    "fen": "r1br2k1/pp3pbp/2n3p1/4N3/4p3/2P4P/P3PPPB/R3KB1R w KQ - 2 14",
+    "setupMove": "e5c6",
+    "solution": [
+      "g7c3"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-vZZ5h",
+    "fen": "1r3r2/4q2k/b2p2p1/2pP1p1p/1p2PRnP/1P4N1/P5P1/1B2R1QK w - - 0 28",
+    "setupMove": "e4f5",
+    "solution": [
+      "e7h4",
+      "g1h2",
+      "h4h2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-vp5nI",
+    "fen": "4r1k1/p2n1pp1/P1p1qbn1/2Pp4/3p3p/1Q2PB1P/5PPB/R3R1K1 w - - 0 27",
+    "setupMove": "e3d4",
+    "solution": [
+      "e6e1",
+      "a1e1",
+      "e8e1"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-vyOIW",
+    "fen": "B1b3r1/6qk/p4p1p/1p3p1Q/1PPbp3/P2P3P/5PP1/4RR1K w - - 1 25",
+    "setupMove": "d3e4",
+    "solution": [
+      "g7g2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-w0qhB",
+    "fen": "7k/pb5p/1p1n2p1/8/5qN1/1B4PP/P3QP1K/8 b - - 0 30",
+    "setupMove": "f4e4",
+    "solution": [
+      "e2b2",
+      "e4d4",
+      "b2d4"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-w7J3i",
+    "fen": "r2q3r/1p2bpk1/p2p1pp1/5N2/2b1P2Q/2N1R3/PPP2PPP/R5K1 b - - 10 20",
+    "setupMove": "g6f5",
+    "solution": [
+      "e3g3",
+      "g7f8",
+      "h4h8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-wCVUO",
+    "fen": "5rk1/pQ1R1pbp/4p1p1/8/2q5/8/6PP/5R1K w - - 2 26",
+    "setupMove": "d7f7",
+    "solution": [
+      "c4f1",
+      "f7f1",
+      "f8f1"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-wJSAb",
+    "fen": "6k1/5p2/2b1p3/1p1p4/1N1P3q/3BPQp1/PP3nP1/6K1 w - - 3 29",
+    "setupMove": "g1f1",
+    "solution": [
+      "h4h1",
+      "f1e2",
+      "h1d1"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-wPcrm",
+    "fen": "5n2/p5kp/2qp1Np1/2p2rP1/1r5R/4Q3/PPP5/2K4R b - - 7 27",
+    "setupMove": "b4h4",
+    "solution": [
+      "e3e7",
+      "g7h8",
+      "e7f8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-woMbQ",
+    "fen": "8/5Qpp/pq1BR3/8/6n1/1k3P2/6P1/4R1K1 w - - 1 36",
+    "setupMove": "g1f1",
+    "solution": [
+      "b6f2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-wsx2t",
+    "fen": "4k2r/p1qn1ppp/3b4/1p6/4b1P1/7P/P1P1NP2/R1BQ1RK1 w k - 0 18",
+    "setupMove": "d1d4",
+    "solution": [
+      "d6h2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-wtCex",
+    "fen": "rb3k2/1bq2p2/p1p1p1pp/7n/2N5/6NP/PPP1QPP1/3R1R1K w - - 2 23",
+    "setupMove": "g3h5",
+    "solution": [
+      "c7h2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-wwHwm",
+    "fen": "6rk/p4prp/1qp5/7Q/5P2/1PbBp2R/P1P3PP/7K b - - 6 26",
+    "setupMove": "e3e2",
+    "solution": [
+      "h5h7",
+      "g7h7",
+      "h3h7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-wxGhv",
+    "fen": "1n3rk1/R6p/1pP1p1p1/4P2b/1P1rp3/6P1/1P4B1/2B1K2R w K - 0 25",
+    "setupMove": "c6c7",
+    "solution": [
+      "d4d1"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-x06F8",
+    "fen": "1k2r3/1p3Bbp/pBb3p1/4pp2/8/P7/1P2KP1P/3R4 b - - 17 30",
+    "setupMove": "e8e7",
+    "solution": [
+      "d1d8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-x6twL",
+    "fen": "3r2k1/3P1ppp/r1B5/8/8/6P1/5P1P/4R1K1 b - - 0 30",
+    "setupMove": "g8f8",
+    "solution": [
+      "e1e8",
+      "d8e8",
+      "d7e8q"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-xPiwy",
+    "fen": "3rkb1r/p4ppp/2n2n2/4pb2/2P5/1PN1B3/P4PPP/R2K1BNR w k - 4 11",
+    "setupMove": "d1c1",
+    "solution": [
+      "f8a3"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-xTSwT",
+    "fen": "2k1r2r/1p1qbpp1/BQp2np1/2Pp4/3P1BP1/7P/PP3P2/2KR3R b - - 0 20",
+    "setupMove": "b7a6",
+    "solution": [
+      "b6b8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-xo34s",
+    "fen": "rnb2rk1/1pq2ppp/p7/3p2B1/1b4n1/2NB4/PPP1NPPP/R2Q1RK1 w - - 4 12",
+    "setupMove": "c3d5",
+    "solution": [
+      "c7h2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-xsQpH",
+    "fen": "4bk2/2p2p1p/p2p4/1p3N2/6Q1/P1P4P/1P3PPK/4q3 b - - 7 31",
+    "setupMove": "e8d7",
+    "solution": [
+      "g4g7",
+      "f8e8",
+      "g7g8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-y9fWB",
+    "fen": "2r2rk1/1bq2p2/p3p1pP/8/3Q1p2/2P5/P1P1B3/1K5R b - - 0 30",
+    "setupMove": "b7h1",
+    "solution": [
+      "d4g7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-yJiM2",
+    "fen": "8/2p5/8/3n4/2k1N3/2P5/2K5/8 b - - 5 56",
+    "setupMove": "c7c5",
+    "solution": [
+      "e4d6"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-yOddq",
+    "fen": "3r3k/p2R1Qpp/1p4n1/8/4p3/P5PK/1q5P/5B2 b - - 1 32",
+    "setupMove": "d8d7",
+    "solution": [
+      "f7e8",
+      "g6f8",
+      "e8f8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-ycnl8",
+    "fen": "5R2/1p1br2R/1Pp1k1p1/2Pp1B2/r2P4/6P1/5PK1/8 b - - 0 42",
+    "setupMove": "g6f5",
+    "solution": [
+      "h7h6"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-yq9Ql",
+    "fen": "r5k1/3nbr1p/p2pB1pB/1p1Pp3/1P2Pp2/P1q3P1/2P4P/R2QKR2 w Q - 4 22",
+    "setupMove": "e1e2",
+    "solution": [
+      "c3e3"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-yydVD",
+    "fen": "8/4N1pk/1p2npb1/4p3/P3P3/6QP/1q4BK/8 b - - 1 35",
+    "setupMove": "g6f7",
+    "solution": [
+      "g3h4",
+      "f7h5",
+      "h4h5"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-z16I0",
+    "fen": "r5k1/ppq2pp1/2p2n1p/3p3b/3P1b1N/2PB1N1P/PP2QPK1/4R3 b - - 7 21",
+    "setupMove": "a8e8",
+    "solution": [
+      "e2e8",
+      "f6e8",
+      "e1e8"
+    ],
+    "alternatives": null,
+    "title": "Mate in 2",
+    "hint": "Two moves to mate."
+  },
+  {
+    "id": "lichess-zGIbj",
+    "fen": "8/pQp3qk/3p3p/3P2pP/6P1/1P2p3/P1P5/2K5 w - - 0 37",
+    "setupMove": "b7b4",
+    "solution": [
+      "g7a1"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-zP9yW",
+    "fen": "rnbqk2r/pp2npQp/2p5/2bN4/4P3/3P4/PPP2PPP/R1B1KB1R b KQkq - 0 9",
+    "setupMove": "h8f8",
+    "solution": [
+      "d5f6"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-zVy8M",
+    "fen": "8/pQ6/2p2pk1/3p3p/3P1q2/2N5/PP5P/7K w - - 1 34",
+    "setupMove": "b7c6",
+    "solution": [
+      "f4f1"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-zYiGY",
+    "fen": "6k1/4pp1p/6p1/1Nrq4/8/4n2P/4QPP1/2R3K1 w - - 0 27",
+    "setupMove": "c1c5",
+    "solution": [
+      "d5g2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-zdwC2",
+    "fen": "1b2Q3/1b4pk/p3pq1p/1pp1P3/3p1r2/P2P3P/1PP4K/6R1 w - - 0 31",
+    "setupMove": "e5f6",
+    "solution": [
+      "f4f2"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
+  },
+  {
+    "id": "lichess-zpXD6",
+    "fen": "1kn5/p2Q2p1/2P4p/4p3/4P3/6PP/6BK/2q5 b - - 3 37",
+    "setupMove": "c8b6",
+    "solution": [
+      "d7b7"
+    ],
+    "alternatives": null,
+    "title": "Mate in 1",
+    "hint": "Find the checkmate."
   }
 ]

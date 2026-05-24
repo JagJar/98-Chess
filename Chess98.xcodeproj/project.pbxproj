@@ -38,10 +38,13 @@
 		94E105E71113FA0CE29A7600 /* Win98Dialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2B9D6FA7B5E184C0C199F8 /* Win98Dialog.swift */; };
 		968751DF626974F1A6D3860A /* ChessKit in Frameworks */ = {isa = PBXBuildFile; productRef = 542ED04C175EA49A108C53B8 /* ChessKit */; };
 		97B80CCCBFE74045D5DE6713 /* AchievementEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784BBF17C6546B6FE08EE784 /* AchievementEvaluator.swift */; };
+		98AACE2033A9FB398A3F7655 /* AchievementEvaluatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46AED40BE4FB9F817552A2C /* AchievementEvaluatorTests.swift */; };
+		9CF6CA48411DD86EB58C6AB5 /* XPCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E4FCA61D9709A05326020E /* XPCalculatorTests.swift */; };
 		A50D4C1F921B8D1ADF28398F /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7A7C72D8B32D4555A131AE /* GameViewModel.swift */; };
 		AE77C930BAFB349D530C7559 /* MoveHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D3507E4B364D2FC9853D4F /* MoveHistoryView.swift */; };
 		B0525CC3BC6EF61C6B5565D1 /* GameResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD1EA893809D84D1C5DE440 /* GameResult.swift */; };
 		BC3D05715CF5EE59CD291864 /* SOURCES.md in Resources */ = {isa = PBXBuildFile; fileRef = 668F1B3DA128B4034FD4844B /* SOURCES.md */; };
+		BEE3F3A196905CC78364A8F0 /* StreakCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6517C3A128122953E1E5E8E /* StreakCalculatorTests.swift */; };
 		C9AF2F325CA922E8EEA0C5EC /* StatsWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B509652876800B739C033B96 /* StatsWindow.swift */; };
 		CBE4860FCFEACCB2032DE09E /* NotificationSettingsDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2252CE46782577D1DF8A9B8 /* NotificationSettingsDialog.swift */; };
 		CC7565A645961629F731BAEE /* OnboardingFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818340794EEA3D74E2D02ECB /* OnboardingFlow.swift */; };
@@ -95,11 +98,13 @@
 		9476CCCA48B2D584156547E4 /* PuzzleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleViewModel.swift; sourceTree = "<group>"; };
 		94E8090B982528E454C9431A /* Puzzles.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Puzzles.json; sourceTree = "<group>"; };
 		9D85C07BF69615EF0201C3AE /* PlayerStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStats.swift; sourceTree = "<group>"; };
+		A4E4FCA61D9709A05326020E /* XPCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPCalculatorTests.swift; sourceTree = "<group>"; };
 		A9BF7D58446BDCD225DDFFF3 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		AB5EAC369861AC37B184B3D8 /* UnlockedAchievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockedAchievement.swift; sourceTree = "<group>"; };
 		B0BAEC1548CACBAC1FBE9B9A /* StockfishEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockfishEngineTests.swift; sourceTree = "<group>"; };
 		B1F764A2A69D55665F879CEA /* Win98MenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Win98MenuBar.swift; sourceTree = "<group>"; };
 		B509652876800B739C033B96 /* StatsWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsWindow.swift; sourceTree = "<group>"; };
+		B6517C3A128122953E1E5E8E /* StreakCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakCalculatorTests.swift; sourceTree = "<group>"; };
 		BBD3BD78F90B05E40DB141B5 /* AchievementUnlockedDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementUnlockedDialog.swift; sourceTree = "<group>"; };
 		BC76BC537073E5A4BF71E406 /* EngineProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineProtocol.swift; sourceTree = "<group>"; };
 		BDD2C23376B5C5B7E5F6EF59 /* SquareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareView.swift; sourceTree = "<group>"; };
@@ -111,6 +116,7 @@
 		D191A7315F2AA33B77404FE5 /* Difficulty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Difficulty.swift; sourceTree = "<group>"; };
 		D35F1AAE10320D2D4794C5D1 /* AchievementCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementCatalog.swift; sourceTree = "<group>"; };
 		E1AA98B04035321098E699C8 /* Win98Tokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Win98Tokens.swift; sourceTree = "<group>"; };
+		E46AED40BE4FB9F817552A2C /* AchievementEvaluatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementEvaluatorTests.swift; sourceTree = "<group>"; };
 		E5C439F6A9383E497F3E7576 /* RetentionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetentionService.swift; sourceTree = "<group>"; };
 		EC2B9D6FA7B5E184C0C199F8 /* Win98Dialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Win98Dialog.swift; sourceTree = "<group>"; };
 		EFA3ECB4478ECEA159ADBA77 /* SavedGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedGame.swift; sourceTree = "<group>"; };
@@ -244,9 +250,12 @@
 		AAB8DAC78840FF8499BD738F /* Chess98Tests */ = {
 			isa = PBXGroup;
 			children = (
+				E46AED40BE4FB9F817552A2C /* AchievementEvaluatorTests.swift */,
 				55565E6726A6676BA82D0508 /* Chess98Tests.swift */,
 				C0F2B04F941DE73BC067E903 /* GameViewModelTests.swift */,
 				B0BAEC1548CACBAC1FBE9B9A /* StockfishEngineTests.swift */,
+				B6517C3A128122953E1E5E8E /* StreakCalculatorTests.swift */,
+				A4E4FCA61D9709A05326020E /* XPCalculatorTests.swift */,
 			);
 			path = Chess98Tests;
 			sourceTree = "<group>";
@@ -422,9 +431,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98AACE2033A9FB398A3F7655 /* AchievementEvaluatorTests.swift in Sources */,
 				ECDFF9EBF2F239C715D7D9FA /* Chess98Tests.swift in Sources */,
 				6E21FDEFACBC73335580CD53 /* GameViewModelTests.swift in Sources */,
 				7D54F4EF656EBE410E602805 /* StockfishEngineTests.swift in Sources */,
+				BEE3F3A196905CC78364A8F0 /* StreakCalculatorTests.swift in Sources */,
+				9CF6CA48411DD86EB58C6AB5 /* XPCalculatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

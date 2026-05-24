@@ -19,7 +19,13 @@ final class PuzzleViewModel {
     init(puzzle: Puzzle) {
         self.puzzle = puzzle
         let position = Position(fen: puzzle.fen) ?? .standard
-        self.game = GameViewModel(startingPosition: position)
+        let vm = GameViewModel(startingPosition: position)
+        // Apply the opponent's setup move silently (e.g. Lichess puzzles
+        // start one ply before the player's first move).
+        if let setup = puzzle.setupMove {
+            _ = vm.makeUCIMove(setup)
+        }
+        self.game = vm
     }
 
     /// Validates the most recent move on `game` against the puzzle's expected
@@ -55,6 +61,9 @@ final class PuzzleViewModel {
     func tryAgain() {
         let position = Position(fen: puzzle.fen) ?? .standard
         game.reset(to: position)
+        if let setup = puzzle.setupMove {
+            _ = game.makeUCIMove(setup)
+        }
         moveIndex = 0
         state = .inProgress
     }
