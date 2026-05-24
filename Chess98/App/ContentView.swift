@@ -23,12 +23,14 @@ struct ContentView: View {
         case confirmResign
         case about
         case stats
+        case freezeUsed
 
         var id: String {
             switch self {
             case .confirmResign: "confirm-resign"
             case .about:         "about"
             case .stats:         "stats"
+            case .freezeUsed:    "freeze-used"
             }
         }
     }
@@ -44,17 +46,28 @@ struct ContentView: View {
             Win98.Palette.desktop.ignoresSafeArea()
 
             VStack(spacing: 0) {
-                Win98Window(title: "Chess 98") {
-                    VStack(spacing: 6) {
-                        Win98MenuBar(menus: menus, openMenuID: $openMenuID)
-                            .win98Bevel(.outset)
-                            .zIndex(10)
+                Win98Window(
+                    title: "Chess 98",
+                    content: {
+                        VStack(spacing: 6) {
+                            Win98MenuBar(menus: menus, openMenuID: $openMenuID)
+                                .win98Bevel(.outset)
+                                .zIndex(10)
 
-                        gameContent
-                            .contentShape(Rectangle())
-                            .onTapGesture { openMenuID = nil }
+                            gameContent
+                                .contentShape(Rectangle())
+                                .onTapGesture { openMenuID = nil }
+                        }
+                    },
+                    trailing: {
+                        if let retention {
+                            StreakBadge(
+                                streak: retention.stats.currentStreak,
+                                onTap: { activeDialog = .stats }
+                            )
+                        }
                     }
-                }
+                )
                 .padding(.horizontal, 8)
                 .padding(.top, 8)
                 Spacer(minLength: 0)
@@ -67,6 +80,7 @@ struct ContentView: View {
                 case .confirmResign: resignConfirmDialog
                 case .about:         aboutDialog
                 case .stats:         statsDialog
+                case .freezeUsed:    freezeUsedDialog
                 }
             }
         }
@@ -82,6 +96,12 @@ struct ContentView: View {
             // If we restored a game that was already over, don't report it
             // as a fresh completion next time isGameOver flips.
             hasReportedThisGame = game.isGameOver
+
+            // Surface the one-time "freeze used" toast if a streak freeze
+            // was auto-applied during onAppLaunch.
+            if retentionService.stats.freezeUsedOn != nil, activeDialog == nil {
+                activeDialog = .freezeUsed
+            }
 
             let e = StockfishEngine()
             await e.start()
@@ -253,6 +273,29 @@ struct ContentView: View {
                 }
             }
         }
+    }
+
+    private var freezeUsedDialog: some View {
+        Win98Dialog(title: "Streak Freeze Used", onClose: dismissFreezeDialog) {
+            VStack(alignment: .leading, spacing: 8) {
+                Text("You missed a day, but a streak freeze kept your streak alive.")
+                Text("A new freeze refills next Monday.")
+                    .foregroundStyle(Win98.Palette.shadow)
+                HStack {
+                    Spacer()
+                    Button("OK", action: dismissFreezeDialog)
+                        .buttonStyle(.win98)
+                }
+                .padding(.top, 6)
+            }
+            .font(.system(size: 12))
+            .foregroundStyle(Win98.Palette.text)
+        }
+    }
+
+    private func dismissFreezeDialog() {
+        retention?.clearFreezeNotice()
+        activeDialog = nil
     }
 
     @ViewBuilder

@@ -20,13 +20,50 @@ final class RetentionService {
         self.stats = Self.fetchOrCreateStats(in: context)
     }
 
-    /// Called once during app launch — keeps daily flags fresh.
+    /// Called once during app launch — refills weekly freeze, evaluates
+    /// streak rollover, resets daily puzzle flag.
     func onAppLaunch() {
-        let today = calendar.startOfDay(for: .now)
+        let now = Date.now
+        let today = calendar.startOfDay(for: now)
+
+        // Weekly freeze refill (cap 1).
+        let weekStart = StreakCalculator.startOfWeek(containing: now, calendar: calendar)
+        if stats.lastFreezeRefillWeek != weekStart {
+            stats.streakFreezesAvailable = 1
+            stats.lastFreezeRefillWeek = weekStart
+        }
+
+        // Streak rollover based on time since last play.
+        let outcome = StreakCalculator.evaluateLaunch(
+            lastPlayedDay: stats.lastPlayedDay,
+            freezesAvailable: stats.streakFreezesAvailable,
+            today: now,
+            calendar: calendar
+        )
+        switch outcome {
+        case .noChange:
+            break
+        case .freezeApplied(let missedDay):
+            stats.streakFreezesAvailable -= 1
+            stats.freezeUsedOn = missedDay
+            // Treat the freeze day as if it had been played, so the next play
+            // increments rather than resets.
+            stats.lastPlayedDay = missedDay
+        case .broken:
+            stats.currentStreak = 0
+        }
+
+        // Daily puzzle flag reset.
         if let lastPuzzle = stats.lastPuzzleDay,
            calendar.startOfDay(for: lastPuzzle) != today {
             stats.puzzlesSolvedToday = false
         }
+        save()
+    }
+
+    /// Clears the one-time "freeze used" flag once the UI has shown the toast.
+    func clearFreezeNotice() {
+        stats.freezeUsedOn = nil
         save()
     }
 
@@ -39,8 +76,9 @@ final class RetentionService {
         difficulty: Difficulty,
         moveCount: Int
     ) -> Int {
-        let today = calendar.startOfDay(for: .now)
-        let xp = XPCalculator.xp(for: outcome, difficulty: difficulty)
+        let now = Date.now
+        let today = calendar.startOfDay(for: now)
+        var xp = XPCalculator.xp(for: outcome, difficulty: difficulty)
 
         stats.gamesPlayed += 1
         switch outcome {
@@ -55,8 +93,28 @@ final class RetentionService {
             stats.losses += 1
             stats.resignations += 1
         }
-        stats.xpTotal += xp
+
+        // Streak handling.
+        let completion = StreakCalculator.evaluateCompletion(
+            lastPlayedDay: stats.lastPlayedDay,
+            today: now,
+            calendar: calendar
+        )
+        switch completion {
+        case .sameDay:
+            break
+        case .continuing:
+            stats.currentStreak += 1
+            xp += XPCalculator.streakMilestoneBonus(forNewStreak: stats.currentStreak)
+        case .newStreak:
+            stats.currentStreak = 1
+            xp += XPCalculator.streakMilestoneBonus(forNewStreak: 1)
+        }
+        if stats.currentStreak > stats.longestStreak {
+            stats.longestStreak = stats.currentStreak
+        }
         stats.lastPlayedDay = today
+        stats.xpTotal += xp
 
         let result = GameResult(
             dayKey: today,

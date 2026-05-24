@@ -1,8 +1,9 @@
 import SwiftUI
 
-struct Win98Window<Content: View>: View {
+struct Win98Window<Content: View, Trailing: View>: View {
     let title: String
     @ViewBuilder var content: Content
+    @ViewBuilder var trailing: Trailing
 
     var body: some View {
         VStack(spacing: 0) {
@@ -21,6 +22,8 @@ struct Win98Window<Content: View>: View {
                 .foregroundStyle(Win98.Palette.titleBarText)
                 .padding(.leading, 4)
             Spacer(minLength: 0)
+            trailing
+                .padding(.trailing, 6)
             // Decorative window controls (non-functional for now)
             ForEach(["_", "□", "✕"], id: \.self) { glyph in
                 Text(glyph)
@@ -35,5 +38,15 @@ struct Win98Window<Content: View>: View {
         .padding(.vertical, 2)
         .padding(.horizontal, 2)
         .background(Win98.Palette.titleBar)
+    }
+}
+
+// Convenience initializer for the common no-accessory case so existing call
+// sites keep working unchanged: Win98Window(title: "...") { content }.
+extension Win98Window where Trailing == EmptyView {
+    init(title: String, @ViewBuilder content: () -> Content) {
+        self.title = title
+        self.content = content()
+        self.trailing = EmptyView()
     }
 }

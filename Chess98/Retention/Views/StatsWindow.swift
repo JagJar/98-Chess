@@ -15,6 +15,12 @@ struct StatsWindow: View {
 
                 Rectangle().fill(Win98.Palette.shadow).frame(height: 1).padding(.vertical, 2)
 
+                row("Current streak", value: "\(stats.currentStreak)")
+                row("Longest streak", value: "\(stats.longestStreak)")
+                row("Streak freezes", value: "\(stats.streakFreezesAvailable)")
+
+                Rectangle().fill(Win98.Palette.shadow).frame(height: 1).padding(.vertical, 2)
+
                 row("Total XP",     value: "\(stats.xpTotal)")
                 row("Level",        value: "\(stats.level)")
                 row("Next level at", value: "\(PlayerStats.xpForLevel(stats.level + 1)) XP")
